@@ -1,0 +1,297 @@
+{
+  "List": {
+    "array": {
+      "array": {
+        "length": 14,
+        "array": [
+          {
+            "ID": 1,
+            "GroupID": 0,
+            "Name": "Def-0",
+            "Time": 1.0,
+            "Values": {
+              "array": {
+                "array": [
+                  0.561158,
+                  0.49899897,
+                  0.5300785,
+                  0.623604834,
+                  0.4782793,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 2,
+            "GroupID": 1,
+            "Name": "Def-1",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 3,
+            "GroupID": 2,
+            "Name": "Def-2",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 4,
+            "GroupID": 3,
+            "Name": "Def-3",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 5,
+            "GroupID": 4,
+            "Name": "Def-4",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 6,
+            "GroupID": 5,
+            "Name": "Def-5",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 7,
+            "GroupID": 6,
+            "Name": "Def-6",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 8,
+            "GroupID": 7,
+            "Name": "Def-7",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 9,
+            "GroupID": 8,
+            "Name": "Def-8",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 10,
+            "GroupID": 9,
+            "Name": "Def-9",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 11,
+            "GroupID": 10,
+            "Name": "Def-10",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 12,
+            "GroupID": 11,
+            "Name": "Def-11",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 13,
+            "GroupID": 12,
+            "Name": "Def-12",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 14,
+            "GroupID": 13,
+            "Name": "Def-13",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 5
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 7
+            },
+            "FadeTime": 1.0
+          }
+        ]
+      }
+    }
+  },
+  "Globals": {
+    "TracksCount": 14,
+    "TrackSize": 0.142,
+    "Length": 237.584,
+    "LoopPoints": {
+      "X": 62.61165,
+      "Y": 64.35962
+    },
+    "TrackNames": {
+      "array": {
+        "array": [
+          "Uno",
+          "track",
+          "track",
+          "track",
+          "trackime",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track"
+        ]
+      }
+    },
+    "AudioFile": "D:\\_VVVV\\_Projects\\_MULTIMELINER\\Audio\\02 - Venter (Evian Christ TF 12 Mix).wav"
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="D:\_VIDEOMIXER\_LaunchPad\_VideoMixer\PageCursors.v4p" systemname="PageCursors" filename="D:\_VIDEOMIXER\_LaunchPad\_VideoMixer\PageCursors.v4p" scrollx="0" scrolly="2445">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2220" top="2040" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2220" top="2040" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Pages">
+   </PIN>
+   </NODE>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2070" top="2565" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1470" top="3045" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Multiply (Color)" nodename="Multiply (Color)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1500" top="4815" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   <PIN pinname="Scalar" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="5" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="1500" top="5235" width="930" height="525">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="5235" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Cursors">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="6" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="1500" top="4170" width="930" height="525">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="4170" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Color Input" slicecount="2" values="|0.98517,1.00000,0.98517,1.00000|,|0.98517,1.00000,0.98517,1.00000|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="1500" top="3630" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1860" top="1500" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1860" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="CurrentPage">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Color Output" dstnodeid="4" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="XY" dstnodeid="4" dstpinname="Scalar">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="5" dstpinname="Color Input">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="2" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Input 2">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="3720" height="6735">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="addonpack" Version="34.0.0">
+   </PACK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="7" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="7" dstpinname="Y">
+   </LINK>
+   </PATCH>

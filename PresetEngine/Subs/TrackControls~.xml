@@ -1,0 +1,255 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\TrackControls.v4p" systemname="TrackControls" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\TrackControls.v4p" bgcolor="8087915">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1785" top="855" width="630" height="540">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1785" top="855" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="EditEnable">
+   </PIN>
+   </NODE>
+   <NODE systemname="ReceiveLaunchPad" filename="ReceiveLaunchPad.v4p" nodename="Subs\ReceiveLaunchPad.v4p" componentmode="InAWindow" id="1">
+   <BOUNDS type="Node" left="2022" top="2462" width="2160" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="750" top="540" width="11335" height="8310">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12180" top="5910" width="11325" height="8310">
+   </BOUNDS>
+   <PIN pinname="List" visible="1">
+   </PIN>
+   <PIN pinname="TrackSelected" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="EditValues" visible="1">
+   </PIN>
+   <PIN pinname="FinishEdit" visible="1">
+   </PIN>
+   <PIN pinname="Play" visible="1">
+   </PIN>
+   <PIN pinname="Loop" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   <PIN pinname="GoToInit" visible="1">
+   </PIN>
+   <PIN pinname="Port" visible="1">
+   </PIN>
+   <PIN pinname="DoSeek" visible="1">
+   </PIN>
+   <PIN pinname="Update" visible="1">
+   </PIN>
+   <PIN pinname="Click" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Server" visible="1">
+   </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4125" top="1875" width="600" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4125" top="1875" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10001">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="LaunchPadPortR">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="4290" top="2430" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="End">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="End">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Keyboard)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Keyboard)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="810" top="2460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="Keyboard">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Keyboard">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Mouse)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Mouse)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="825" top="2085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="Mouse">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="1365" top="3825" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="TrackControls">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="3975" top="3945" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="SetValues">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="3990" top="3615" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Port">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="8" dstpinname="Input Value">
+   </LINK>
+   <BOUNDS type="Window" left="0" top="9690" width="5745" height="5910">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10">
+   <BOUNDS type="Box" left="4425" top="2910" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4425" top="2910" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Click" dstnodeid="10" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="11">
+   <BOUNDS type="Box" left="2040" top="1995" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2040" top="1995" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="127.0.0.1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="localhost">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Server">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="1" dstpinname="Server">
+   </LINK>
+   <NODE systemname="TrackControls (Track)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="TrackControls (Track)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1380" top="3105" width="2820" height="270">
+   </BOUNDS>
+   <PIN pinname="SetValues" visible="1">
+   </PIN>
+   <PIN pinname="End" visible="1">
+   </PIN>
+   <PIN pinname="Keyboard Device" visible="1">
+   </PIN>
+   <PIN pinname="Mouse Device" visible="1">
+   </PIN>
+   <PIN pinname="Controls" visible="1">
+   </PIN>
+   <PIN pinname="FollowPointer" visible="1">
+   </PIN>
+   <PIN pinname="EditMulti" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Controls" dstnodeid="7" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="2" dstpinname="Keyboard Device">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="2" dstpinname="Mouse Device">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="2" dstpinname="EditEnable">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Add" dstnodeid="2" dstpinname="Add">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="EditValues" dstnodeid="2" dstpinname="EditValues">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="FinishEdit" dstnodeid="2" dstpinname="FinishEdit">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="TrackID" dstnodeid="2" dstpinname="TrackID">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="AddCopy" dstnodeid="2" dstpinname="AddCopy">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Pointer" dstnodeid="2" dstpinname="Pointer">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="DoSeek" dstnodeid="2" dstpinname="DoSeek">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Play" dstnodeid="2" dstpinname="Play">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="GoToInit" dstnodeid="2" dstpinname="GoToInit">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Loop" dstnodeid="2" dstpinname="Loop">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="2" dstpinname="End">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="SetValues" dstnodeid="9" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Enable">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13">
+   <BOUNDS type="Box" left="4140" top="900" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4140" top="900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="FollowPointer">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="2" dstpinname="FollowPointer">
+   </LINK>
+   </PATCH>

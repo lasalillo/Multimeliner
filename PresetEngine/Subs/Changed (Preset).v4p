@@ -1,0 +1,151 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.1.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Changed (Preset).v4p" systemname="Changed (Preset)" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Changed (Preset).v4p" scrollx="765" scrolly="870">
+   <NODE systemname="GetValues (Utilities Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="GetValues (Utilities Preset)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1530" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Data" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Values" visible="1">
+   </PIN>
+   <PIN pinname="Values Bin Size" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1515" top="2100" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1500" top="2520" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" visible="1" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2190" top="2100" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2190" top="2550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" visible="1" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="1500" top="2955" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="OnChange" dstnodeid="2" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="5" dstpinname="Input 1">
+   </LINK>
+   <NODE id="6" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="3555" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="3555" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="6" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Values" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <NODE id="7" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Data">
+   </PIN>
+   <BOUNDS type="Box" left="1530" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1530" top="500" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output Node" dstnodeid="0" dstpinname="Data">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="OnChange" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <BOUNDS type="Window" left="7725" top="9435" width="3795" height="4545">
+   </BOUNDS>
+   <NODE systemname="SetSlice (Utilities Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="SetSlice (Utilities Node)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="2955" top="5985" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Bin Size" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="8" dstpinname="Index" linkstyle="VHV">
+   <LINKPOINT x="4015" y="3103">
+   </LINKPOINT>
+   <LINKPOINT x="3620" y="3513">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="List" dstnodeid="8" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="Output Node" dstnodeid="8" dstpinname="Value">
+   </LINK>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="2250" top="3015" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Values Bin Size" dstnodeid="2" dstpinname="Bin Size">
+   </LINK>
+   <NODE systemname="GetToggle (Utilities Preset)" filename="vl\VVVV.Value.PresetEngine.vl" nodename="GetToggle (Utilities Preset)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="2625" top="1515" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Data" visible="1">
+   </PIN>
+   <PIN pinname="Toggle" visible="1">
+   </PIN>
+   <PIN pinname="Toggle Bin Size" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output Node" dstnodeid="11" dstpinname="Data">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Toggle" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Toggle Bin Size" dstnodeid="4" dstpinname="Bin Size">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="5" dstpinname="Input 2">
+   </LINK>
+   </PATCH>

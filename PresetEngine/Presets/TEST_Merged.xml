@@ -1,0 +1,1339 @@
+{
+  "List": {
+    "array": {
+      "array": {
+        "length": 34,
+        "array": [
+          {
+            "ID": 1,
+            "GroupID": 0,
+            "Name": "003",
+            "Time": 0.0001,
+            "Values": {
+              "array": {
+                "array": [
+                  0.3464567,
+                  0.0,
+                  0.275590539,
+                  0.0,
+                  0.157480314,
+                  0.102362208,
+                  0.0,
+                  0.563447833,
+                  0.637795269,
+                  1.0,
+                  0.8031496,
+                  1.0,
+                  0.6692913,
+                  0.51968503,
+                  0.9527559,
+                  0.96062994,
+                  0.992126,
+                  1.0,
+                  1.0,
+                  0.0472440943,
+                  0.102362208,
+                  0.984252,
+                  0.2992126,
+                  0.244094491,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 2,
+            "GroupID": 0,
+            "Name": "050",
+            "Time": 0.0001,
+            "Values": {
+              "array": {
+                "array": [
+                  0.3464567,
+                  0.0,
+                  0.275590539,
+                  0.0,
+                  0.157480314,
+                  0.102362208,
+                  0.0,
+                  0.563447833,
+                  0.637795269,
+                  1.0,
+                  0.8031496,
+                  1.0,
+                  0.6692913,
+                  0.51968503,
+                  0.9527559,
+                  0.96062994,
+                  0.8976378,
+                  1.0,
+                  0.503937,
+                  0.0,
+                  0.0,
+                  0.984252,
+                  0.2992126,
+                  0.244094491,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 3,
+            "GroupID": 0,
+            "Name": "034",
+            "Time": 24.1798,
+            "Values": {
+              "array": {
+                "array": [
+                  0.3464567,
+                  0.0,
+                  0.275590539,
+                  0.0,
+                  0.157480314,
+                  0.102362208,
+                  0.0,
+                  0.563447833,
+                  0.637795269,
+                  1.0,
+                  0.8031496,
+                  1.0,
+                  0.6692913,
+                  0.51968503,
+                  0.9527559,
+                  0.96062994,
+                  0.976377964,
+                  1.0,
+                  0.7480315,
+                  0.0,
+                  0.0,
+                  0.984252,
+                  0.2992126,
+                  0.244094491,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 4,
+            "GroupID": 0,
+            "Name": "012",
+            "Time": 52.2994652,
+            "Values": {
+              "array": {
+                "array": [
+                  0.3464567,
+                  0.0,
+                  0.275590539,
+                  0.0,
+                  0.157480314,
+                  0.102362208,
+                  0.0,
+                  0.563447833,
+                  0.637795269,
+                  1.0,
+                  0.8031496,
+                  1.0,
+                  0.6692913,
+                  0.51968503,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.0,
+                  0.984252,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0472440943,
+                  0.102362208,
+                  0.11811024
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 5,
+            "GroupID": 0,
+            "Name": "017",
+            "Time": 74.83482,
+            "Values": {
+              "array": {
+                "array": [
+                  0.3464567,
+                  0.0,
+                  0.275590539,
+                  0.0,
+                  0.157480314,
+                  0.102362208,
+                  0.0,
+                  0.563447833,
+                  0.637795269,
+                  1.0,
+                  0.8031496,
+                  1.0,
+                  0.6692913,
+                  0.51968503,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.0,
+                  0.992126,
+                  0.0314960629,
+                  0.102362208,
+                  0.0,
+                  0.0472440943,
+                  0.102362208,
+                  0.11811024
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 6,
+            "GroupID": 0,
+            "Name": "008",
+            "Time": 90.82813,
+            "Values": {
+              "array": {
+                "array": [
+                  0.3464567,
+                  0.0,
+                  0.275590539,
+                  0.0,
+                  0.157480314,
+                  0.102362208,
+                  0.0,
+                  0.563447833,
+                  0.637795269,
+                  1.0,
+                  0.8031496,
+                  1.0,
+                  0.6692913,
+                  0.51968503,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.0,
+                  0.212598428,
+                  0.708661437,
+                  0.8110236,
+                  0.0,
+                  0.0472440943,
+                  0.102362208,
+                  0.11811024
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 7,
+            "GroupID": 0,
+            "Name": "022",
+            "Time": 111.428352,
+            "Values": {
+              "array": {
+                "array": [
+                  0.354330719,
+                  0.0,
+                  0.464566916,
+                  0.0,
+                  0.0,
+                  0.338582665,
+                  0.0,
+                  1.0,
+                  0.637795269,
+                  0.716535449,
+                  0.8346457,
+                  0.7559055,
+                  0.6692913,
+                  0.51968503,
+                  0.6771653,
+                  0.9448819,
+                  0.6692913,
+                  0.0,
+                  0.464566916,
+                  0.007874016,
+                  0.0,
+                  0.8346457,
+                  0.818897665,
+                  0.5590551,
+                  0.236220479,
+                  0.314960629,
+                  0.1496063,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  false,
+                  false,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  true,
+                  true,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 8,
+            "GroupID": 0,
+            "Name": "045",
+            "Time": 124.639839,
+            "Values": {
+              "array": {
+                "array": [
+                  0.322834641,
+                  0.0,
+                  0.44094488,
+                  0.503937,
+                  0.370078743,
+                  0.7401575,
+                  0.6929134,
+                  1.0,
+                  0.637795269,
+                  0.716535449,
+                  0.8346457,
+                  0.7559055,
+                  0.6692913,
+                  0.51968503,
+                  0.6771653,
+                  0.9448819,
+                  0.7007874,
+                  1.0,
+                  0.464566916,
+                  0.8031496,
+                  0.724409461,
+                  0.07874016,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 7.15255737E-07
+          },
+          {
+            "ID": 9,
+            "GroupID": 0,
+            "Name": "044",
+            "Time": 142.8569,
+            "Values": {
+              "array": {
+                "array": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 10,
+            "GroupID": 0,
+            "Name": "003",
+            "Time": 162.032669,
+            "Values": {
+              "array": {
+                "array": [
+                  0.3464567,
+                  0.0,
+                  0.275590539,
+                  0.0,
+                  0.157480314,
+                  0.102362208,
+                  0.0,
+                  0.563447833,
+                  0.637795269,
+                  1.0,
+                  0.8031496,
+                  1.0,
+                  0.6692913,
+                  0.51968503,
+                  0.9527559,
+                  0.96062994,
+                  0.976377964,
+                  1.0,
+                  0.7480315,
+                  0.0,
+                  0.0,
+                  0.984252,
+                  0.2992126,
+                  0.244094491,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 11,
+            "GroupID": 0,
+            "Name": "051",
+            "Time": 182.8035,
+            "Values": {
+              "array": {
+                "array": [
+                  0.322834641,
+                  0.0,
+                  0.44094488,
+                  0.503937,
+                  0.370078743,
+                  0.7401575,
+                  0.6929134,
+                  1.0,
+                  0.637795269,
+                  0.716535449,
+                  0.8346457,
+                  0.7559055,
+                  0.6692913,
+                  0.51968503,
+                  0.6771653,
+                  0.9448819,
+                  0.7007874,
+                  1.0,
+                  0.464566916,
+                  0.8031496,
+                  0.724409461,
+                  0.07874016,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 12,
+            "GroupID": 0,
+            "Name": "063",
+            "Time": 203.934387,
+            "Values": {
+              "array": {
+                "array": [
+                  0.3464567,
+                  0.0,
+                  0.275590539,
+                  0.0,
+                  0.157480314,
+                  0.102362208,
+                  0.0,
+                  0.563447833,
+                  0.637795269,
+                  1.0,
+                  0.8031496,
+                  1.0,
+                  0.6692913,
+                  0.51968503,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.393700778,
+                  0.0,
+                  0.0,
+                  0.984252,
+                  0.2992126,
+                  0.244094491,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 13,
+            "GroupID": 0,
+            "Name": "054",
+            "Time": 228.325272,
+            "Values": {
+              "array": {
+                "array": [
+                  0.322834641,
+                  0.0,
+                  0.44094488,
+                  0.503937,
+                  0.370078743,
+                  0.7401575,
+                  0.6929134,
+                  1.0,
+                  0.637795269,
+                  0.716535449,
+                  0.8346457,
+                  0.7559055,
+                  0.6692913,
+                  0.51968503,
+                  0.6771653,
+                  0.9448819,
+                  0.7007874,
+                  1.0,
+                  0.464566916,
+                  0.8031496,
+                  0.724409461,
+                  0.07874016,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 14,
+            "GroupID": 0,
+            "Name": "009",
+            "Time": 260.583954,
+            "Values": {
+              "array": {
+                "array": [
+                  0.3464567,
+                  0.0,
+                  0.275590539,
+                  0.0,
+                  0.157480314,
+                  0.102362208,
+                  0.0,
+                  0.563447833,
+                  0.637795269,
+                  1.0,
+                  0.8031496,
+                  1.0,
+                  0.6692913,
+                  0.51968503,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.393700778,
+                  0.0,
+                  0.0,
+                  0.984252,
+                  0.2992126,
+                  0.244094491,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 15,
+            "GroupID": 0,
+            "Name": "004",
+            "Time": 303.3628,
+            "Values": {
+              "array": {
+                "array": [
+                  0.3464567,
+                  0.0,
+                  0.275590539,
+                  0.0,
+                  0.157480314,
+                  0.102362208,
+                  0.0,
+                  0.563447833,
+                  0.637795269,
+                  1.0,
+                  0.8031496,
+                  1.0,
+                  0.6692913,
+                  0.51968503,
+                  0.9527559,
+                  0.96062994,
+                  0.992126,
+                  1.0,
+                  1.0,
+                  0.0472440943,
+                  0.102362208,
+                  0.984252,
+                  0.2992126,
+                  0.244094491,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 0.0
+          },
+          {
+            "ID": 16,
+            "GroupID": 1,
+            "Name": "Def-32",
+            "Time": 1.0,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 17,
+            "GroupID": 2,
+            "Name": "Def-15",
+            "Time": 1.0,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 18,
+            "GroupID": 3,
+            "Name": "Def-16",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 19,
+            "GroupID": 4,
+            "Name": "Def-17",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 20,
+            "GroupID": 5,
+            "Name": "Def-18",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 21,
+            "GroupID": 6,
+            "Name": "Def-19",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 22,
+            "GroupID": 7,
+            "Name": "Def-20",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 23,
+            "GroupID": 8,
+            "Name": "Def-21",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 24,
+            "GroupID": 9,
+            "Name": "Def-22",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 25,
+            "GroupID": 10,
+            "Name": "Def-23",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 26,
+            "GroupID": 11,
+            "Name": "Def-24",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 27,
+            "GroupID": 12,
+            "Name": "Def-25",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 28,
+            "GroupID": 13,
+            "Name": "Def-26",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 29,
+            "GroupID": 14,
+            "Name": "Def-27",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 30,
+            "GroupID": 15,
+            "Name": "Def-28",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 31,
+            "GroupID": 16,
+            "Name": "Def-29",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 32,
+            "GroupID": 17,
+            "Name": "Def-30",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 33,
+            "GroupID": 18,
+            "Name": "Def-31",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 34,
+            "GroupID": 19,
+            "Name": "Def-31",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 85
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 87
+            },
+            "FadeTime": 1.0
+          }
+        ]
+      }
+    }
+  },
+  "Globals": {
+    "TracksCount": 20,
+    "TrackSize": 0.133,
+    "Length": 356.6,
+    "LoopPoints": {
+      "X": 37.26251,
+      "Y": 87.78859
+    },
+    "TrackNames": {
+      "array": {
+        "array": [
+          "V_Filename",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "V_Filename",
+          "track",
+          "track",
+          "track",
+          "trackime"
+        ]
+      }
+    },
+    "AudioFile": "C:\\_AUDIO\\01 - I Know No Weekend.wav"
+  }
+}

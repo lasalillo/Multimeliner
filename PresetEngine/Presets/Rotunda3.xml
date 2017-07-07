@@ -1,0 +1,1792 @@
+{
+  "List": {
+    "array": {
+      "array": {
+        "length": 37,
+        "array": [
+          {
+            "ID": 1,
+            "GroupID": 0,
+            "Name": "Def-0",
+            "Time": 0.7251314,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 2,
+            "GroupID": 0,
+            "Name": "New-13",
+            "Time": 1.40142989,
+            "Values": {
+              "array": {
+                "array": [
+                  0.629921257,
+                  0.937007844,
+                  1.0,
+                  0.9133858,
+                  0.8031496,
+                  0.866141737,
+                  0.9448819,
+                  0.7401575,
+                  0.503937,
+                  0.614173234,
+                  0.503937,
+                  0.6456693,
+                  0.5590551,
+                  1.0,
+                  0.7401575,
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.488188982,
+                  0.44094488,
+                  0.496063,
+                  0.0,
+                  0.0,
+                  0.779527545,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  true,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  true,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 3,
+            "GroupID": 0,
+            "Name": "New-33-Copy",
+            "Time": 2.94624925,
+            "Values": {
+              "array": {
+                "array": [
+                  0.354330719,
+                  0.0,
+                  0.464566916,
+                  0.0,
+                  0.0,
+                  0.338582665,
+                  0.0,
+                  1.0,
+                  0.637795269,
+                  0.716535449,
+                  0.8346457,
+                  0.7559055,
+                  0.6692913,
+                  0.51968503,
+                  0.6771653,
+                  0.9448819,
+                  0.6692913,
+                  0.0,
+                  0.464566916,
+                  0.007874016,
+                  0.0,
+                  0.8346457,
+                  0.818897665,
+                  0.5590551,
+                  0.236220479,
+                  0.314960629,
+                  0.1496063,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  false,
+                  false,
+                  true,
+                  true,
+                  true,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  true,
+                  true,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 2.5
+          },
+          {
+            "ID": 4,
+            "GroupID": 0,
+            "Name": "New-12",
+            "Time": 3.77217245,
+            "Values": {
+              "array": {
+                "array": [
+                  0.322834641,
+                  0.0,
+                  0.44094488,
+                  0.503937,
+                  0.370078743,
+                  0.7401575,
+                  0.6929134,
+                  1.0,
+                  0.637795269,
+                  0.716535449,
+                  0.8346457,
+                  0.7559055,
+                  0.6692913,
+                  0.51968503,
+                  0.6771653,
+                  0.9448819,
+                  0.7007874,
+                  1.0,
+                  0.464566916,
+                  0.8031496,
+                  0.724409461,
+                  0.07874016,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 2.0
+          },
+          {
+            "ID": 5,
+            "GroupID": 0,
+            "Name": "New-33",
+            "Time": 4.637506,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0,
+                  0.637795269,
+                  0.716535449,
+                  0.8346457,
+                  0.7559055,
+                  0.6692913,
+                  0.51968503,
+                  0.6771653,
+                  0.9448819,
+                  0.6692913,
+                  0.0,
+                  0.464566916,
+                  0.007874016,
+                  0.0,
+                  0.2913386,
+                  0.322834641,
+                  0.322834641,
+                  0.527559042,
+                  0.637795269,
+                  1.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  true,
+                  true,
+                  false,
+                  true,
+                  true,
+                  false,
+                  false,
+                  true,
+                  true,
+                  true,
+                  false,
+                  false,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 2.5
+          },
+          {
+            "ID": 6,
+            "GroupID": 0,
+            "Name": "New-31",
+            "Time": 7.408916,
+            "Values": {
+              "array": {
+                "array": [
+                  0.6048626,
+                  0.312575549,
+                  0.525174,
+                  0.8346457,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.454106331,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.567489,
+                  0.0,
+                  0.0,
+                  0.7007874,
+                  1.0,
+                  0.4015748,
+                  0.8031496,
+                  0.724409461,
+                  0.212598428,
+                  0.417322844,
+                  0.685039341,
+                  0.9212598,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  true,
+                  true,
+                  false,
+                  false,
+                  true,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 3.125
+          },
+          {
+            "ID": 7,
+            "GroupID": 0,
+            "Name": "New-32",
+            "Time": 12.2620506,
+            "Values": {
+              "array": {
+                "array": [
+                  0.322834641,
+                  0.0,
+                  0.44094488,
+                  0.503937,
+                  0.370078743,
+                  0.7401575,
+                  0.6929134,
+                  1.0,
+                  0.637795269,
+                  0.716535449,
+                  0.8346457,
+                  0.7559055,
+                  0.6692913,
+                  0.51968503,
+                  0.6771653,
+                  0.9448819,
+                  0.6692913,
+                  0.0,
+                  0.464566916,
+                  0.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.007874016,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  true,
+                  true,
+                  false,
+                  true,
+                  true,
+                  false,
+                  false,
+                  true,
+                  true,
+                  true,
+                  false,
+                  false,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 2.00000024
+          },
+          {
+            "ID": 8,
+            "GroupID": 1,
+            "Name": "Def-1",
+            "Time": 1.0,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 9,
+            "GroupID": 2,
+            "Name": "Def-2",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 40
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 42
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 10,
+            "GroupID": 3,
+            "Name": "Def-3",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 40
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 42
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 11,
+            "GroupID": 4,
+            "Name": "Def-4",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 40
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 42
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 12,
+            "GroupID": 5,
+            "Name": "Def-5",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 40
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 42
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 13,
+            "GroupID": 6,
+            "Name": "New-23",
+            "Time": 0.4813076,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 14,
+            "GroupID": 6,
+            "Name": "Def-6",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 40
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 42
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 15,
+            "GroupID": 6,
+            "Name": "New-25",
+            "Time": 1.42948651,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.503937,
+                  0.393700778,
+                  0.204724416,
+                  0.8503937,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  true,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 16,
+            "GroupID": 6,
+            "Name": "New-26",
+            "Time": 1.85212326,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 17,
+            "GroupID": 6,
+            "Name": "New-27",
+            "Time": 2.31986976,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 18,
+            "GroupID": 6,
+            "Name": "New-28",
+            "Time": 2.8128674,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 19,
+            "GroupID": 6,
+            "Name": "New-29",
+            "Time": 3.28800869,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 20,
+            "GroupID": 6,
+            "Name": "New-30",
+            "Time": 3.765985,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 21,
+            "GroupID": 6,
+            "Name": "New-31",
+            "Time": 4.81351566,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.362204731,
+                  0.7322835,
+                  1.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  true,
+                  false,
+                  false,
+                  false,
+                  true,
+                  false,
+                  false,
+                  false,
+                  true
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 22,
+            "GroupID": 7,
+            "Name": "Def-7",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 40
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 42
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 23,
+            "GroupID": 7,
+            "Name": "New-21",
+            "Time": 1.708603,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 24,
+            "GroupID": 7,
+            "Name": "New-22",
+            "Time": 2.368285,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 25,
+            "GroupID": 7,
+            "Name": "New-17",
+            "Time": 2.77033639,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 26,
+            "GroupID": 7,
+            "Name": "New-18",
+            "Time": 3.604557,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 27,
+            "GroupID": 7,
+            "Name": "New-19",
+            "Time": 3.98195076,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 28,
+            "GroupID": 7,
+            "Name": "New-20",
+            "Time": 4.45099354,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 29,
+            "GroupID": 8,
+            "Name": "Def-31",
+            "Time": 1.0,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 30,
+            "GroupID": 9,
+            "Name": "Def-9",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 40
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 42
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 31,
+            "GroupID": 9,
+            "Name": "New-15",
+            "Time": 2.092832,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 32,
+            "GroupID": 9,
+            "Name": "New-16",
+            "Time": 3.2576232,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 33,
+            "GroupID": 9,
+            "Name": "New-14",
+            "Time": 4.29426765,
+            "Values": {
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 0.5
+          },
+          {
+            "ID": 34,
+            "GroupID": 10,
+            "Name": "Def-10",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 40
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 42
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 35,
+            "GroupID": 11,
+            "Name": "Def-11",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 40
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 42
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 36,
+            "GroupID": 12,
+            "Name": "Def-34",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 121
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 123
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 37,
+            "GroupID": 13,
+            "Name": "Def-35",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 121
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 123
+            },
+            "FadeTime": 1.0
+          }
+        ]
+      }
+    }
+  },
+  "Globals": {
+    "TracksCount": 14,
+    "TrackSize": 0.142,
+    "Length": 240.0,
+    "LoopPoints": {
+      "X": 2.73239851,
+      "Y": 8.406799
+    },
+    "TrackNames": {
+      "array": {
+        "array": [
+          "Uno",
+          "track",
+          "track",
+          "track",
+          "trackime",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track",
+          "track"
+        ]
+      }
+    },
+    "AudioFile": "D:\\_VVVV\\_Projects\\_MULTIMELINER\\Audio\\02 - Venter (Evian Christ TF 12 Mix).wav"
+  }
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.2.dtd" >
+   <PATCH nodename="D:\_VIDEOMIXER\_LaunchControlXL\Layers.v4p" systemname="Layers" filename="D:\_VIDEOMIXER\_LaunchControlXL\Layers.v4p" scrollx="0" scrolly="0">
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
+   <BOUNDS type="Node" left="6795" top="2040" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6795" top="2040" width="5190" height="3675">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="48" values="|A Start Pos|,|B Start Pos|,|C Start Pos|,|D Start Pos|,|A End Pos |,|B End Pos|,|C End Pos|,|D End Pos|,|A Mode|,|B Mode|,|C Mode|,|D Mode|,|E Mode|,|Mean Audio|,|Ctr Rotate|,|Color Damper|,|A Deform|,|B Deform|,|C Deform|,|D Deform|,|Deform Morph|,|BG Col|,CTRCol,|Audio Smooth |,|A Alpha|,|B Alpha|,|C Alpha|,|D Alpha|,|E Feed back|,BG/CTR,|MAIN ALPHA|,|MAIN Audio|,|A Mirror Play|,|B Mirror Play|,|C Mirror Play|,|D Mirror Play|,|Invert Mirror ALL|,|A Fix Length|,|B Fix Length|,Noise,|A Reset|,|B Reset|,|C Reset|,|D Reset|,|Reset ALL|,|C Fix Length|,|D Fix Length|,Lomo">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="1">
+   <BOUNDS type="Node" left="1500" top="2040" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="2040" width="5190" height="3675">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="48" values="|A Gain|,|B Gain|,|C Gain|,|D Gain|,|E Gain|,Strobo,Disp2,Zoom,|A Mode|,|B Mode|,|C Mode|,|D Mode|,|E Mode|,|XCount Audio texture|,|YCount  Audio texture|,Bump,|A Deform|,|B Deform|,|C Deform|,|D Deform|,|Deform Morph|,|BG Col|,CTRCol,|Audio Smooth |,|A Alpha|,|B Alpha|,|C Alpha|,|D Alpha|,|E Feed back|,BG/CTR,|MAIN ALPHA|,|MAIN Audio|,|A As CTR|,|B As CTR|,|C As CTR|,|D As CTR|,|E As CTR|,|A Fix Length|,|B Fix Length|,Noise,|A Reset|,|B Reset|,|C Reset|,|D Reset|,|Reset ALL|,|C Fix Length|,|D Fix Length|,Lomo">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="2" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="9330" top="1500" width="2760" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9330" top="1500" width="2760" height="510">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|If Fix Length ON -&gt; End Pos = Length y parpadea|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="12090" top="2040" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12090" top="2040" width="5190" height="3675">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="48" values="|A ScaleY|,|B ScaleY|,|C ScaleY|,|D ScaleY|,|E ScaleY|,Strobo,Disp2,Zoom,|A ScaleX|,|B ScaleX|,|C ScaleX|,|D ScaleX|,|E ScaleX|,|XCount Audio texture|,|YCount  Audio texture|,Bump,|A Deform|,|B Deform|,|C Deform|,|D Deform|,|Deform Morph|,|BG Col|,CTRCol,|Audio Smooth |,|A Alpha|,|B Alpha|,|C Alpha|,|D Alpha|,|E Feed back|,BG/CTR,|MAIN ALPHA|,|MAIN Audio|,|A Symetry|,|B Symetry|,|C Symetry|,|D Symetry|,|E Symetry|,|A Fix Length|,|B Fix Length|,Noise,|A Reset|,|B Reset|,|C Reset|,|D Reset|,|Reset ALL|,|C Fix Length|,|D Fix Length|,Lomo">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="4">
+   <BOUNDS type="Node" left="6795" top="5790" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6795" top="5790" width="5190" height="3675">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="48" visible="1" values="|A Start Pos|,|B Start Pos|,|C Start Pos|,|D Start Pos|,|A End Pos / Length|,|B End Pos|,|C End Pos|,|D End Pos|,,,,,,|Mean Audio|,|Ctr Rotate|,,,,,,,,,,,,,,,,,,|A Mirror Play|,|B Mirror Play|,|C Mirror Play|,|D Mirror Play|,|Invert Mirror ALL|,,,,,,,,,,,">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="5">
+   <BOUNDS type="Node" left="12090" top="5790" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12090" top="5790" width="5190" height="3675">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="48" visible="1" values="|A ScaleY|,|B ScaleY|,|C ScaleY|,|D ScaleY|,|E ScaleY|,Strobo,,,|A ScaleX|,|B ScaleX|,|C ScaleX|,|D ScaleX|,|E ScaleX|,,,,,,,,,,,,,,,,,,,,|A Symetry|,|B Symetry|,|C Symetry|,|D Symetry|,|E Symetry|,,,,,,,,,,,">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="6">
+   <BOUNDS type="Node" left="1500" top="5790" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1500" top="5790" width="5190" height="3675">
+   </BOUNDS>
+   <PIN pinname="Columns" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input String" slicecount="48" values="|A Gain|,|B Gain|,|C Gain|,|D Gain|,|E Gain|,,,,,,,,,,,,,,,,,,,,,,,,,,,,|A As CTR|,|B As CTR|,|C As CTR|,|D As CTR|,|E As CTR|,,,,,,,,,,,">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="17370" top="3855" width="615" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17370" top="3855" width="615" height="630">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Faders">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="17370" top="2055" width="615" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17370" top="2055" width="615" height="1875">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Knobs">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="9" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="17370" top="4410" width="615" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17370" top="4410" width="615" height="1305">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Buttons&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="10">
+   <BOUNDS type="Node" left="17880" top="6420" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17880" top="6420" width="1020" height="1695">
+   </BOUNDS>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Input String" slicecount="4" values="|Up Tempo|,|Down Tempo|,TAP,|Audio Mirror|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="11">
+   <BOUNDS type="Node" left="17340" top="5805" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="17340" top="5805" width="2085" height="630">
+   </BOUNDS>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Input String" slicecount="4" values="|&lt; PAGE|,|PAGE &gt;|,|&lt; Slow|,|Fast &gt;|">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="17685" top="10350" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="18630" top="10395" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="48" values=",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="48" values="|A Start Pos|,|B Start Pos|,|C Start Pos|,|D Start Pos|,|A End Pos / Length|,|B End Pos|,|C End Pos|,|D End Pos|,|A Mode|,|B Mode|,|C Mode|,|D Mode|,|E Mode|,|Mean Audio|,|Ctr Rotate|,|Length ALL|,|A Velo|,|B Velo|,|C Velo|,|D Velo|,|E Velo|,|BG Col|,CTRCol,|Smooth 0=OFF|,|A Alpha|,|B Alpha|,|C Alpha|,|D Alpha|,|E Alpha|,|Deform Morph|,BG/CTR,|MAIN Audio|,|A Mirror Play|,|B Mirror Play|,|C Mirror Play|,|D Mirror Play|,|Invert Mirror ALL|,|A Fix Length|,|B Fix Length|,Noise,|A Reset|,|B Reset|,|C Reset|,|D Reset|,|Reset ALL|,|C Fix Length|,|D Fix Length|,Lomo">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="48" values="|A ScaleY|,|B ScaleY|,|C ScaleY|,|D ScaleY|,|E ScaleY|,Disp1,Disp2,Zoom,|A ScaleX|,|B ScaleX|,|C ScaleX|,|D ScaleX|,|E ScaleX|,XCount,YCount,|Bump 0=OFF|,|A Velo|,|B Velo|,|C Velo|,|D Velo|,|E Velo|,|BG Col|,CTRCol,|Smooth 0=OFF|,|A Alpha|,|B Alpha|,|C Alpha|,|D Alpha|,|E Alpha|,|Deform Morph|,BG/CTR,|MAIN Audio|,|A Symetry|,|B Symetry|,|C Symetry|,|D Symetry|,|E Symetry|,|A Fix Length|,|B Fix Length|,Noise,|A Reset|,|B Reset|,|C Reset|,|D Reset|,|Reset ALL|,|C Fix Length|,|D Fix Length|,Lomo">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="14" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="18585" top="9645" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="18585" top="9645" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="18585" top="9165" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="Template">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cons (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (String)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="17730" top="11025" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="4" values="|&lt; PAGE|,|PAGE &gt;|,|&lt; SlowTempo|,|Fast Tempo &gt;|">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="4" values="|Up Tempo|,|Down Tempo|,TAP,|Audio Mirror|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Cons (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (String)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="18555" top="11070" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="48" values="|A Gain|,|B Gain|,|C Gain|,|D Gain|,|E Gain|,Disp1,Disp2,Zoom,|A Mode|,|B Mode|,|C Mode|,|D Mode|,|E Mode|,XCount,YCount,Bump,|A Velo|,|B Velo|,|C Velo|,|D Velo|,|E Velo|,|BG Col|,CTRCol,|Smooth |,|A Alpha|,|B Alpha|,|C Alpha|,|D Alpha|,|E Alpha|,|Deform Morph|,BG/CTR,|MAIN Audio|,|A As CTR|,|B As CTR|,|C As CTR|,|D As CTR|,|E As CTR|,|A Fix Length|,|B Fix Length|,Noise,|A Reset|,|B Reset|,|C Reset|,|D Reset|,|Reset ALL|,|C Fix Length|,|D Fix Length|,Lomo">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="4" values=",,|&lt; Slow|,|Fast &gt;|">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="4" values=",,,">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="19905" top="6885" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Select" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="19">
+   <BOUNDS type="Node" left="19590" top="5820" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="19590" top="5820" width="2085" height="630">
+   </BOUNDS>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Input String" slicecount="4" values="|&lt; PAGE|,|PAGE &gt;|,,">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="12" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="12" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="12" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="16" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="16" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="16" dstpinname="Input 3">
+   </LINK>
+   <NODE id="20" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   <BOUNDS type="Box" left="17730" top="11670" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="17730" top="11670" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Output" dstnodeid="20" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="17" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="17" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Output String" dstnodeid="17" dstpinname="Input 3">
+   </LINK>
+   <NODE id="21" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Output 1|">
+   </PIN>
+   <BOUNDS type="Box" left="18630" top="11670" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="18630" top="11670" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output" dstnodeid="21" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Input Value" dstnodeid="14" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="13" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="13" dstpinname="Input 3">
+   </LINK>
+   <BOUNDS type="Window" left="4980" top="3120" width="21495" height="12660">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="addonpack" Version="34.1.0">
+   </PACK>
+   </PATCH>

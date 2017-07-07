@@ -1,0 +1,183 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\GetPlayerData.v4p" systemname="GetPlayerData" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\GetPlayerData.v4p" scrollx="60" scrolly="0">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2430" top="2985" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2430" top="2985" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Length">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3255" top="3015" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3255" top="3015" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="LoopPointsXY">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4230" top="720" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4230" top="720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Set">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="8" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1065" top="3900" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1065" top="3900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="List">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="9" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="2055" top="1125" width="945" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2055" top="1125" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input Value|">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="-1" top="-1" width="6090" height="5670">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="GetGlobals (Utilities WriterData)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="GetGlobals (Utilities WriterData)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2070" top="1650" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Data" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Globals" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="1" dstpinname="Data">
+   </LINK>
+   <NODE systemname="Split (Utilities Globals)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Split (Utilities Globals)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="2085" top="2175" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Data" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Length" visible="1">
+   </PIN>
+   <PIN pinname="LoopPointsXY" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="2085" top="2175">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Length" dstnodeid="3" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="LoopPointsXY" dstnodeid="4" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Globals" dstnodeid="2" dstpinname="Data">
+   </LINK>
+   <NODE systemname="GetList (Utilities WriterData)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="GetList (Utilities WriterData)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="1185" top="2175" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Data" visible="1" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Box" left="1185" top="2175">
+   </BOUNDS>
+   <PIN pinname="List" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output Node" dstnodeid="5" dstpinname="Data">
+   </LINK>
+   <NODE systemname="PrepareList_ (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="PrepareList_ (Preset)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="1065" top="3045" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Length" visible="1">
+   </PIN>
+   <PIN pinname="List" visible="1">
+   </PIN>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="In Progress" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Length" dstnodeid="10" dstpinname="Length">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="List" dstnodeid="10" dstpinname="List">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="List" dstnodeid="8" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11">
+   <BOUNDS type="Box" left="4215" top="1560" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4215" top="1560" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="11" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
+   <BOUNDS type="Box" left="4425" top="3060" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4425" top="3060" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|In Progress|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="In Progress" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   </PATCH>
