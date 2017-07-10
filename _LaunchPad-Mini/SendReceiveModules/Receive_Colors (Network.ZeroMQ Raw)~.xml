@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\_LaunchPad-Mini\SendReceiveModules\Receive_Colors (Network.ZeroMQ Raw).v4p" systemname="Receive_Colors (Network.ZeroMQ Raw)" filename="D:\_VIDEOMIXER\_LaunchPad\Receive_Colors (Network.ZeroMQ Raw).v4p" scrollx="0" scrolly="0">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta34.dtd" >
+   <PATCH nodename="D:\_VIDEOMIXER\_LaunchPad-Mini\Receive_Colors (Network.ZeroMQ Raw).v4p" systemname="Receive_Colors (Network.ZeroMQ Raw)" filename="D:\_VIDEOMIXER\_LaunchPad\Receive_Colors (Network.ZeroMQ Raw).v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="0" top="7320" width="7965" height="8025">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
@@ -24,7 +24,7 @@
    </NODE>
    <PACK Name="VVVV.Packs" Version="0.1.0">
    </PACK>
-   <PACK Name="addonpack" Version="35.0.0">
+   <PACK Name="addonpack" Version="34.0.0">
    </PACK>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="20" systemname="IOBox (Enumerations)">
    <BOUNDS type="Box" left="600" top="270" width="555" height="270">
@@ -116,6 +116,34 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="OnData">
    </PIN>
    </NODE>
+   <NODE systemname="Dealer (Network.ZeroMQ)" filename="%VVVV%\packs\vvvv-ZeroMQ_Release_x64\nodes\plugins\VVVV.ZeroMQ.dll" nodename="Dealer (Network.ZeroMQ)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="1275" top="1020" width="1935" height="270">
+   </BOUNDS>
+   <PIN pinname="Protocol" visible="1">
+   </PIN>
+   <PIN pinname="Port" visible="1">
+   </PIN>
+   <PIN pinname="Sockets" visible="1">
+   </PIN>
+   <PIN pinname="Valid" visible="1">
+   </PIN>
+   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
+   </PIN>
+   <BOUNDS type="Box" left="1275" top="1020">
+   </BOUNDS>
+   <PIN pinname="Bind" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Enable">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output Enum" dstnodeid="19" dstpinname="Protocol">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Port">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Valid" dstnodeid="26" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="74" srcpinname="Output String" dstnodeid="19" dstpinname="Server">
+   </LINK>
    <NODE systemname="Receive (Network.ZeroMQ Raw)" filename="%VVVV%\packs\vvvv-ZeroMQ_Release_x64\nodes\plugins\VVVV.ZeroMQ.dll" nodename="Receive (Network.ZeroMQ Raw)" componentmode="Hidden" id="153">
    <BOUNDS type="Node" left="1275" top="1755" width="4860" height="270">
    </BOUNDS>
@@ -143,6 +171,8 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="153" srcpinname="OnData" dstnodeid="169" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Sockets" dstnodeid="153" dstpinname="Socket">
    </LINK>
    <PACK Name="vvvv-ZeroMQ" Version="0.5.0">
    </PACK>
@@ -277,53 +307,5 @@
    <LINK srcnodeid="184" srcpinname="Output" dstnodeid="192" dstpinname="Color Input">
    </LINK>
    <LINK srcnodeid="158" srcpinname="Output" dstnodeid="162" dstpinname="Input">
-   </LINK>
-   <NODE systemname="Subscriber (Network.ZeroMQ)" filename="%VVVV%\packs\vvvv-ZeroMQ_Release_x64\nodes\plugins\VVVV.ZeroMQ.dll" nodename="Subscriber (Network.ZeroMQ)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="1275" top="1020" width="1935" height="270">
-   </BOUNDS>
-   <PIN pinname="Protocol" visible="1">
-   </PIN>
-   <PIN pinname="Port" visible="1">
-   </PIN>
-   <PIN pinname="Sockets" visible="1">
-   </PIN>
-   <PIN pinname="Valid" visible="1">
-   </PIN>
-   <PIN pinname="Server" visible="1" slicecount="1" values="127.0.0.1">
-   </PIN>
-   <BOUNDS type="Box" left="1275" top="1020">
-   </BOUNDS>
-   <PIN pinname="Bind" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Topic" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Enable">
-   </LINK>
-   <LINK srcnodeid="20" srcpinname="Output Enum" dstnodeid="19" dstpinname="Protocol">
-   </LINK>
-   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="19" dstpinname="Port">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Valid" dstnodeid="26" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="74" srcpinname="Output String" dstnodeid="19" dstpinname="Server">
-   </LINK>
-   <LINK srcnodeid="19" srcpinname="Sockets" dstnodeid="153" dstpinname="Socket">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="193">
-   <BOUNDS type="Box" left="735" top="600" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="735" top="600" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="Event">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="193" srcpinname="Output String" dstnodeid="19" dstpinname="Topic">
    </LINK>
    </PATCH>

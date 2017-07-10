@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\WriteReadList (WriterData).v4p" systemname="WriteReadList (WriterData)" filename="D:\_VVVV\_VL\User\PresetEngine\WriteReadList (WriterData).v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\WriteReadList (WriterData).v4p" systemname="WriteReadList (WriterData)" filename="D:\_VVVV\_VL\User\PresetEngine\WriteReadList (WriterData).v4p" scrollx="1155" scrolly="0">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Box" left="3690" top="1650" width="2055" height="240">
    </BOUNDS>
@@ -52,22 +52,18 @@
    <BOUNDS type="Box" left="2265" top="2925">
    </BOUNDS>
    </NODE>
-   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="2265" top="3555" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Simulate" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Bang" visible="1">
-   </PIN>
-   </NODE>
    <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="8">
-   <BOUNDS type="Node" left="2265" top="3870" width="100" height="100">
+   <BOUNDS type="Node" left="2265" top="4020" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
@@ -105,11 +101,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Success">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1">
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="5" srcpinname="Bang" dstnodeid="8" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Input 2">
    </LINK>
    <BOUNDS type="Window" left="8190" top="6075" width="6435" height="7440">
@@ -127,8 +121,6 @@
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Output 1" dstnodeid="23" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="5" dstpinname="Simulate">
    </LINK>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="1530" top="5655" width="100" height="100">
@@ -164,18 +156,6 @@
    <PIN pinname="On Completed" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Reader (WriterData)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Reader (WriterData)" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="1500" top="4410" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Read" visible="1">
-   </PIN>
-   <PIN pinname="File Path" visible="1">
-   </PIN>
-   <PIN pinname="Result" visible="1">
-   </PIN>
-   <PIN pinname="On Completed" visible="1">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="24" srcpinname="Input Value" dstnodeid="26" dstpinname="Value">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="26" dstpinname="File Path">
@@ -184,20 +164,120 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="On Completed" dstnodeid="4" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="27" dstpinname="Read">
+   <LINK srcnodeid="23" srcpinname="Output" dstnodeid="8" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="27" dstpinname="File Path">
-   </LINK>
-   <LINK srcnodeid="27" srcpinname="Result" dstnodeid="25" dstpinname="Input Value">
-   </LINK>
-   <LINK srcnodeid="27" srcpinname="On Completed" dstnodeid="12" dstpinname="Y Input Value">
-   </LINK>
-   <NODE systemname="FileName (File Split)" nodename="FileName (File Split)" componentmode="Hidden" id="28">
-   <BOUNDS type="Node" left="1425" top="1875" width="100" height="100">
+   <NODE systemname="Reader (WriterData)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Reader (WriterData)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="1500" top="4410" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Filename" visible="1">
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="31" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="31" dstpinname="File Path">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Result" dstnodeid="25" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="On Completed" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Writer (WriterData)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Writer (WriterData)" componentmode="Hidden" id="32">
+   <BOUNDS type="Node" left="3555" top="4185" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Path" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Write" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="On Completed" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="28" dstpinname="Filename">
+   <NODE systemname="FIleNameGen" filename="FIleNameGen.v4p" nodename="FIleNameGen.v4p" componentmode="Hidden" id="45">
+   <BOUNDS type="Node" left="3848" top="3510" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1541" top="858" width="4615" height="5305">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11760" top="10080" width="6075" height="5295">
+   </BOUNDS>
+   <PIN pinname="Path" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="32" dstpinname="File Path">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="45" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Input Value" dstnodeid="32" dstpinname="Value">
+   </LINK>
+   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="5595" top="3435" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Period" visible="1">
+   </PIN>
+   <PIN pinname="Change" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
+   <BOUNDS type="Box" left="5925" top="1665" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5925" top="1665" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="120">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Period">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Period">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48">
+   <BOUNDS type="Box" left="3555" top="4770" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3555" top="4770" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="On Completed" dstnodeid="48" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="53">
+   <BOUNDS type="Node" left="5940" top="3825" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="Change" dstnodeid="53" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
+   <BOUNDS type="Box" left="6540" top="2115" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6540" top="2115" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="AutoBackUp">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="32" dstpinname="Write">
    </LINK>
    </PATCH>

@@ -21,7 +21,7 @@
    </PIN>
    <PIN pinname="Layer 5" visible="1">
    </PIN>
-   <PIN pinname="Layer 6" visible="1">
+   <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <NODE systemname="TimeGrid" filename="TimeGrid.v4p" nodename="Subs\TimeGrid.v4p" componentmode="Hidden" id="1" debug="0">
@@ -67,13 +67,15 @@
    </PIN>
    <PIN pinname="Reload" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Marker" visible="1">
+   </PIN>
    </NODE>
-   <NODE systemname="Cues" filename="Cues.v4p" nodename="Subs\Cues.v4p" componentmode="InAWindow" id="2" debug="0">
+   <NODE systemname="Cues" filename="Cues.v4p" nodename="Subs\Cues.v4p" componentmode="Hidden" id="2" debug="0">
    <BOUNDS type="Node" left="1140" top="2790" width="675" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="1140" top="2790" width="5670" height="6825">
    </BOUNDS>
-   <BOUNDS type="Window" left="10185" top="150" width="10395" height="8130">
+   <BOUNDS type="Window" left="5325" top="6420" width="10395" height="8130">
    </BOUNDS>
    <PIN pinname="TrackColors" visible="1" slicecount="12" values="|0.02250,0.24690,0.27750,1.00000|,|0.02250,0.18315,0.27750,1.00000|,|0.02250,0.11940,0.27750,1.00000|,|0.02250,0.05565,0.27750,1.00000|,|0.05310,0.02250,0.27750,1.00000|,|0.11685,0.02250,0.27750,1.00000|,|0.18060,0.02250,0.27750,1.00000|,|0.24435,0.02250,0.27750,1.00000|,|0.27750,0.02250,0.24690,1.00000|,|0.27750,0.02250,0.18315,1.00000|,|0.27750,0.02250,0.11940,1.00000|,|0.27750,0.02250,0.05565,1.00000|">
    </PIN>
@@ -91,9 +93,9 @@
    </PIN>
    </NODE>
    <NODE systemname="ValuesPanel" filename="ValuesPanel.v4p" nodename="Subs\ValuesPanel.v4p" componentmode="Hidden" id="3">
-   <BOUNDS type="Node" left="1497" top="3174" width="1125" height="270">
+   <BOUNDS type="Node" left="1977" top="3144" width="1125" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="375" top="225" width="13575" height="9960">
+   <BOUNDS type="Box" left="855" top="195" width="13575" height="9960">
    </BOUNDS>
    <BOUNDS type="Window" left="7740" top="4005" width="13575" height="9960">
    </BOUNDS>
@@ -271,9 +273,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="ShowValues">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Input 2">
-   </LINK>
    <NODE nodename="Group (DX11.Layer)" id="12">
    <BOUNDS type="Node" left="1290" top="4020" width="0" height="0">
    </BOUNDS>
@@ -286,16 +288,14 @@
    <PIN pinname="Layer Out" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Layer Out" dstnodeid="12" dstpinname="Layer 1">
-   </LINK>
    <LINK srcnodeid="10" srcpinname="Output" dstnodeid="12" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="12" srcpinname="Layer Out" dstnodeid="0" dstpinname="Layer 4">
    </LINK>
    <NODE systemname="InfoPanelGUI" filename="InfoPanelGUI.v4p" nodename="InfoPanelGUI.v4p" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="2055" top="3630" width="0" height="0">
+   <BOUNDS type="Node" left="2490" top="3735" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="135" top="345" width="13350" height="8295">
+   <BOUNDS type="Box" left="570" top="450" width="13350" height="8295">
    </BOUNDS>
    <BOUNDS type="Window" left="9960" top="2835" width="13350" height="8295">
    </BOUNDS>
@@ -308,8 +308,6 @@
    <PIN pinname="TranslateX" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="0" dstpinname="Layer 6">
-   </LINK>
    <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="0" dstpinname="Layer 5">
    </LINK>
    <LINK srcnodeid="3" srcpinname="InfoPanelTransf" dstnodeid="13" dstpinname="Transform Out">
@@ -379,9 +377,59 @@
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <PIN pinname="Color" slicecount="1" values="|0.31789,0.31789,0.31789,1.00000|">
+   <PIN pinname="Color" slicecount="1" values="|0.28453,0.28453,0.28453,1.00000|">
    </PIN>
    </NODE>
    <LINK srcnodeid="18" srcpinname="Layer" dstnodeid="0" dstpinname="Layer 1">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="3645" top="1350" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="SetValues">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="3210" top="1665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="20" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Output" dstnodeid="10" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="0" dstpinname="Layer 6">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21">
+   <BOUNDS type="Box" left="2805" top="660" width="345" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2805" top="660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Marker">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Marker" linkstyle="VHV">
+   <LINKPOINT x="2805" y="1470">
+   </LINKPOINT>
+   <LINKPOINT x="1455" y="1470">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Layer Out" dstnodeid="12" dstpinname="Layer 1">
    </LINK>
    </PATCH>

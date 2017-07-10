@@ -296,7 +296,7 @@
    </LINK>
    <LINK srcnodeid="201" srcpinname="Output" dstnodeid="163" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="Dealer (Network.ZeroMQ)" filename="%VVVV%\packs\vvvv-ZeroMQ_Release_x64\nodes\plugins\VVVV.ZeroMQ.dll" nodename="Dealer (Network.ZeroMQ)" componentmode="Hidden" id="19">
+   <NODE systemname="Publisher (Network.ZeroMQ)" filename="%VVVV%\packs\vvvv-ZeroMQ_Release_x64\nodes\plugins\VVVV.ZeroMQ.dll" nodename="Publisher (Network.ZeroMQ)" componentmode="Hidden" id="19">
    <BOUNDS type="Node" left="1260" top="2175" width="1965" height="270">
    </BOUNDS>
    <PIN pinname="Protocol" visible="1">

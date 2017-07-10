@@ -22,10 +22,10 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="EditEnable">
    </PIN>
    </NODE>
-   <NODE systemname="ReceiveLaunchPad" filename="ReceiveLaunchPad.v4p" nodename="Subs\ReceiveLaunchPad.v4p" componentmode="InAWindow" id="1">
-   <BOUNDS type="Node" left="2022" top="2462" width="2160" height="270">
+   <NODE systemname="ReceiveLaunchPad" filename="ReceiveLaunchPad.v4p" nodename="Subs\ReceiveLaunchPad.v4p" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2007" top="2492" width="2160" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="750" top="540" width="11335" height="8310">
+   <BOUNDS type="Box" left="735" top="570" width="11335" height="8310">
    </BOUNDS>
    <BOUNDS type="Window" left="12180" top="5910" width="11325" height="8310">
    </BOUNDS>
