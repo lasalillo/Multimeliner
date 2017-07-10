@@ -72,7 +72,7 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="1545" top="9705" width="8805" height="5520">
+   <BOUNDS type="Window" left="2010" top="9705" width="8340" height="5520">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -125,7 +125,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
    <BOUNDS type="Node" left="5910" top="255" width="2985" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5910" top="255" width="2025" height="2670">
+   <BOUNDS type="Box" left="5910" top="255" width="2040" height="2625">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|TRACKING INSTANCE:&cr;&lf;Tracking  Track 0&cr;&lf;Camera  Tracks 1,2&cr;&lf;&cr;&lf;CONTENT:&cr;&lf;first 3 tracks are not sent to content|">
    </PIN>

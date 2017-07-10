@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ValuesPanel.v4p" systemname="ValuesPanel" filename="D:\_VVVV\_VL\User\PresetEngine\ValuesPanel.v4p" scrollx="6210" scrolly="3150">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ValuesPanel.v4p" systemname="ValuesPanel" filename="D:\_VVVV\_VL\User\PresetEngine\ValuesPanel.v4p" scrollx="12555" scrolly="3330">
    <NODE componentmode="InABox" id="0" nodename="IOBox (Color)" systemname="IOBox (Color)">
    <BOUNDS height="0" left="10890" top="3354" type="Node" width="0">
    </BOUNDS>
@@ -791,7 +791,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="17700" top="4590" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.36">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.869">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2850,8 +2850,6 @@
    </LINK>
    <LINK srcnodeid="368" srcpinname="Output" dstnodeid="323" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="365" srcpinname="Output" dstnodeid="85" dstpinname="Y Input Value">
-   </LINK>
    <LINK srcnodeid="289" srcpinname="Output" dstnodeid="297" dstpinname="Size">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="372">
@@ -2977,5 +2975,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="381" srcpinname="Y Output Value" dstnodeid="360" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="365" srcpinname="Output" dstnodeid="85" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

@@ -368,7 +368,7 @@
    </LINK>
    <LINK srcnodeid="9" srcpinname="Output" dstnodeid="16" dstpinname="ZoomOut" hiddenwhenlocked="0">
    </LINK>
-   <NODE systemname="WriteReadList (WriterData)" filename="WriteReadList (WriterData).v4p" nodename="WriteReadList (WriterData)" componentmode="InAWindow" id="41">
+   <NODE systemname="WriteReadList (WriterData)" filename="WriteReadList (WriterData).v4p" nodename="WriteReadList (WriterData)" componentmode="Hidden" id="41">
    <BOUNDS type="Node" left="915" top="2565" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Read" visible="1">

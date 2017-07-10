@@ -166,18 +166,6 @@
    </LINK>
    <LINK srcnodeid="23" srcpinname="Output" dstnodeid="8" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="Reader (WriterData)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Reader (WriterData)" componentmode="Hidden" id="31">
-   <BOUNDS type="Node" left="1500" top="4410" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="31" dstpinname="Read">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="31" dstpinname="File Path">
-   </LINK>
-   <LINK srcnodeid="31" srcpinname="Result" dstnodeid="25" dstpinname="Input Value">
-   </LINK>
-   <LINK srcnodeid="31" srcpinname="On Completed" dstnodeid="12" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="Writer (WriterData)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Writer (WriterData)" componentmode="Hidden" id="32">
    <BOUNDS type="Node" left="3555" top="4185" width="100" height="100">
    </BOUNDS>
@@ -279,5 +267,17 @@
    <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="32" dstpinname="Write">
+   </LINK>
+   <NODE systemname="Reader (WriterData)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Reader (WriterData)" componentmode="Hidden" id="55">
+   <BOUNDS type="Node" left="1500" top="4410" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="55" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="55" dstpinname="File Path">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="Result" dstnodeid="25" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="55" srcpinname="On Completed" dstnodeid="12" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
