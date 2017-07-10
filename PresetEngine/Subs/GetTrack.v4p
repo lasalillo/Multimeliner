@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.7.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\GetTrack.v4p" systemname="GetTrack" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\GetTrack.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\GetTrack.v4p" systemname="GetTrack" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\GetTrack.v4p" scrollx="0" scrolly="0">
    <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="2820" top="1680" width="100" height="100">
    </BOUNDS>
@@ -134,7 +134,7 @@
    </LINK>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Index">
    </LINK>
-   <BOUNDS type="Window" left="-1" top="-1" width="10455" height="4695">
+   <BOUNDS type="Window" left="18825" top="3990" width="10455" height="4695">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -161,6 +161,10 @@
    </BOUNDS>
    <PIN pinname="GroupID" visible="1">
    </PIN>
+   <PIN pinname="Values Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Toggle Bin Size" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="GroupID" dstnodeid="8" dstpinname="Y Input Value">
    </LINK>
@@ -175,5 +179,37 @@
    <LINK srcnodeid="0" srcpinname="Values" dstnodeid="6" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="0" srcpinname="Toggle" dstnodeid="7" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="10">
+   <BOUNDS type="Box" left="5655" top="1980" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5655" top="1980" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Values Bin Size|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Values Bin Size" dstnodeid="10" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11">
+   <BOUNDS type="Box" left="9840" top="1905" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9840" top="1905" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Toggle Bin Size|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Toggle Bin Size" dstnodeid="11" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
