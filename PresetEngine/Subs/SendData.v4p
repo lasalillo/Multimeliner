@@ -125,7 +125,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="9" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="2625" top="1380" width="100" height="100">
+   <BOUNDS type="Node" left="2670" top="1380" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="Current">
    </PIN>
@@ -137,9 +137,9 @@
    </PIN>
    </NODE>
    <NODE systemname="JoinDataForLaunchPad" filename="JoinDataForLaunchPad.v4p" nodename="Subs\JoinDataForLaunchPad.v4p" componentmode="Hidden" id="10" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="3750" top="1425" width="0" height="0">
+   <BOUNDS type="Node" left="3750" top="1380" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3750" top="1425" width="5740" height="7585">
+   <BOUNDS type="Box" left="3750" top="1380" width="5740" height="7585">
    </BOUNDS>
    <BOUNDS type="Window" left="10215" top="7140" width="6330" height="7575">
    </BOUNDS>
@@ -237,7 +237,7 @@
    <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Port">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="5805" top="1425" width="100" height="100">
+   <BOUNDS type="Node" left="5805" top="1380" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="MasterChannel_GUI">
    </PIN>
@@ -311,7 +311,7 @@
    </BOUNDS>
    </NODE>
    <NODE systemname="AsRaw (Utilities Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="AsRaw (Utilities Preset)" componentmode="Hidden" id="0" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="2655" top="1800" width="795" height="270">
+   <BOUNDS type="Node" left="2670" top="1800" width="795" height="270">
    </BOUNDS>
    <PIN pinname="List" visible="1" slicecount="1" values="||">
    </PIN>
@@ -319,7 +319,7 @@
    </PIN>
    <PIN pinname="List Bin Size" visible="1" slicecount="1" values="-1">
    </PIN>
-   <BOUNDS type="Box" left="2655" top="1800">
+   <BOUNDS type="Box" left="2670" top="1800">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Raw" dstnodeid="6" dstpinname="Raw" hiddenwhenlocked="0">
@@ -671,7 +671,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3405" top="4650" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0,1,2">
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="0,1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -681,7 +681,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
+   <PIN pinname="Rows" slicecount="1" values="2">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
@@ -689,22 +689,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Index">
-   </LINK>
-   <NODE systemname="AsRaw (Utilities Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="AsRaw (Utilities Preset)" componentmode="Hidden" id="47" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="2805" top="6030" width="795" height="270">
-   </BOUNDS>
-   <PIN pinname="List" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Raw" visible="1">
-   </PIN>
-   <PIN pinname="List Bin Size" visible="1" slicecount="1" values="-1">
-   </PIN>
-   <BOUNDS type="Box" left="2805" top="6030">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="45" srcpinname="Output Node" dstnodeid="47" dstpinname="List">
-   </LINK>
-   <LINK srcnodeid="47" srcpinname="Raw" dstnodeid="40" dstpinname="Raw">
    </LINK>
    <NODE systemname="DeleteSlice (Node)" filename="DeleteSlice (Node).v4p" nodename="DeleteSlice (Node).v4p" componentmode="Hidden" id="54">
    <BOUNDS type="Node" left="990" top="5490" width="0" height="0">
@@ -719,5 +703,35 @@
    <LINK srcnodeid="54" srcpinname="Output" dstnodeid="11" dstpinname="List">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="54" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="JoinTrackingData" filename="JoinTrackingData.v4p" nodename="JoinTrackingData.v4p" componentmode="Hidden" id="115" debug="0">
+   <BOUNDS type="Node" left="2819" top="6037" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="1770" width="6220" height="8535">
+   </BOUNDS>
+   <BOUNDS type="Window" left="-1" top="-1" width="6220" height="8535">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="PlayerPos" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Output Node" dstnodeid="115" dstpinname="TrackList">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Output" dstnodeid="40" dstpinname="Raw">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="117">
+   <BOUNDS type="Node" left="4200" top="5370" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="PlayerPointer">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PlayerPos">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="117" srcpinname="Input Value" dstnodeid="115" dstpinname="PlayerPos">
    </LINK>
    </PATCH>
