@@ -1,5 +1,5 @@
 # Multimeliner
-Multi cue timeliner, every cue is 28 floats + 14 toogle.
+Multi cue timeliner
 Fully control with LaunchPad Mini & LaunchControl XL
 
 vvvv_50beta35.8_x64
