@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ShortCuts.v4p" systemname="ShortCuts" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ShortCuts.v4p" bgcolor="16777215" scrollx="0" scrolly="-360">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ShortCuts.v4p" systemname="ShortCuts" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ShortCuts.v4p" bgcolor="16777215" scrollx="0" scrolly="0">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Node" left="270" top="225" width="2985" height="270">
    </BOUNDS>
@@ -25,9 +25,9 @@
    <NODE id="1" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="1" managers="">
    <BOUNDS type="Node" left="255" top="4965" width="1635" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="255" top="4965" width="3465" height="2235">
+   <BOUNDS type="Box" left="255" top="4965" width="4710" height="2250">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" pintype="Input" slicecount="1" values="|To do:&cr;&lf;Snap on multiple, use ctr to activate instead of shift&cr;&lf;Init Track&cr;&lf;AutoSave&cr;&lf;Different Values bin size per track&cr;&lf;Interpolation mode per cue&cr;&lf;Live recording every n frames&cr;&lf;|">
+   <PIN pinname="Input String" visible="0" pintype="Input" slicecount="1" values="|To do:&cr;&lf;Snap on multiple, use ctr to activate instead of shift&cr;&lf;Init Track&cr;&lf;AutoSave&cr;&lf;Different Values bin size per track&cr;&lf;Interpolation mode per cue&cr;&lf;Live recording every n frames&cr;&lf;Panel to Enable Interpol by track, and add to the globals.&cr;&lf;|">
    </PIN>
    <PIN pinname="Output String" visible="0" pintype="Output">
    </PIN>
@@ -72,7 +72,7 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="2010" top="9705" width="8340" height="5520">
+   <BOUNDS type="Window" left="0" top="9705" width="10575" height="5520">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -123,11 +123,33 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="5910" top="255" width="2985" height="270">
+   <BOUNDS type="Node" left="5910" top="225" width="2985" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5910" top="255" width="2040" height="2625">
+   <BOUNDS type="Box" left="5910" top="225" width="2010" height="2670">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|SEND DATA:&cr;&lf;&cr;&lf;TRACKING:&cr;&lf;Parameters Track 0&cr;&lf;Camera  Tracks 1,2&cr;&lf;&cr;&lf;CONTENT:&cr;&lf;first 3 tracks are not sent to content|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Franklin Gothic Book|">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="7995" top="225" width="2985" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7995" top="225" width="2100" height="2670">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|MIXER PARAMETERS:&cr;&lf;1.Polar&cr;&lf;2.Cylinder&cr;&lf;3.Control Texture&cr;&lf;-Bottom-Alpha&cr;&lf;-Middle-Luma&cr;&lf;-Top-BlendMode&cr;&lf;Toggle:&cr;&lf;-Up-Invert&cr;&lf;-Down-TransformTexture&cr;&lf;|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>

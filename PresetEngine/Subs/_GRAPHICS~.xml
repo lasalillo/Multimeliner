@@ -277,9 +277,9 @@
    </PIN>
    </NODE>
    <NODE nodename="Group (DX11.Layer)" id="12">
-   <BOUNDS type="Node" left="1290" top="4020" width="0" height="0">
+   <BOUNDS type="Node" left="1290" top="3990" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1290" top="4020" width="2400" height="1800">
+   <BOUNDS type="Box" left="1290" top="3990" width="2400" height="1800">
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
@@ -317,7 +317,7 @@
    <LINK srcnodeid="3" srcpinname="TranslateY" dstnodeid="13" dstpinname="TranslateY">
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="14">
-   <BOUNDS type="Node" left="3135" top="2400" width="100" height="100">
+   <BOUNDS type="Node" left="3150" top="2385" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Simulate" visible="1">
    </PIN>
