@@ -97,7 +97,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="855" top="195" width="13575" height="9960">
    </BOUNDS>
-   <BOUNDS type="Window" left="-825" top="2280" width="13575" height="9960">
+   <BOUNDS type="Window" left="1020" top="2325" width="13575" height="9960">
    </BOUNDS>
    <PIN pinname="Values" visible="1" slicecount="21" values="1,1,1,1,1,1,1,0.763552010059357,0.719917297363281,0.608033418655395,0.744904696941376,0.744904696941376,0.589386105537415,1,0.682622671127319,0.769705653190613,0.744904696941376,1,0.634381711483002,0.715683996677399,0.589386105537415">
    </PIN>
@@ -277,28 +277,24 @@
    </PIN>
    </NODE>
    <NODE systemname="InfoPanelGUI" filename="InfoPanelGUI.v4p" nodename="InfoPanelGUI.v4p" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="2880" top="3645" width="0" height="0">
+   <BOUNDS type="Node" left="2760" top="3825" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="960" top="360" width="13350" height="8295">
+   <BOUNDS type="Box" left="840" top="540" width="13350" height="8295">
    </BOUNDS>
-   <BOUNDS type="Window" left="9960" top="2835" width="13350" height="8295">
+   <BOUNDS type="Window" left="3990" top="8145" width="13350" height="8295">
    </BOUNDS>
-   <PIN pinname="TranslateY" visible="1" slicecount="1" values="0.856">
+   <PIN pinname="TranslateY" visible="1" slicecount="1" values="0.61">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="TranslateX" visible="1">
+   <PIN pinname="TranslateX" visible="1" slicecount="1" values="0.89">
    </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="0" dstpinname="Layer 5">
    </LINK>
    <LINK srcnodeid="3" srcpinname="InfoPanelTransf" dstnodeid="13" dstpinname="Transform Out">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="TranslateX" dstnodeid="13" dstpinname="TranslateX">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="TranslateY" dstnodeid="13" dstpinname="TranslateY">
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="14">
    <BOUNDS type="Node" left="3150" top="2385" width="100" height="100">

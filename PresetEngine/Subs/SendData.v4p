@@ -795,9 +795,9 @@
    <LINK srcnodeid="117" srcpinname="Input Value" dstnodeid="115" dstpinname="PlayerPos">
    </LINK>
    <NODE systemname="DeleteSlice (Node)" filename="DeleteSlice (Node).v4p" nodename="DeleteSlice (Node).v4p" componentmode="Hidden" id="138">
-   <BOUNDS type="Node" left="7275" top="5730" width="0" height="0">
+   <BOUNDS type="Node" left="7320" top="6240" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7275" top="5730" width="3760" height="4870">
+   <BOUNDS type="Box" left="7320" top="6240" width="3760" height="4870">
    </BOUNDS>
    <BOUNDS type="Window" left="-1" top="-1" width="3760" height="4870">
    </BOUNDS>
@@ -807,13 +807,13 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="138" dstpinname="Index" linkstyle="VHV">
-   <LINKPOINT x="3465" y="5498">
+   <LINKPOINT x="3480" y="5668">
    </LINKPOINT>
-   <LINKPOINT x="8265" y="5498">
+   <LINKPOINT x="8295" y="5838">
    </LINKPOINT>
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="161">
-   <BOUNDS type="Node" left="8400" top="4905" width="100" height="100">
+   <BOUNDS type="Node" left="9330" top="4830" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="Next">
    </PIN>
@@ -825,9 +825,9 @@
    </PIN>
    </NODE>
    <NODE systemname="DeleteSlice (Node)" filename="DeleteSlice (Node).v4p" nodename="DeleteSlice (Node).v4p" componentmode="Hidden" id="152">
-   <BOUNDS type="Node" left="8400" top="5730" width="0" height="0">
+   <BOUNDS type="Node" left="8415" top="6180" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="8400" top="5730" width="3760" height="4870">
+   <BOUNDS type="Box" left="8415" top="6180" width="3760" height="4870">
    </BOUNDS>
    <BOUNDS type="Window" left="-1" top="-1" width="3760" height="4870">
    </BOUNDS>
@@ -841,29 +841,15 @@
    <LINK srcnodeid="161" srcpinname="Input Value" dstnodeid="152" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="152" dstpinname="Index" linkstyle="VHV">
-   <LINKPOINT x="3120" y="5498">
+   <LINKPOINT x="3125" y="5648">
    </LINKPOINT>
-   <LINKPOINT x="9735" y="5498">
+   <LINKPOINT x="9745" y="5798">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="32" srcpinname="Input Value" dstnodeid="31" dstpinname="Input 3">
    </LINK>
-   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="220">
-   <BOUNDS type="Node" left="7275" top="4905" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Receive String" slicecount="1" values="Current">
-   </PIN>
-   <PIN pinname="Input Value" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Current">
-   </PIN>
-   <PIN pinname="Display Channel" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="220" srcpinname="Input Value" dstnodeid="138" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="226">
-   <BOUNDS type="Node" left="9510" top="4905" width="100" height="100">
+   <BOUNDS type="Node" left="9555" top="5235" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="Fade">
    </PIN>
@@ -875,9 +861,9 @@
    </PIN>
    </NODE>
    <NODE systemname="DeleteSlice (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="DeleteSlice (Spreads)" componentmode="Hidden" id="227">
-   <BOUNDS type="Node" left="9510" top="5730" width="100" height="100">
+   <BOUNDS type="Node" left="9525" top="6180" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="9510" top="5730" width="3000" height="3000">
+   <BOUNDS type="Box" left="9525" top="6180" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -889,17 +875,17 @@
    <LINK srcnodeid="226" srcpinname="Input Value" dstnodeid="227" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="227" dstpinname="Index" linkstyle="VHV">
-   <LINKPOINT x="3825" y="5498">
+   <LINKPOINT x="3830" y="5648">
    </LINKPOINT>
-   <LINKPOINT x="9945" y="5498">
+   <LINKPOINT x="9955" y="5798">
    </LINKPOINT>
    </LINK>
    <NODE systemname="JoinPaletteData" filename="JoinPaletteData.v4p" nodename="JoinPaletteData.v4p" componentmode="Hidden" id="232">
-   <BOUNDS type="Node" left="6847" top="6239" width="0" height="0">
+   <BOUNDS type="Node" left="6862" top="6704" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2215" top="2972" width="9265" height="6535">
+   <BOUNDS type="Box" left="2230" top="3437" width="9265" height="6535">
    </BOUNDS>
-   <BOUNDS type="Window" left="9615" top="9075" width="7560" height="5385">
+   <BOUNDS type="Window" left="1710" top="9405" width="7560" height="5385">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -907,9 +893,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="232" srcpinname="Output" dstnodeid="31" dstpinname="Input 2" linkstyle="Bezier">
-   <LINKPOINT x="10930" y="8720">
+   <LINKPOINT x="10940" y="9030">
    </LINKPOINT>
-   <LINKPOINT x="10535" y="865">
+   <LINKPOINT x="10540" y="1020">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="227" srcpinname="Output" dstnodeid="232" dstpinname="Fade">
@@ -919,9 +905,9 @@
    <LINK srcnodeid="152" srcpinname="Output" dstnodeid="232" dstpinname="Next">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="233">
-   <BOUNDS type="Node" left="10335" top="4905" width="1650" height="270">
+   <BOUNDS type="Node" left="10275" top="4800" width="1650" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="10335" top="4905" width="1650" height="270">
+   <BOUNDS type="Box" left="10275" top="4800" width="1650" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;-On the same frame|">
    </PIN>
@@ -933,5 +919,39 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="54" srcpinname="Output" dstnodeid="232" dstpinname="ListToContent">
+   </LINK>
+   <NODE systemname="SetSlice (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="SetSlice (Preset)" componentmode="Hidden" id="236">
+   <BOUNDS type="Node" left="7320" top="5835" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Data" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="List" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="237">
+   <BOUNDS type="Node" left="7845" top="4830" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="CurrentActive">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="237" srcpinname="Input Value" dstnodeid="236" dstpinname="Data">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="238">
+   <BOUNDS type="Node" left="8130" top="5250" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="TrackSelected">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="238" srcpinname="Input Value" dstnodeid="236" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="236" dstpinname="List">
+   </LINK>
+   <LINK srcnodeid="236" srcpinname="List" dstnodeid="138" dstpinname="Input Node">
    </LINK>
    </PATCH>

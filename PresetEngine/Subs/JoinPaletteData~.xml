@@ -5,7 +5,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="720" top="3060" width="3000" height="3000">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="21" values="0,1,0,0,36,0,0,0,0,5,0,1,0,0,0,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Input 2" visible="1" slicecount="21" values="64,1,62,0,7,0,0,0,0,5,0,1,0,0,0,0,0,0,0,0,0">
    </PIN>
@@ -79,7 +79,7 @@
    </PIN>
    <PIN pinname="Show Grid" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" visible="1">
+   <PIN pinname="Y Input Value" visible="1" slicecount="21" values="0,1,0,0,36,0,0,0,0,5,0,1,0,0,0,0,0,0,0,0,0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="27">
@@ -174,7 +174,19 @@
    </LINK>
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Input 3">
    </LINK>
-   <NODE systemname="LTP (Value)" filename="%VVVV%\addonpack\lib\nodes\plugins\LTPNode.dll" nodename="LTP (Value)" componentmode="Hidden" id="34">
+   <LINK srcnodeid="31" srcpinname="PaletteIndex" dstnodeid="27" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="4335" top="1485" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Input">
+   </LINK>
+   <NODE systemname="LTP_FlipFlop" filename="LTP_FlipFlop.v4p" nodename="LTP_FlipFlop.v4p" componentmode="Hidden" id="34">
    <BOUNDS type="Node" left="705" top="2490" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
@@ -182,6 +194,8 @@
    <PIN pinname="Input 2" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Set2" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="PaletteIndex" dstnodeid="34" dstpinname="Input 1">
@@ -192,6 +206,6 @@
    </LINK>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="26" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="31" srcpinname="PaletteIndex" dstnodeid="27" dstpinname="Y Input Value">
+   <LINK srcnodeid="35" srcpinname="OnChange" dstnodeid="34" dstpinname="Set2">
    </LINK>
    </PATCH>

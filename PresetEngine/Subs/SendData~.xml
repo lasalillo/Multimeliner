@@ -919,9 +919,9 @@
    <LINK srcnodeid="152" srcpinname="Output" dstnodeid="232" dstpinname="Next">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="233">
-   <BOUNDS type="Node" left="10335" top="4890" width="1650" height="270">
+   <BOUNDS type="Node" left="10335" top="4905" width="1650" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="10335" top="4890" width="1650" height="270">
+   <BOUNDS type="Box" left="10335" top="4905" width="1650" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;-On the same frame|">
    </PIN>

@@ -19061,9 +19061,9 @@
 
 -->
       <Node Name="LTP_Values" Bounds="443,557" Id="KZeXPs9gjRUMG12cxuE2zC">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
-          <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
-          <Choice Kind="ClassType, HasMasterPatchFlag, DefinitionFlag" Name="Class" />
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
         <Patch Id="Lt0LKF0i5cQO6QM6qA3rO7">
           <Canvas Id="CLGoEeKMTnDLE3OEaxrR3G">
@@ -19325,7 +19325,7 @@
               </p:TypeAnnotation>
             </Pin>
           </Patch>
-          <ProcessDefinition Id="VdNRJKCBdd5MGf8Q3Iun3c" IsHidden="true">
+          <ProcessDefinition Id="VdNRJKCBdd5MGf8Q3Iun3c">
             <Fragment Id="McXTNvnyywZMhrBWMqhps1" Patch="Uj8q23ewByuPzVTmE3eOaQ" Enabled="true" />
           </ProcessDefinition>
           <Link Id="HOh4QYROJ3sPWQ8EP1O9S1" Ids="Dgkxz3RPmoLLeWfXDeOULs,JoYDe6GcbKvMKiJfWrOStj" IsHidden="true" />
@@ -19801,7 +19801,7 @@
             <Pin Id="JhV4BGe7CsRON0UgqT3R2c" Name="HardReset" Kind="InputPin" Bounds="753,86" />
             <p:Info />
           </Patch>
-          <Canvas Id="UxAM1ftxRaNQCURPQykQw5" BordersChecked="false">
+          <Canvas Id="UxAM1ftxRaNQCURPQykQw5">
             <Pad Id="Q8ZTwSRC1qJMk3B4CWqcrQ" SlotId="H9PNiIpfKnRMw5t3cIVYSO" Bounds="251,57" />
             <Pad Id="SvQWCP2wfFSP8oVbHzntjh" SlotId="H9PNiIpfKnRMw5t3cIVYSO" Bounds="207,170" />
             <Pad Id="BdYfWL05yq6NGpiNg8NGh5" SlotId="H9PNiIpfKnRMw5t3cIVYSO" Bounds="276,627" />
@@ -20333,12 +20333,12 @@
 
 -->
       <Node Name="LTP_Preset" Bounds="443,594" Id="N21QzKFjY6eMKArEI8kJtX">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
-          <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
-          <Choice Kind="ClassType, HasMasterPatchFlag, DefinitionFlag" Name="Class" />
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
         <Patch Id="CisY6c2mprCLY3vCbDAWxx">
-          <Canvas Id="MPBsISHPCjROLCGuQ73mEG" BordersChecked="false">
+          <Canvas Id="MPBsISHPCjROLCGuQ73mEG">
             <ControlPoint Id="Gse1QyZfoLnNUxSVRFUoNn" Bounds="352,139" />
             <ControlPoint Id="HbJSmiLAkHVObkCqeDjK8X" Bounds="399,139" />
             <ControlPoint Id="GGO2K9mwPNsPXDFf5vWSaa" Bounds="475,151" />
@@ -20347,7 +20347,7 @@
             <ControlPoint Id="KZkzf11jLNZPhD2N6hUfos" Bounds="617,152" />
             <ControlPoint Id="V5QCvsfQ8XRLHIgoS0oA9e" Bounds="662,152" />
             <Node Name="ForEach2" Bounds="340,260,169,84" Id="OL29rmgFrVnQKrmvafQvRN">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.Core.dll">
                 <Choice Kind="ForEachLoop" Name="ForEach" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
@@ -20362,12 +20362,10 @@
                 <Patch Id="ChRd2Coyh2BMyzHStpGgYa" Name="Update" />
                 <Patch Id="QjolykZieofNidtIwfdbO8" Name="Destroy" />
                 <Node Bounds="352,295,145,22" Id="NL9PMVKowywL4NjwtKcB4D">
-                  <p:NodeReference LastCategoryFullName="VVVV.Preset.LTP_Values" LastSymbolSource="VVVV.Value.PresetEngine.vl">
+                  <p:NodeReference LastCategoryFullName="VVVV.Preset" LastSymbolSource="VVVV.Value.PresetEngine.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="TypeFlag" Name="LTP_Values" />
-                    <Choice Kind="OperationNode" Name="Update" />
+                    <Choice Kind="ProcessAppFlag" Name="LTP_Values" />
                   </p:NodeReference>
-                  <Pin Id="GQDe5eyzqTANjAUq5ab9X9" Name="Input" Kind="StateInputPin" />
                   <Pin Id="KERfWRDje5RLpUsQ8zq6Ol" Name="Data1" Kind="InputPin" />
                   <Pin Id="KhTWWHRRzBaPFEu0g6Yxpy" Name="Data2" Kind="InputPin" />
                   <Pin Id="KGOggoRxfZ4NFFuqDcdjnX" Name="Set1" Kind="InputPin" />
@@ -20375,7 +20373,6 @@
                   <Pin Id="HPIldvPHmxzOlwKgDQWCWs" Name="Keep2" Kind="InputPin" />
                   <Pin Id="H4VpDGbZwAfQAICbg9ZzbU" Name="Soft" Kind="InputPin" />
                   <Pin Id="Vc66xaTKNA4MXeZxmwkFyp" Name="Time" Kind="InputPin" />
-                  <Pin Id="SbTioOaANJKM7RDyEu6j0Z" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="LQqkA6VzTjNMbjVp2SKhzm" Name="Data" Kind="OutputPin" />
                   <Pin Id="G79SvHGRIGBOo1q0Q8HgZz" Name="ValueChanged" Kind="OutputPin" />
                   <Pin Id="OxewE1Uu9M7PXKXWxzJUxe" Name="ToggleChanged" Kind="OutputPin" />
@@ -20460,7 +20457,7 @@
               </p:TypeAnnotation>
             </Pin>
           </Patch>
-          <ProcessDefinition Id="T9LlAZKBpfxLn2Zd2m7vhu" IsHidden="true">
+          <ProcessDefinition Id="T9LlAZKBpfxLn2Zd2m7vhu">
             <Fragment Id="LYLBf8d9FjNLflKO4IOGz4" Patch="DYZyN5k1cyFLsEXw5q3Cn3" Enabled="true" />
             <Fragment Id="RM16fFUYHrlPXWC3T0dtQU" Patch="TQ8TdGAFFmgMmZZ4qKWDH6" Enabled="true" />
           </ProcessDefinition>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ValuesPanel.v4p" systemname="ValuesPanel" filename="D:\_VVVV\_VL\User\PresetEngine\ValuesPanel.v4p" scrollx="6225" scrolly="6690">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ValuesPanel.v4p" systemname="ValuesPanel" filename="D:\_VVVV\_VL\User\PresetEngine\ValuesPanel.v4p" scrollx="0" scrolly="8820">
    <NODE componentmode="InABox" id="0" nodename="IOBox (Color)" systemname="IOBox (Color)">
    <BOUNDS height="0" left="10890" top="3354" type="Node" width="0">
    </BOUNDS>
@@ -362,7 +362,7 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="15" dstpinname="X">
    </LINK>
-   <BOUNDS type="Window" left="-825" top="2280" width="13575" height="9960">
+   <BOUNDS type="Window" left="1020" top="2325" width="13575" height="9960">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -1417,7 +1417,7 @@
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="172">
-   <BOUNDS type="Node" left="8115" top="13350" width="100" height="100">
+   <BOUNDS type="Node" left="9885" top="16140" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -1495,9 +1495,9 @@
    <LINK srcnodeid="171" srcpinname="Output" dstnodeid="178" dstpinname="Input Value">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="181">
-   <BOUNDS type="Box" left="8100" top="13770" width="795" height="240">
+   <BOUNDS type="Box" left="9870" top="16560" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8100" top="13770" width="0" height="0">
+   <BOUNDS type="Node" left="9870" top="16560" width="0" height="0">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="172" srcpinname="Output" dstnodeid="181" dstpinname="Input Node">

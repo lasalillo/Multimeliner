@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MergeGUI-Controller.v4p" systemname="MergeGUI-Controller" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MergeGUI-Controller.v4p" scrollx="0" scrolly="0" bgcolor="6126557">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MergeGUI-Controller.v4p" systemname="MergeGUI-Controller" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MergeGUI-Controller.v4p" scrollx="0" scrolly="-360" bgcolor="6126557">
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="0" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="390" top="1680" width="795" height="240">
    </BOUNDS>
@@ -218,8 +218,6 @@
    <PIN pinname="Input Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="0" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="14" srcpinname="Input Value" dstnodeid="1" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="1" dstpinname="Index" hiddenwhenlocked="1" linkstyle="Bezier">
@@ -265,7 +263,7 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="22">
-   <BOUNDS type="Node" left="375" top="4095" width="100" height="100">
+   <BOUNDS type="Node" left="360" top="4740" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
@@ -738,8 +736,6 @@
    <PIN pinname="HardReset" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="5" dstpinname="Data1">
-   </LINK>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Set1" linkstyle="Bezier" hiddenwhenlocked="0">
    <LINKPOINT x="3180" y="2870">
    </LINKPOINT>
@@ -765,7 +761,7 @@
    <LINK srcnodeid="179" srcpinname="Bang" dstnodeid="5" dstpinname="Set2">
    </LINK>
    <NODE systemname="LTP_Values (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="LTP_Values (Preset)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="390" top="3465" width="100" height="100">
+   <BOUNDS type="Node" left="360" top="3465" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Data1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -777,7 +773,7 @@
    </PIN>
    <PIN pinname="Set1" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="390" top="3465">
+   <BOUNDS type="Box" left="360" top="3465">
    </BOUNDS>
    <PIN pinname="Dominant2" visible="1">
    </PIN>
@@ -790,27 +786,23 @@
    <PIN pinname="HardReset" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Output Node" dstnodeid="2" dstpinname="Data1">
-   </LINK>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Set1" linkstyle="Bezier" hiddenwhenlocked="0">
-   <LINKPOINT x="3120" y="2863">
+   <LINKPOINT x="3095" y="2863">
    </LINKPOINT>
-   <LINKPOINT x="690" y="2778">
+   <LINKPOINT x="640" y="2778">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Keep2" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="4635" y="2685">
+   <LINKPOINT x="4610" y="2685">
    </LINKPOINT>
-   <LINKPOINT x="1155" y="2685">
+   <LINKPOINT x="1105" y="2685">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Time" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="5760" y="2558">
+   <LINKPOINT x="5735" y="2558">
    </LINKPOINT>
-   <LINKPOINT x="1500" y="2558">
+   <LINKPOINT x="1450" y="2558">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Data" dstnodeid="22" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="161" srcpinname="Y Output Value" dstnodeid="2" dstpinname="HardReset">
    </LINK>
@@ -831,8 +823,6 @@
    </LINKPOINT>
    <LINKPOINT x="2535" y="2498">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="Input Value" dstnodeid="156" dstpinname="List">
    </LINK>
    <LINK srcnodeid="156" srcpinname="List" dstnodeid="61" dstpinname="Input Value">
    </LINK>
@@ -974,8 +964,88 @@
    </LINK>
    <LINK srcnodeid="27" srcpinname="Output" dstnodeid="35" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="5" dstpinname="Data2">
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="5" dstpinname="Data2" linkstyle="VHV">
+   <LINKPOINT x="6705" y="2603">
+   </LINKPOINT>
+   <LINKPOINT x="2025" y="2603">
+   </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="2" dstpinname="Data2">
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="2" dstpinname="Data2" linkstyle="VHV">
+   <LINKPOINT x="6680" y="2603">
+   </LINKPOINT>
+   <LINKPOINT x="565" y="2603">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Input Value" dstnodeid="156" dstpinname="List">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="5" dstpinname="Data1">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="0" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="LTP_Values (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="LTP_Values (Preset)" componentmode="Hidden" id="191">
+   <BOUNDS type="Node" left="360" top="3015" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Data1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Data2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Data" visible="1">
+   </PIN>
+   <PIN pinname="Set2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Set1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="360" top="3015">
+   </BOUNDS>
+   <PIN pinname="Dominant2" visible="1">
+   </PIN>
+   <PIN pinname="Keep2" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Soft" visible="1" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Time" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="HardReset" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="191" dstpinname="Set1" linkstyle="Bezier" hiddenwhenlocked="0">
+   <LINKPOINT x="3110" y="2713">
+   </LINKPOINT>
+   <LINKPOINT x="670" y="2478">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="191" dstpinname="Keep2" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="4625" y="2535">
+   </LINKPOINT>
+   <LINKPOINT x="1135" y="2385">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="191" dstpinname="Time" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="5750" y="2408">
+   </LINKPOINT>
+   <LINKPOINT x="1480" y="2258">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="161" srcpinname="Y Output Value" dstnodeid="191" dstpinname="HardReset">
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Bang" dstnodeid="191" dstpinname="Set2">
+   </LINK>
+   <LINK srcnodeid="185" srcpinname="Output" dstnodeid="191" dstpinname="Soft">
+   </LINK>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="192">
+   <BOUNDS type="Node" left="780" top="2565" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="ListFromGUI">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="192" srcpinname="Input Value" dstnodeid="191" dstpinname="Data2">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Data" dstnodeid="22" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output Node" dstnodeid="191" dstpinname="Data1">
+   </LINK>
+   <LINK srcnodeid="191" srcpinname="Data" dstnodeid="2" dstpinname="Data1">
    </LINK>
    </PATCH>
