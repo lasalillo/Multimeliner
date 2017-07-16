@@ -349,7 +349,7 @@
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="39">
    <BOUNDS type="Node" left="3345" top="3765" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
    </PIN>
@@ -387,7 +387,7 @@
    </PIN>
    <PIN pinname="Change" visible="1">
    </PIN>
-   <PIN pinname="Index" visible="1" slicecount="1" values="3">
+   <PIN pinname="Index" visible="1" slicecount="1" values="11">
    </PIN>
    <PIN pinname="Insert" visible="1" slicecount="1" values="0">
    </PIN>
@@ -395,11 +395,11 @@
    </PIN>
    <PIN pinname="Globals" visible="1">
    </PIN>
-   <PIN pinname="Copy" visible="1">
+   <PIN pinname="Copy" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="TrackName" visible="1">
    </PIN>
-   <PIN pinname="Destination" visible="1">
+   <PIN pinname="Destination" visible="1" slicecount="1" values="2">
    </PIN>
    </NODE>
    <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="35" dstpinname="InsertOnIndex">
@@ -475,17 +475,15 @@
    </PIN>
    </NODE>
    <NODE systemname="FrameDelay (Globals)" filename="FrameDelay (Globals).v4p" nodename="FrameDelay (Globals).v4p" componentmode="Hidden" id="52">
-   <BOUNDS type="Node" left="4745" top="4125" width="0" height="0">
+   <BOUNDS type="Node" left="4760" top="4185" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3135" top="2283" width="3220" height="3685">
+   <BOUNDS type="Box" left="3150" top="2343" width="3220" height="3685">
    </BOUNDS>
    <BOUNDS type="Window" left="7515" top="10020" width="4515" height="5835">
    </BOUNDS>
-   <PIN pinname="Globals" visible="1">
+   <PIN pinname="Globals" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="35" srcpinname="Globals" dstnodeid="52" dstpinname="Globals">
-   </LINK>
    <LINK srcnodeid="52" srcpinname="Globals" dstnodeid="47" dstpinname="Input Value">
    </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="53">
@@ -605,5 +603,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Destination">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Globals" dstnodeid="52" dstpinname="Globals">
    </LINK>
    </PATCH>

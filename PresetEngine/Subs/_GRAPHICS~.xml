@@ -75,7 +75,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1140" top="2790" width="5670" height="6825">
    </BOUNDS>
-   <BOUNDS type="Window" left="5325" top="6420" width="10395" height="8130">
+   <BOUNDS type="Window" left="12495" top="1095" width="12525" height="14115">
    </BOUNDS>
    <PIN pinname="TrackColors" visible="1" slicecount="12" values="|0.02250,0.24690,0.27750,1.00000|,|0.02250,0.18315,0.27750,1.00000|,|0.02250,0.11940,0.27750,1.00000|,|0.02250,0.05565,0.27750,1.00000|,|0.05310,0.02250,0.27750,1.00000|,|0.11685,0.02250,0.27750,1.00000|,|0.18060,0.02250,0.27750,1.00000|,|0.24435,0.02250,0.27750,1.00000|,|0.27750,0.02250,0.24690,1.00000|,|0.27750,0.02250,0.18315,1.00000|,|0.27750,0.02250,0.11940,1.00000|,|0.27750,0.02250,0.05565,1.00000|">
    </PIN>
@@ -97,7 +97,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="855" top="195" width="13575" height="9960">
    </BOUNDS>
-   <BOUNDS type="Window" left="7740" top="4005" width="13575" height="9960">
+   <BOUNDS type="Window" left="-825" top="2280" width="13575" height="9960">
    </BOUNDS>
    <PIN pinname="Values" visible="1" slicecount="21" values="1,1,1,1,1,1,1,0.763552010059357,0.719917297363281,0.608033418655395,0.744904696941376,0.744904696941376,0.589386105537415,1,0.682622671127319,0.769705653190613,0.744904696941376,1,0.634381711483002,0.715683996677399,0.589386105537415">
    </PIN>
@@ -276,26 +276,10 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="Group (DX11.Layer)" id="12">
-   <BOUNDS type="Node" left="1290" top="3990" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="1290" top="3990" width="2400" height="1800">
-   </BOUNDS>
-   <PIN pinname="Layer 1" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" visible="1">
-   </PIN>
-   <PIN pinname="Layer Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="12" dstpinname="Enabled">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Layer Out" dstnodeid="0" dstpinname="Layer 4">
-   </LINK>
    <NODE systemname="InfoPanelGUI" filename="InfoPanelGUI.v4p" nodename="InfoPanelGUI.v4p" componentmode="Hidden" id="13">
-   <BOUNDS type="Node" left="2490" top="3735" width="0" height="0">
+   <BOUNDS type="Node" left="2880" top="3645" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="570" top="450" width="13350" height="8295">
+   <BOUNDS type="Box" left="960" top="360" width="13350" height="8295">
    </BOUNDS>
    <BOUNDS type="Window" left="9960" top="2835" width="13350" height="8295">
    </BOUNDS>
@@ -373,7 +357,7 @@
    <LINK srcnodeid="17" srcpinname="Bang" dstnodeid="2" dstpinname="ShowLabels">
    </LINK>
    <NODE systemname="FullscreenQuad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\FullscreenQuad (DX11.Layer).v4p" nodename="FullscreenQuad (DX11.Layer)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="375" top="3675" width="100" height="100">
+   <BOUNDS type="Node" left="390" top="3465" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
    </PIN>
@@ -430,6 +414,22 @@
    <LINKPOINT x="1455" y="1470">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="3" srcpinname="Layer Out" dstnodeid="12" dstpinname="Layer 1">
+   <NODE systemname="Validator (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Validator (DX11.Layer)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="1965" top="3825" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1965" top="3825" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Layer In" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Layer Out" dstnodeid="22" dstpinname="Layer In">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Bang" dstnodeid="22" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="22" srcpinname="Layer Out" dstnodeid="0" dstpinname="Layer 4">
    </LINK>
    </PATCH>

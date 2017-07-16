@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Player.v4p" scrollx="0" scrolly="690" systemname="Player" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Player.v4p" bgcolor="9996518">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Player.v4p" scrollx="0" scrolly="0" systemname="Player" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Player.v4p" bgcolor="9996518">
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="960" top="5775" width="100" height="100">
    </BOUNDS>
@@ -86,7 +86,7 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="1995" top="3450" width="8790" height="10365">
+   <BOUNDS type="Window" left="930" top="4125" width="8790" height="10785">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -747,6 +747,10 @@
    </PIN>
    <PIN pinname="MorphList" visible="1">
    </PIN>
+   <PIN pinname="Next" visible="1">
+   </PIN>
+   <PIN pinname="Last" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="76" srcpinname="Output" dstnodeid="93" dstpinname="List">
    </LINK>
@@ -875,7 +879,7 @@
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="119">
    <BOUNDS type="Node" left="3495" top="8355" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="21" values="-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005">
+   <PIN pinname="Input" visible="1" slicecount="23" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -901,7 +905,7 @@
    <NODE systemname="AvoidNIL (String)" filename="%VVVV%\lib\nodes\modules\String\AvoidNIL (String).v4p" nodename="AvoidNIL (String)" componentmode="Hidden" id="121">
    <BOUNDS type="Node" left="4725" top="8340" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="21" values="-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005,-9.1552734375E-005">
+   <PIN pinname="Input" visible="1" slicecount="23" values=",,,,,,,,,,,,,,,,,,,,,,">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -1057,7 +1061,7 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="28" values="1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1">
+   <PIN pinname="Y Input Value" slicecount="28" values="1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -1089,5 +1093,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="136" srcpinname="Y Output Value" dstnodeid="138" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="139">
+   <BOUNDS type="Node" left="4800" top="9375" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="Next">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="93" srcpinname="Next" dstnodeid="139" dstpinname="Input Value">
    </LINK>
    </PATCH>
