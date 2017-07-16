@@ -35,7 +35,7 @@
    </PIN>
    </NODE>
    <NODE id="4" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Res">
    </PIN>
    <BOUNDS type="Box" left="1500" top="500" width="750" height="240">
    </BOUNDS>
@@ -49,7 +49,7 @@
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="0" dstpinname="Ord Value" hiddenwhenlocked="1">
    </LINK>
    <NODE id="5" systemname="IOBox (Enumerations)" componentmode="InABox" nodename="IOBox (Enumerations)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Enum">
+   <PIN pinname="Descriptive Name" slicecount="1" values="AASamples">
    </PIN>
    <BOUNDS type="Box" left="1500" top="3075" width="750" height="240">
    </BOUNDS>

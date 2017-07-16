@@ -13,7 +13,7 @@
    </PIN>
    </NODE>
    <NODE systemname="GetSlice (Node)" nodename="GetSlice (Node)" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="405" top="1125" width="100" height="100">
+   <BOUNDS type="Node" left="390" top="1125" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
@@ -37,9 +37,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="4" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="1650" top="1680" width="795" height="240">
+   <BOUNDS type="Box" left="1950" top="1725" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1650" top="1680" width="0" height="0">
+   <BOUNDS type="Node" left="1950" top="1725" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="ActiveInterpolated">
    </PIN>
@@ -705,7 +705,7 @@
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="179" dstpinname="Simulate">
    </LINK>
    <NODE systemname="LTP_Values (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="LTP_Values (Preset)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="1800" top="3465" width="100" height="100">
+   <BOUNDS type="Node" left="1875" top="3465" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Data1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -717,7 +717,7 @@
    </PIN>
    <PIN pinname="Set1" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="1800" top="3465">
+   <BOUNDS type="Box" left="1875" top="3465">
    </BOUNDS>
    <PIN pinname="Dominant2" visible="1">
    </PIN>
@@ -737,21 +737,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Set1" linkstyle="Bezier" hiddenwhenlocked="0">
-   <LINKPOINT x="3180" y="2870">
+   <LINKPOINT x="3205" y="2870">
    </LINKPOINT>
-   <LINKPOINT x="2025" y="2785">
+   <LINKPOINT x="2075" y="2785">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Keep2" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="4710" y="2685">
+   <LINKPOINT x="4735" y="2685">
    </LINKPOINT>
-   <LINKPOINT x="2490" y="2685">
+   <LINKPOINT x="2540" y="2685">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Time" hiddenwhenlocked="1" linkstyle="Bezier">
-   <LINKPOINT x="5835" y="2558">
+   <LINKPOINT x="5860" y="2558">
    </LINKPOINT>
-   <LINKPOINT x="2835" y="2558">
+   <LINKPOINT x="2885" y="2558">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="5" srcpinname="Data" dstnodeid="21" dstpinname="Input Value">
@@ -761,7 +761,7 @@
    <LINK srcnodeid="179" srcpinname="Bang" dstnodeid="5" dstpinname="Set2">
    </LINK>
    <NODE systemname="LTP_Values (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="LTP_Values (Preset)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="360" top="3465" width="100" height="100">
+   <BOUNDS type="Node" left="390" top="3465" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Data1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -773,7 +773,7 @@
    </PIN>
    <PIN pinname="Set1" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="360" top="3465">
+   <BOUNDS type="Box" left="390" top="3465">
    </BOUNDS>
    <PIN pinname="Dominant2" visible="1">
    </PIN>
@@ -887,7 +887,7 @@
    <LINK srcnodeid="183" srcpinname="Y Output Value" dstnodeid="27" dstpinname="FadeTime">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="184">
-   <BOUNDS type="Node" left="2040" top="2790" width="100" height="100">
+   <BOUNDS type="Node" left="4185" top="2445" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="EnableInterpol">
    </PIN>
@@ -965,9 +965,9 @@
    <LINK srcnodeid="27" srcpinname="Output" dstnodeid="35" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="27" srcpinname="Output" dstnodeid="5" dstpinname="Data2" linkstyle="VHV">
-   <LINKPOINT x="6705" y="2603">
+   <LINKPOINT x="6730" y="2603">
    </LINKPOINT>
-   <LINKPOINT x="2025" y="2603">
+   <LINKPOINT x="2075" y="2603">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="27" srcpinname="Output" dstnodeid="2" dstpinname="Data2" linkstyle="VHV">
@@ -978,12 +978,10 @@
    </LINK>
    <LINK srcnodeid="15" srcpinname="Input Value" dstnodeid="156" dstpinname="List">
    </LINK>
-   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="5" dstpinname="Data1">
-   </LINK>
    <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="0" dstpinname="Input Node">
    </LINK>
    <NODE systemname="LTP_Values (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="LTP_Values (Preset)" componentmode="Hidden" id="191">
-   <BOUNDS type="Node" left="360" top="3015" width="100" height="100">
+   <BOUNDS type="Node" left="390" top="3015" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Data1" visible="1" slicecount="1" values="||">
    </PIN>
@@ -995,7 +993,7 @@
    </PIN>
    <PIN pinname="Set1" visible="1" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="360" top="3015">
+   <BOUNDS type="Box" left="390" top="3015">
    </BOUNDS>
    <PIN pinname="Dominant2" visible="1">
    </PIN>
@@ -1033,7 +1031,7 @@
    <LINK srcnodeid="185" srcpinname="Output" dstnodeid="191" dstpinname="Soft">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="192">
-   <BOUNDS type="Node" left="780" top="2565" width="100" height="100">
+   <BOUNDS type="Node" left="525" top="2370" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="ListFromGUI">
    </PIN>
@@ -1047,5 +1045,61 @@
    <LINK srcnodeid="0" srcpinname="Output Node" dstnodeid="191" dstpinname="Data1">
    </LINK>
    <LINK srcnodeid="191" srcpinname="Data" dstnodeid="2" dstpinname="Data1">
+   </LINK>
+   <NODE systemname="LTP_Values (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="LTP_Values (Preset)" componentmode="Hidden" id="193">
+   <BOUNDS type="Node" left="1875" top="3000" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Data1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Data2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Data" visible="1">
+   </PIN>
+   <PIN pinname="Set2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Set1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Box" left="1875" top="3000">
+   </BOUNDS>
+   <PIN pinname="Dominant2" visible="1">
+   </PIN>
+   <PIN pinname="Keep2" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Soft" visible="1" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   <PIN pinname="Time" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="HardReset" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="193" dstpinname="Set1" linkstyle="Bezier" hiddenwhenlocked="0">
+   <LINKPOINT x="3615" y="2708">
+   </LINKPOINT>
+   <LINKPOINT x="1680" y="2468">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="193" dstpinname="Keep2" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="5130" y="2530">
+   </LINKPOINT>
+   <LINKPOINT x="2145" y="2375">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Y Output Value" dstnodeid="193" dstpinname="Time" hiddenwhenlocked="1" linkstyle="Bezier">
+   <LINKPOINT x="6255" y="2403">
+   </LINKPOINT>
+   <LINKPOINT x="2490" y="2248">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="161" srcpinname="Y Output Value" dstnodeid="193" dstpinname="HardReset">
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Bang" dstnodeid="193" dstpinname="Set2">
+   </LINK>
+   <LINK srcnodeid="185" srcpinname="Output" dstnodeid="193" dstpinname="Soft">
+   </LINK>
+   <LINK srcnodeid="192" srcpinname="Input Value" dstnodeid="193" dstpinname="Data2">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="193" dstpinname="Data1">
+   </LINK>
+   <LINK srcnodeid="193" srcpinname="Data" dstnodeid="5" dstpinname="Data1">
    </LINK>
    </PATCH>

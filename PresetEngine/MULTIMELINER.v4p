@@ -885,7 +885,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="480" top="8145" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="10320" top="5880" width="18480" height="9720">
+   <BOUNDS type="Window" left="10320" top="-30" width="18480" height="15630">
    </BOUNDS>
    <PIN pinname="AA Samples per Pixel" slicecount="1" values="4" visible="1">
    </PIN>
@@ -927,7 +927,7 @@
    </PIN>
    </NODE>
    <NODE id="7" systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="1680" top="8520" width="100" height="100">
+   <BOUNDS type="Node" left="1650" top="8520" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1" slicecount="2" values="1220,998">
    </PIN>
