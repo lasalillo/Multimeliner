@@ -2,7 +2,7 @@
   "List": {
     "array": {
       "array": {
-        "length": 59,
+        "length": 58,
         "array": [
           {
             "ID": 1,
@@ -2521,14 +2521,60 @@
             "ID": 52,
             "GroupID": 17,
             "Name": "New-56",
-            "Time": 124.326576,
+            "Time": 86.59113,
             "Values": {
-              "_flags": "cached",
-              "id": 197
+              "array": {
+                "array": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.06721798,
+                  0.5,
+                  0.75,
+                  0.0,
+                  0.148839831,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.00234607421,
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.6666667,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
             },
             "Toggle": {
-              "_flags": "cached",
-              "id": 199
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
             },
             "FadeTime": 1.0
           },
@@ -2601,14 +2647,14 @@
             "Values": {
               "array": {
                 "array": [
+                  1.0,
                   0.0,
                   0.0,
-                  0.0,
-                  0.0,
+                  0.0432115644,
                   0.5,
                   0.75,
                   0.0,
-                  0.0,
+                  0.172846258,
                   0.0,
                   0.0,
                   0.0,
@@ -2622,7 +2668,7 @@
                   0.0,
                   0.0,
                   0.0,
-                  0.6666667,
+                  1.0,
                   0.0,
                   0.0,
                   0.0,
@@ -2661,61 +2707,46 @@
             "Time": 1.0,
             "Values": {
               "_flags": "cached",
-              "id": 209
+              "id": 213
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 211
+              "id": 215
             },
             "FadeTime": 1.0
           },
           {
             "ID": 56,
-            "GroupID": 19,
-            "Name": "New-57",
-            "Time": 137.186951,
-            "Values": {
-              "_flags": "cached",
-              "id": 214
-            },
-            "Toggle": {
-              "_flags": "cached",
-              "id": 216
-            },
-            "FadeTime": 1.0
-          },
-          {
-            "ID": 57,
             "GroupID": 20,
             "Name": "Def-71",
             "Time": 1.0,
             "Values": {
               "_flags": "cached",
-              "id": 209
+              "id": 213
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 211
+              "id": 215
             },
             "FadeTime": 1.0
           },
           {
-            "ID": 58,
+            "ID": 57,
             "GroupID": 21,
             "Name": "Def-74",
             "Time": 1.0,
             "Values": {
               "_flags": "cached",
-              "id": 209
+              "id": 213
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 211
+              "id": 215
             },
             "FadeTime": 1.0
           },
           {
-            "ID": 59,
+            "ID": 58,
             "GroupID": 22,
             "Name": "Def-75",
             "Time": 1.0,
