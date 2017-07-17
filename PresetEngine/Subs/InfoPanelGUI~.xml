@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\InfoPanelGUI.v4p" systemname="InfoPanelGUI" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\InfoPanelGUI.v4p" scrollx="0" scrolly="600">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\InfoPanelGUI.v4p" systemname="InfoPanelGUI" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\InfoPanelGUI.v4p" scrollx="0" scrolly="480">
    <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2220" top="6030" width="100" height="100">
    </BOUNDS>
@@ -43,7 +43,7 @@
    </PIN>
    <PIN pinname="CenterX" slicecount="1" visible="1" values="0">
    </PIN>
-   <PIN pinname="CenterY" slicecount="1" values="0" visible="1">
+   <PIN pinname="CenterY" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
@@ -285,7 +285,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2685" top="3585" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.89">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.956">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -405,7 +405,7 @@
    </PIN>
    <PIN pinname="Output Node" visible="1">
    </PIN>
-   <PIN pinname="Input Node" visible="1">
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="30" srcpinname="Render State" dstnodeid="0" dstpinname="Render State">
@@ -703,7 +703,7 @@
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="50" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Scale (Transform)" nodename="Scale (Transform)" componentmode="Hidden" id="51">
-   <BOUNDS type="Node" left="2565" top="5625" width="100" height="100">
+   <BOUNDS type="Node" left="2565" top="5550" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform In" visible="1">
    </PIN>
@@ -717,8 +717,6 @@
    <LINK srcnodeid="34" srcpinname="Transform Out" dstnodeid="1" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Transform Out" dstnodeid="51" dstpinname="Transform In">
-   </LINK>
-   <LINK srcnodeid="51" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform In">
    </LINK>
    <LINK srcnodeid="23" srcpinname="Y" dstnodeid="26" dstpinname="Input">
    </LINK>
@@ -766,20 +764,28 @@
    </LINK>
    <LINK srcnodeid="55" srcpinname="Output" dstnodeid="52" dstpinname="Input 1">
    </LINK>
+   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="1" dstpinname="CenterY">
+   </LINK>
    <NODE systemname="WithinView (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="WithinView (DX11.Layer)" componentmode="Hidden" id="56">
-   <BOUNDS type="Node" left="2550" top="7215" width="100" height="100">
+   <BOUNDS type="Node" left="1560" top="6420" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2550" top="7215" width="3000" height="3000">
+   <BOUNDS type="Box" left="1560" top="6420" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Layer In" visible="1">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Preserve Aspect" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Preserve Crop" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="56" dstpinname="Layer In">
    </LINK>
    <LINK srcnodeid="56" srcpinname="Layer Out" dstnodeid="32" dstpinname="Input Node">
    </LINK>
-   <LINK srcnodeid="53" srcpinname="Output" dstnodeid="1" dstpinname="CenterY">
+   <LINK srcnodeid="51" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform In">
    </LINK>
    </PATCH>

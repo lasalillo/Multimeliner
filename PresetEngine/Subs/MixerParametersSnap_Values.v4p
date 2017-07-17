@@ -1,15 +1,15 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MixerParametersSnap.v4p" systemname="MixerParametersSnap" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MixerParametersSnap.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="10005" top="1380" width="7245" height="5025">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MixerParametersSnap_Values.v4p" systemname="MixerParametersSnap" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MixerParametersSnap.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="17025" top="1395" width="7350" height="5010">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="37">
-   <BOUNDS type="Box" left="5790" top="705" width="480" height="480">
+   <BOUNDS type="Box" left="5985" top="765" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="5790" top="705" width="0" height="0">
+   <BOUNDS type="Node" left="5985" top="765" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -28,16 +28,12 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <NODE systemname="SnapMixer (Utilities Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="SnapMixerValues (Utilities)" componentmode="Hidden" id="46">
-   <BOUNDS type="Node" left="510" top="2340" width="5100" height="270">
+   <NODE systemname="SnapMixer (Utilities Values)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="SnapMixerValues (Utilities)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="825" top="2355" width="5100" height="270">
    </BOUNDS>
    <PIN pinname="Values" visible="1">
    </PIN>
    <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Preset" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="MapAlphaXY" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="46" dstpinname="EnableAlpha">
@@ -47,9 +43,9 @@
    <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="46" dstpinname="EnableColor">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
-   <BOUNDS type="Box" left="5445" top="3165" width="795" height="240">
+   <BOUNDS type="Box" left="5520" top="3240" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5445" top="3165" width="0" height="0">
+   <BOUNDS type="Node" left="5520" top="3240" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -58,15 +54,43 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="SnapMap">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="55">
+   <BOUNDS type="Box" left="810" top="405" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="810" top="405" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56">
+   <BOUNDS type="Box" left="795" top="2925" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="795" top="2925" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Values">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="46" srcpinname="Values" dstnodeid="56" dstpinname="Y Input Value">
+   </LINK>
    <NODE systemname="SnapParameters" filename="SnapParameters.v4p" nodename="SnapParameters.v4p" componentmode="Hidden" id="57">
-   <BOUNDS type="Node" left="1237" top="1416" width="4305" height="270">
+   <BOUNDS type="Node" left="1312" top="1491" width="4305" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="0" width="9700" height="8140">
    </BOUNDS>
    <BOUNDS type="Window" left="12330" top="5385" width="13425" height="9270">
    </BOUNDS>
-   <PIN pinname="MapAlpha" visible="1">
-   </PIN>
    </NODE>
    <LINK srcnodeid="57" srcpinname="AlphaIndices" dstnodeid="46" dstpinname="AlphaIndices">
    </LINK>
@@ -99,31 +123,5 @@
    <LINK srcnodeid="57" srcpinname="SnapMap" dstnodeid="54" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="57" srcpinname="ColorIndices" dstnodeid="46" dstpinname="ColorIndices">
-   </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="58">
-   <BOUNDS type="Box" left="750" top="780" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="750" top="780" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Preset">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="59">
-   <BOUNDS type="Box" left="810" top="3420" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="810" top="3420" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Preset">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="46" srcpinname="Preset" dstnodeid="59" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="57" srcpinname="MapAlpha" dstnodeid="46" dstpinname="MapAlphaXY">
-   </LINK>
-   <LINK srcnodeid="58" srcpinname="Output Node" dstnodeid="46" dstpinname="Preset">
    </LINK>
    </PATCH>

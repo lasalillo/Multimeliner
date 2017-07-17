@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ShortCuts.v4p" systemname="ShortCuts" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ShortCuts.v4p" bgcolor="16777215" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ShortCuts.v4p" systemname="ShortCuts" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ShortCuts.v4p" bgcolor="16777215" scrollx="0" scrolly="-360">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Node" left="270" top="225" width="2985" height="270">
    </BOUNDS>
@@ -147,9 +147,9 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
    <BOUNDS type="Node" left="7995" top="225" width="2985" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="7995" top="225" width="2070" height="3585">
+   <BOUNDS type="Box" left="7995" top="225" width="2130" height="3930">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|MIXER PARAMETERS:&cr;&lf;1.Polar&cr;&lf;2.Cylinder&cr;&lf;3.Control Texture&cr;&lf;-Bottom-Alpha&cr;&lf;-Middle-Luma&cr;&lf;-Top-BlendMode&cr;&lf;&cr;&lf;1 Palette for the 3 Outs&cr;&lf;&cr;&lf;Toggle:&cr;&lf;-Up-Invert&cr;&lf;-Down-Alpha Invert|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|MIXER PARAMETERS:&cr;&lf;1.Cylindrical&cr;&lf;2.Polar&cr;&lf;3.Control Texture&cr;&lf;&cr;&lf;-Bottom-Alpha&cr;&lf;-MidBottom-Luma&cr;&lf;-MidTop-BlendMode&cr;&lf;-Top-Colorize Controls&cr;&lf;1 Palette for the 3 Outs&cr;&lf;&cr;&lf;Toggle:&cr;&lf;-Up-Invert&cr;&lf;-Down-Alpha Invert|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>

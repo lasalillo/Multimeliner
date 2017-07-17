@@ -37,7 +37,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2520" top="1185" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="28" visible="1" values="0,0,0,0,0.5,0.75,0,0,0,0,0,0,0,0.00234607420861721,0.5,0.5,0.5,0,0,0,0,0.666666686534882,0,0,0,0,0,0">
+   <PIN pinname="Y Input Value" slicecount="28" visible="1" values="0,0,0,0,0.5,0.5,0,0,0,0,0,0,0,0.00234607420861721,0.5,0.5,0.5,0,0,0,0,0.666666686534882,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

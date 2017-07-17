@@ -1,7 +1,7 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Player.v4p" scrollx="0" scrolly="0" systemname="Player" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Player.v4p" bgcolor="9996518">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Player.v4p" scrollx="0" scrolly="-360" systemname="Player" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Player.v4p" bgcolor="9996518">
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="2">
-   <BOUNDS type="Node" left="960" top="5775" width="100" height="100">
+   <BOUNDS type="Node" left="975" top="5850" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XY" visible="1" slicecount="2" values="0,18.36">
    </PIN>
@@ -539,7 +539,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="0" top="0" width="10765" height="11175">
    </BOUNDS>
-   <BOUNDS type="Window" left="13515" top="5670" width="10755" height="11175">
+   <BOUNDS type="Window" left="4770" top="4995" width="10755" height="11175">
    </BOUNDS>
    <PIN pinname="String" visible="1">
    </PIN>
@@ -773,7 +773,7 @@
    <LINK srcnodeid="93" srcpinname="CountPerID" dstnodeid="49" dstpinname="Input">
    </LINK>
    <NODE systemname="PlayClock (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="PlayClock (Preset)" componentmode="Hidden" id="98">
-   <BOUNDS type="Node" left="2355" top="7080" width="100" height="100">
+   <BOUNDS type="Node" left="2385" top="7260" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Clock" visible="1" slicecount="1" values="27.3986697873779">
    </PIN>
@@ -806,8 +806,6 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="98" dstpinname="Play">
    </LINK>
-   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="98" dstpinname="Seek Time">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="112" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3990" top="4530" width="480" height="480">
    </BOUNDS>
@@ -837,9 +835,9 @@
    <LINK srcnodeid="98" srcpinname="Position" dstnodeid="93" dstpinname="Position">
    </LINK>
    <NODE systemname="ClockGen" filename="ClockGen.v4p" nodename="ClockGen.v4p" componentmode="Hidden" id="114" managers="">
-   <BOUNDS type="Node" left="3901" top="6793" width="0" height="0">
+   <BOUNDS type="Node" left="3541" top="6943" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1561" top="4603" width="4680" height="4380">
+   <BOUNDS type="Box" left="1201" top="4753" width="4680" height="4380">
    </BOUNDS>
    <BOUNDS type="Window" left="-1" top="-1" width="4680" height="4380">
    </BOUNDS>
@@ -847,19 +845,19 @@
    </PIN>
    <PIN pinname="Clock" visible="1">
    </PIN>
+   <PIN pinname="SeekTime" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="114" dstpinname="SeekTime">
-   </LINK>
    <LINK srcnodeid="114" srcpinname="Clock" dstnodeid="98" dstpinname="Clock">
    </LINK>
    <LINK srcnodeid="98" srcpinname="Position" dstnodeid="114" dstpinname="Position">
-   <LINKPOINT x="3846" y="7527">
+   <LINKPOINT x="3798" y="7701">
    </LINKPOINT>
-   <LINKPOINT x="4842" y="7209">
+   <LINKPOINT x="4716" y="7377">
    </LINKPOINT>
-   <LINKPOINT x="4938" y="6201">
+   <LINKPOINT x="4734" y="6363">
    </LINKPOINT>
-   <LINKPOINT x="4344" y="6228">
+   <LINKPOINT x="4062" y="6384">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="46" srcpinname="Output" dstnodeid="114" dstpinname="Seek">
@@ -1103,5 +1101,95 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="93" srcpinname="Next" dstnodeid="139" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="140">
+   <BOUNDS type="Box" left="3330" top="5970" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3330" top="5970" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="140" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Map (Value)" nodename="Map (Value)" componentmode="Hidden" id="141">
+   <BOUNDS type="Node" left="3315" top="6345" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mapping" slicecount="1" values="Clamp">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Source Minimum" visible="1">
+   </PIN>
+   <PIN pinname="Destination Minimum" visible="1">
+   </PIN>
+   <PIN pinname="Source Maximum" visible="1">
+   </PIN>
+   <PIN pinname="Destination Maximum" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="141" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y" dstnodeid="141" dstpinname="Source Maximum">
+   </LINK>
+   <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="142">
+   <BOUNDS type="Node" left="2400" top="6045" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.0001">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y" dstnodeid="142" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="142" srcpinname="Output" dstnodeid="141" dstpinname="Destination Maximum">
+   </LINK>
+   <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="143">
+   <BOUNDS type="Node" left="2790" top="6675" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="141" srcpinname="Output" dstnodeid="143" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="143" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Loop" dstnodeid="143" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="143" srcpinname="Output" dstnodeid="98" dstpinname="Seek Time">
+   </LINK>
+   <LINK srcnodeid="143" srcpinname="Output" dstnodeid="114" dstpinname="SeekTime">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="145">
+   <BOUNDS type="Box" left="2730" top="5775" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2730" top="5775" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.0001">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="145" srcpinname="Y Output Value" dstnodeid="142" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="X" dstnodeid="141" dstpinname="Source Minimum">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="X" dstnodeid="141" dstpinname="Destination Minimum">
    </LINK>
    </PATCH>

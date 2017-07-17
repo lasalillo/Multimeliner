@@ -97,7 +97,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="510" top="6120" width="7365" height="5605">
    </BOUNDS>
-   <BOUNDS type="Window" left="-150" top="9690" width="10860" height="5910">
+   <BOUNDS type="Window" left="0" top="7980" width="12750" height="7305">
    </BOUNDS>
    <PIN pinname="Keep2" visible="1" slicecount="1" values="1">
    </PIN>
@@ -495,7 +495,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3915" top="8520" width="7755" height="5205">
    </BOUNDS>
-   <BOUNDS type="Window" left="1710" top="2295" width="12420" height="8445">
+   <BOUNDS type="Window" left="1710" top="2295" width="12525" height="8550">
    </BOUNDS>
    <PIN pinname="ToContent" visible="1">
    </PIN>
@@ -573,7 +573,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="650" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="4245" top="6600" width="915" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="4245" top="6600" width="915" height="270">
+   <BOUNDS type="Box" left="4245" top="6600" width="945" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|Send ports|">
    </PIN>
@@ -885,9 +885,9 @@
    </BOUNDS>
    <BOUNDS type="Box" left="480" top="8145" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="10320" top="-30" width="18480" height="15630">
+   <BOUNDS type="Window" left="10320" top="0" width="18480" height="15195">
    </BOUNDS>
-   <PIN pinname="AA Samples per Pixel" slicecount="1" values="4" visible="1">
+   <PIN pinname="AA Samples per Pixel" slicecount="1" visible="1" values="4">
    </PIN>
    <PIN pinname="Fullscreen" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1593,7 +1593,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3495" top="7050" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="1,2,10,16">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="1,2,10,18">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
