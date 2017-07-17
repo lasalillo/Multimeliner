@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MixerParametersSnap.v4p" systemname="MixerParametersSnap" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MixerParametersSnap.v4p" scrollx="0" scrolly="0">
-   <BOUNDS type="Window" left="10005" top="1380" width="7245" height="5025">
+   <BOUNDS type="Window" left="10320" top="0" width="7245" height="5025">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>

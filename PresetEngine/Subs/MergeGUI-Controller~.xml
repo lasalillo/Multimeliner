@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MergeGUI-Controller.v4p" systemname="MergeGUI-Controller" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MergeGUI-Controller.v4p" scrollx="0" scrolly="0" bgcolor="6126557">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MergeGUI-Controller.v4p" systemname="MergeGUI-Controller" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MergeGUI-Controller.v4p" scrollx="0" scrolly="-360" bgcolor="6126557">
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="0" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="390" top="1680" width="795" height="240">
    </BOUNDS>
@@ -49,9 +49,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="6" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="810" top="3660" width="480" height="480">
+   <BOUNDS type="Box" left="765" top="3675" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="810" top="3660" width="0" height="0">
+   <BOUNDS type="Node" left="765" top="3675" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -271,7 +271,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="25">
-   <BOUNDS type="Node" left="765" top="2865" width="100" height="100">
+   <BOUNDS type="Node" left="765" top="2895" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="SetCue">
    </PIN>
@@ -343,7 +343,7 @@
    </BOUNDS>
    <PIN pinname="FadeTime" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Values" visible="1" pintype="Input" slicecount="28" values="0,0,0,0,0.5,0.5,0,0,0,0,0,0,0,0.00234607420861721,0.5,0.5,0.5,0,0,0,0,0.666666686534882,0,0,0,0,0,0">
+   <PIN pinname="Values" visible="1" pintype="Input" slicecount="28" values="0,0,0,0,0.5,0.75,0,0,0,0,0,0,0,0.00234607420861721,0.5,0.5,0.5,0,0,0,0,0.666666686534882,0,0,0,0,0,0">
    </PIN>
    <BOUNDS type="Window" left="9900" top="6240" width="6555" height="6630">
    </BOUNDS>
@@ -666,8 +666,6 @@
    <BOUNDS type="Box" left="750" top="3285">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="25" srcpinname="Input Value" dstnodeid="177" dstpinname="Set">
-   </LINK>
    <LINK srcnodeid="177" srcpinname="Output" dstnodeid="6" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="178">
@@ -953,9 +951,9 @@
    <LINK srcnodeid="179" srcpinname="Bang" dstnodeid="194" dstpinname="Set2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="196">
-   <BOUNDS type="Box" left="915" top="2295" width="480" height="480">
+   <BOUNDS type="Box" left="2205" top="2610" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="915" top="2295" width="0" height="0">
+   <BOUNDS type="Node" left="2205" top="2610" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -972,8 +970,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="196" srcpinname="Y Output Value" dstnodeid="194" dstpinname="Set3">
-   </LINK>
    <LINK srcnodeid="196" srcpinname="Y Output Value" dstnodeid="195" dstpinname="Set3">
    </LINK>
    <LINK srcnodeid="195" srcpinname="Data" dstnodeid="21" dstpinname="Input Value">
@@ -1087,7 +1083,7 @@
    </PIN>
    <PIN pinname="Enable" slicecount="1" visible="1" values="1">
    </PIN>
-   <BOUNDS type="Window" left="10005" top="1380" width="7245" height="5025">
+   <BOUNDS type="Window" left="10320" top="0" width="7245" height="5025">
    </BOUNDS>
    <PIN pinname="SnapMap" visible="1">
    </PIN>
@@ -1229,5 +1225,9 @@
    <LINK srcnodeid="160" srcpinname="Output" dstnodeid="216" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="216" srcpinname="Up Edge" dstnodeid="173" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="196" srcpinname="Y Output Value" dstnodeid="194" dstpinname="Set3">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Input Value" dstnodeid="177" dstpinname="Set">
    </LINK>
    </PATCH>

@@ -109,9 +109,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Preset">
    </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="58" srcpinname="Output Node" dstnodeid="46" dstpinname="Preset">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="59">
    <BOUNDS type="Box" left="810" top="3420" width="795" height="240">
    </BOUNDS>
@@ -123,5 +123,7 @@
    <LINK srcnodeid="46" srcpinname="Preset" dstnodeid="59" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="57" srcpinname="MapAlpha" dstnodeid="46" dstpinname="MapAlphaXY">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Output Node" dstnodeid="46" dstpinname="Preset">
    </LINK>
    </PATCH>

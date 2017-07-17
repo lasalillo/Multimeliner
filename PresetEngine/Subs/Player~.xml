@@ -1143,7 +1143,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 2" slicecount="1" values="0.0001" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.0001">
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Y" dstnodeid="142" dstpinname="Input 1">
@@ -1172,18 +1172,6 @@
    </LINK>
    <LINK srcnodeid="143" srcpinname="Output" dstnodeid="114" dstpinname="SeekTime">
    </LINK>
-   <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="144">
-   <BOUNDS type="Node" left="2205" top="6480" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Input 2" slicecount="1" visible="1" values="0.0001">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="2" srcpinname="X" dstnodeid="144" dstpinname="Input 1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="145">
    <BOUNDS type="Box" left="2730" top="5775" width="795" height="240">
    </BOUNDS>
@@ -1200,10 +1188,8 @@
    </NODE>
    <LINK srcnodeid="145" srcpinname="Y Output Value" dstnodeid="142" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="145" srcpinname="Y Output Value" dstnodeid="144" dstpinname="Input 2">
+   <LINK srcnodeid="2" srcpinname="X" dstnodeid="141" dstpinname="Source Minimum">
    </LINK>
-   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="141" dstpinname="Source Minimum">
-   </LINK>
-   <LINK srcnodeid="144" srcpinname="Output" dstnodeid="141" dstpinname="Destination Minimum">
+   <LINK srcnodeid="2" srcpinname="X" dstnodeid="141" dstpinname="Destination Minimum">
    </LINK>
    </PATCH>
