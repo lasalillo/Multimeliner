@@ -68,15 +68,61 @@
           {
             "ID": 2,
             "GroupID": 1,
-            "Name": "First Part_1_",
+            "Name": "First Part_1_.avi",
             "Time": 1.80588388,
             "Values": {
-              "_flags": "cached",
-              "id": 5
+              "array": {
+                "array": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
             },
             "Toggle": {
-              "_flags": "cached",
-              "id": 7
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
             },
             "FadeTime": 1.0
           },
@@ -205,7 +251,7 @@
           {
             "ID": 5,
             "GroupID": 3,
-            "Name": "First Part_1_",
+            "Name": "First Part_1_.avi",
             "Time": 0.0001,
             "Values": {
               "array": {
@@ -266,7 +312,7 @@
           {
             "ID": 6,
             "GroupID": 3,
-            "Name": "Anna+Andrew_1_",
+            "Name": "Anna+Andrew_1_.avi",
             "Time": 31.8386421,
             "Values": {
               "array": {
@@ -876,7 +922,7 @@
           {
             "ID": 16,
             "GroupID": 5,
-            "Name": "Anna+Andrew_1_",
+            "Name": "Anna+Andrew_1_.avi",
             "Time": 20.9854813,
             "Values": {
               "array": {
@@ -941,41 +987,41 @@
             "Time": 51.605072,
             "Values": {
               "_flags": "cached",
-              "id": 71
+              "id": 75
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 73
+              "id": 77
             },
             "FadeTime": 0.0
           },
           {
             "ID": 18,
             "GroupID": 5,
-            "Name": "Anna+Andrew_1_",
+            "Name": "Anna+Andrew_1_.avi",
             "Time": 77.84039,
             "Values": {
               "_flags": "cached",
-              "id": 76
+              "id": 80
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 78
+              "id": 82
             },
             "FadeTime": 0.0
           },
           {
             "ID": 19,
             "GroupID": 5,
-            "Name": "First Part_1_",
+            "Name": "First Part_1_.avi",
             "Time": 270.0098,
             "Values": {
               "_flags": "cached",
-              "id": 71
+              "id": 75
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 73
+              "id": 77
             },
             "FadeTime": 0.0
           },
@@ -1352,11 +1398,11 @@
             "Time": 1.0,
             "Values": {
               "_flags": "cached",
-              "id": 71
+              "id": 75
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 73
+              "id": 77
             },
             "FadeTime": 1.0
           },
@@ -1367,11 +1413,11 @@
             "Time": 1.0,
             "Values": {
               "_flags": "cached",
-              "id": 71
+              "id": 75
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 73
+              "id": 77
             },
             "FadeTime": 1.0
           },
@@ -1382,11 +1428,11 @@
             "Time": 1.0,
             "Values": {
               "_flags": "cached",
-              "id": 71
+              "id": 75
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 73
+              "id": 77
             },
             "FadeTime": 1.0
           },
@@ -1397,11 +1443,11 @@
             "Time": 1.0,
             "Values": {
               "_flags": "cached",
-              "id": 71
+              "id": 75
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 73
+              "id": 77
             },
             "FadeTime": 1.0
           },
@@ -2204,11 +2250,11 @@
             "Time": 1.0,
             "Values": {
               "_flags": "cached",
-              "id": 177
+              "id": 181
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 179
+              "id": 183
             },
             "FadeTime": 1.0
           },
@@ -2219,11 +2265,11 @@
             "Time": 1.0,
             "Values": {
               "_flags": "cached",
-              "id": 177
+              "id": 181
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 179
+              "id": 183
             },
             "FadeTime": 1.0
           },
@@ -2234,11 +2280,11 @@
             "Time": 1.0,
             "Values": {
               "_flags": "cached",
-              "id": 177
+              "id": 181
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 179
+              "id": 183
             },
             "FadeTime": 1.0
           },
@@ -2249,11 +2295,11 @@
             "Time": 1.0,
             "Values": {
               "_flags": "cached",
-              "id": 177
+              "id": 181
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 179
+              "id": 183
             },
             "FadeTime": 1.0
           },
