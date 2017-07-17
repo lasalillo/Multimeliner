@@ -2,7 +2,7 @@
   "List": {
     "array": {
       "array": {
-        "length": 60,
+        "length": 61,
         "array": [
           {
             "ID": 1,
@@ -1835,7 +1835,7 @@
           {
             "ID": 37,
             "GroupID": 13,
-            "Name": "Def-40",
+            "Name": "Def-41",
             "Time": 1.0,
             "Values": {
               "array": {
@@ -1896,219 +1896,6 @@
           {
             "ID": 38,
             "GroupID": 13,
-            "Name": "New-46",
-            "Time": 52.7136726,
-            "Values": {
-              "_flags": "cached",
-              "id": 127
-            },
-            "Toggle": {
-              "_flags": "cached",
-              "id": 129
-            },
-            "FadeTime": 1.0
-          },
-          {
-            "ID": 39,
-            "GroupID": 13,
-            "Name": "New-47",
-            "Time": 61.63042,
-            "Values": {
-              "array": {
-                "array": [
-                  1.0,
-                  0.0,
-                  0.0,
-                  0.01920514,
-                  0.5,
-                  0.75,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.00234607421,
-                  0.5,
-                  0.5,
-                  0.5,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.6666667,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ]
-              }
-            },
-            "Toggle": {
-              "array": {
-                "array": [
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false
-                ]
-              }
-            },
-            "FadeTime": 1.0
-          },
-          {
-            "ID": 40,
-            "GroupID": 13,
-            "Name": "New-47 C",
-            "Time": 66.79373,
-            "Values": {
-              "array": {
-                "array": [
-                  1.0,
-                  0.0,
-                  0.0,
-                  0.0240064245,
-                  0.5,
-                  0.75,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.00234607421,
-                  0.5,
-                  0.5,
-                  0.5,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.6666667,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ]
-              }
-            },
-            "Toggle": {
-              "array": {
-                "array": [
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false
-                ]
-              }
-            },
-            "FadeTime": 4.125
-          },
-          {
-            "ID": 41,
-            "GroupID": 13,
-            "Name": "New-51",
-            "Time": 75.84633,
-            "Values": {
-              "array": {
-                "array": [
-                  1.0,
-                  0.0,
-                  0.0,
-                  0.0240064245,
-                  0.5,
-                  0.75,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.00234607421,
-                  0.5,
-                  0.5,
-                  0.5,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ]
-              }
-            },
-            "Toggle": {
-              "array": {
-                "array": [
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false
-                ]
-              }
-            },
-            "FadeTime": 1.0
-          },
-          {
-            "ID": 42,
-            "GroupID": 14,
-            "Name": "Def-41",
-            "Time": 1.0,
-            "Values": {
-              "_flags": "cached",
-              "id": 153
-            },
-            "Toggle": {
-              "_flags": "cached",
-              "id": 155
-            },
-            "FadeTime": 1.0
-          },
-          {
-            "ID": 43,
-            "GroupID": 14,
             "Name": "New-49",
             "Time": 75.95612,
             "Values": {
@@ -2168,14 +1955,227 @@
             "FadeTime": 1.50000024
           },
           {
-            "ID": 44,
-            "GroupID": 14,
+            "ID": 39,
+            "GroupID": 13,
             "Name": "New-50",
             "Time": 86.42671,
             "Values": {
               "array": {
                 "array": [
                   0.0,
+                  0.0,
+                  0.0,
+                  0.0240064245,
+                  0.5,
+                  0.75,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.00234607421,
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 40,
+            "GroupID": 14,
+            "Name": "Def-40",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 153
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 155
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 41,
+            "GroupID": 14,
+            "Name": "New-46",
+            "Time": 52.7136726,
+            "Values": {
+              "_flags": "cached",
+              "id": 127
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 129
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 42,
+            "GroupID": 14,
+            "Name": "New-47",
+            "Time": 61.63042,
+            "Values": {
+              "array": {
+                "array": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.01920514,
+                  0.5,
+                  0.75,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.00234607421,
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.6666667,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 43,
+            "GroupID": 14,
+            "Name": "New-47 C",
+            "Time": 66.79373,
+            "Values": {
+              "array": {
+                "array": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0240064245,
+                  0.5,
+                  0.75,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.00234607421,
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.6666667,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 4.125
+          },
+          {
+            "ID": 44,
+            "GroupID": 14,
+            "Name": "New-51",
+            "Time": 75.84633,
+            "Values": {
+              "array": {
+                "array": [
+                  1.0,
                   0.0,
                   0.0,
                   0.0240064245,
@@ -2668,7 +2668,7 @@
                   0.0,
                   0.0,
                   0.0,
-                  1.0,
+                  0.6666667,
                   0.0,
                   0.0,
                   0.0,
@@ -2702,6 +2702,67 @@
           },
           {
             "ID": 55,
+            "GroupID": 18,
+            "Name": "New-58 C",
+            "Time": 136.129333,
+            "Values": {
+              "array": {
+                "array": [
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0432115644,
+                  0.5,
+                  0.75,
+                  0.0,
+                  0.172846258,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.00234607421,
+                  0.5,
+                  0.5,
+                  0.5,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "Toggle": {
+              "array": {
+                "array": [
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false,
+                  false
+                ]
+              }
+            },
+            "FadeTime": 3.5
+          },
+          {
+            "ID": 56,
             "GroupID": 19,
             "Name": "Def-70",
             "Time": 1.0,
@@ -2762,40 +2823,40 @@
             "FadeTime": 1.0
           },
           {
-            "ID": 56,
+            "ID": 57,
             "GroupID": 20,
             "Name": "Def-71",
             "Time": 1.0,
             "Values": {
               "_flags": "cached",
-              "id": 223
+              "id": 228
             },
             "Toggle": {
               "_flags": "cached",
-              "id": 225
-            },
-            "FadeTime": 1.0
-          },
-          {
-            "ID": 57,
-            "GroupID": 21,
-            "Name": "Def-74",
-            "Time": 1.0,
-            "Values": {
-              "_flags": "cached",
-              "id": 223
-            },
-            "Toggle": {
-              "_flags": "cached",
-              "id": 225
+              "id": 230
             },
             "FadeTime": 1.0
           },
           {
             "ID": 58,
             "GroupID": 21,
+            "Name": "Def-74",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 228
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 230
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 59,
+            "GroupID": 21,
             "Name": "New-58",
-            "Time": 120.939789,
+            "Time": 131.354218,
             "Values": {
               "array": {
                 "array": [
@@ -2853,7 +2914,7 @@
             "FadeTime": 3.0
           },
           {
-            "ID": 59,
+            "ID": 60,
             "GroupID": 21,
             "Name": "New-58 C",
             "Time": 156.345016,
@@ -2914,10 +2975,10 @@
             "FadeTime": 3.0
           },
           {
-            "ID": 60,
+            "ID": 61,
             "GroupID": 22,
-            "Name": "Def-75",
-            "Time": 1.0,
+            "Name": "New-61",
+            "Time": 0.0001,
             "Values": {
               "array": {
                 "array": [
@@ -2925,6 +2986,8 @@
                   0.0,
                   0.0,
                   0.0,
+                  0.5,
+                  0.75,
                   0.0,
                   0.0,
                   0.0,
@@ -2932,12 +2995,10 @@
                   0.0,
                   0.0,
                   0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
-                  0.0,
+                  0.00234607421,
+                  0.5,
+                  0.5,
+                  0.5,
                   0.0,
                   0.0,
                   0.0,
@@ -2983,8 +3044,8 @@
     "TrackSize": 0.125,
     "Length": 356.6,
     "LoopPoints": {
-      "X": 84.29282,
-      "Y": 151.433548
+      "X": 12.574255,
+      "Y": 159.601364
     },
     "TrackNames": {
       "array": {
@@ -3002,8 +3063,8 @@
           "Video4_Values",
           "LongShadows",
           "DistFlow",
-          "Fluids",
           "2D Shadows",
+          "Fluids",
           "Particles",
           "Starfield",
           "Camera",
