@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\PresetSlit\SplitVideoData (Preset).v4p" systemname="SplitVideoData (Preset)" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\PresetSplit\SplitVideoData (Preset).v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\Dropbox\Rotonda\_rotonda\_LIBRARY\TimelinerReceiver\SplitVideoData (Preset).v4p" systemname="SplitVideoData (Preset)" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\PresetSplit\SplitVideoData (Preset).v4p" scrollx="0" scrolly="0">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3765" top="1590" width="285" height="660">
    </BOUNDS>
@@ -311,9 +311,9 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="33">
-   <BOUNDS type="Node" left="6630" top="1215" width="100" height="100">
+   <BOUNDS type="Node" left="6000" top="1305" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6630" top="1215" width="795" height="240">
+   <BOUNDS type="Box" left="6000" top="1305" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
@@ -344,6 +344,8 @@
    <PIN pinname="GroupID Bin Size" visible="1">
    </PIN>
    <PIN pinname="SizeMulti" visible="1">
+   </PIN>
+   <PIN pinname="SizeMutiIndex" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="GroupID" dstnodeid="17" dstpinname="Y Input Value">
@@ -408,4 +410,24 @@
    </NODE>
    <LINK srcnodeid="34" srcpinname="SizeMulti" dstnodeid="37" dstpinname="Y Input Value">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
+   <BOUNDS type="Box" left="6585" top="2745" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6585" top="2745" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="6">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Y Output Value" dstnodeid="34" dstpinname="SizeMutiIndex">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.2">
+   </PACK>
+   <PACK Name="ImagePack" Version="0.2.0">
+   </PACK>
    </PATCH>
