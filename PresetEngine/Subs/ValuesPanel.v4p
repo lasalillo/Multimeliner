@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ValuesPanel.v4p" systemname="ValuesPanel" filename="D:\_VVVV\_VL\User\PresetEngine\ValuesPanel.v4p" scrollx="0" scrolly="9720">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ValuesPanel.v4p" systemname="ValuesPanel" filename="D:\_VVVV\_VL\User\PresetEngine\ValuesPanel.v4p" scrollx="0" scrolly="2130">
    <NODE componentmode="InABox" id="0" nodename="IOBox (Color)" systemname="IOBox (Color)">
    <BOUNDS height="0" left="10890" top="3354" type="Node" width="0">
    </BOUNDS>
@@ -347,7 +347,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8880" top="5595" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.5">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.05">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -805,7 +805,7 @@
    <NODE systemname="Round (Value)" filename="%VVVV%\addonpack\lib\nodes\plugins\Round.dll" nodename="Round (Value)" componentmode="Hidden" id="91">
    <BOUNDS type="Node" left="4050" top="3675" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="Input" visible="1" slicecount="28" values="1,0,0,0.0190386045724154,0.5,0.75,0,0,0,0,0,0,0,0.00234607420861721,0.5,0.5,0.5,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Digits" slicecount="1" values="5">
    </PIN>
@@ -2710,52 +2710,6 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    </NODE>
-   <NODE componentmode="Hidden" id="395" nodename="Slider (GUI)" systemname="Slider (GUI)" filename="%VVVV%\addonpack\lib\nodes\plugins\Gui2d.dll">
-   <BOUNDS height="270" left="3090" top="7269" type="Node" width="8100">
-   </BOUNDS>
-   <BOUNDS height="0" left="3090" top="7269" type="Box" width="0">
-   </BOUNDS>
-   <BOUNDS height="0" left="2400" top="7080" type="Window" width="0">
-   </BOUNDS>
-   <PIN pinname="Internal Value" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
-   </PIN>
-   <PIN pinname="Color" visible="1">
-   </PIN>
-   <PIN pinname="Hit" visible="1">
-   </PIN>
-   <PIN pinname="Value Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="395" srcpinname="Transform Out" dstnodeid="4" dstpinname="Transform">
-   </LINK>
-   <LINK dstnodeid="395" dstpinname="Transform In" srcnodeid="1" srcpinname="Transform Out">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="395" dstpinname="Slider Size">
-   </LINK>
-   <LINK srcnodeid="15" srcpinname="XY" dstnodeid="395" dstpinname="CountXY">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="395" dstpinname="SizeXY">
-   </LINK>
-   <LINK srcnodeid="29" srcpinname="Output Node" dstnodeid="395" dstpinname="Mouse">
-   </LINK>
-   <LINK srcnodeid="395" srcpinname="Transform Out" dstnodeid="20" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="395" dstpinname="Slider Speed">
-   </LINK>
-   <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="395" dstpinname="Value Input">
-   </LINK>
-   <LINK srcnodeid="65" srcpinname="Output" dstnodeid="395" dstpinname="Set Value">
-   </LINK>
-   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="395" dstpinname="Slider Color">
-   </LINK>
-   <LINK srcnodeid="76" srcpinname="Output" dstnodeid="395" dstpinname="Mouse Over Color">
-   </LINK>
-   <LINK srcnodeid="76" srcpinname="Output" dstnodeid="395" dstpinname="Color">
-   </LINK>
-   <LINK srcnodeid="76" srcpinname="Output" dstnodeid="395" dstpinname="Activated Color">
-   </LINK>
-   <LINK srcnodeid="391" srcpinname="Y Output Value" dstnodeid="395" dstpinname="Is Long Slider">
-   </LINK>
    <NODE systemname="Slider (GUI)" filename="%VVVV%\addonpack\lib\nodes\plugins\Gui2d.dll" nodename="Slider (GUI)" componentmode="Hidden" id="396">
    <BOUNDS type="Node" left="28605" top="6360" width="100" height="100">
    </BOUNDS>
@@ -2853,7 +2807,7 @@
    <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="415">
    <BOUNDS type="Node" left="2910" top="16395" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="56" values="|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|">
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -2862,22 +2816,18 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="395" srcpinname="Color" dstnodeid="415" dstpinname="Input 1">
-   </LINK>
    <LINK srcnodeid="414" srcpinname="Output" dstnodeid="415" dstpinname="Switch">
    </LINK>
    <NODE systemname="Add (Color)" nodename="Add (Color)" componentmode="Hidden" id="416">
    <BOUNDS type="Node" left="3390" top="15975" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input2" visible="1">
+   <PIN pinname="Input2" visible="1" slicecount="56" values="|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|,|0.00000,0.00000,0.00000,0.29004|,|0.77201,0.77201,0.77201,0.33086|">
    </PIN>
    <PIN pinname="Input1" slicecount="1" visible="1" values="|0.87892,0.83319,1.00000,0.11677|">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="395" srcpinname="Color" dstnodeid="416" dstpinname="Input2">
-   </LINK>
    <LINK srcnodeid="416" srcpinname="Output" dstnodeid="415" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="415" srcpinname="Output" dstnodeid="4" dstpinname="Color">
@@ -3179,13 +3129,11 @@
    <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="436">
    <BOUNDS type="Node" left="14715" top="9210" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="395" srcpinname="Hit" dstnodeid="436" dstpinname="Input">
-   </LINK>
    <NODE systemname="OR (Boolean Spectral)" nodename="OR (Boolean Spectral)" componentmode="Hidden" id="437">
    <BOUNDS type="Node" left="15585" top="9150" width="100" height="100">
    </BOUNDS>
@@ -3279,16 +3227,14 @@
    </BOUNDS>
    <PIN pinname="SnapMap" visible="1">
    </PIN>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="Values" visible="1">
+   <PIN pinname="Values" visible="1" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    </NODE>
    <LINK srcnodeid="171" srcpinname="Output" dstnodeid="444" dstpinname="Preset">
    </LINK>
    <LINK srcnodeid="171" srcpinname="Output" dstnodeid="178" dstpinname="Input Value">
-   </LINK>
-   <LINK srcnodeid="395" srcpinname="Value Output" dstnodeid="444" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="444" srcpinname="Values" dstnodeid="266" dstpinname="Y Input Value">
    </LINK>
@@ -3441,5 +3387,53 @@
    <LINK srcnodeid="412" srcpinname="ToBlend" dstnodeid="465" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="465" srcpinname="Output" dstnodeid="414" dstpinname="Input">
+   </LINK>
+   <NODE componentmode="Hidden" id="471" nodename="Slider (GUI)" systemname="Slider (GUI)" filename="%VVVV%\addonpack\lib\nodes\plugins\Gui2d.dll">
+   <BOUNDS height="270" left="3090" top="7269" type="Node" width="8100">
+   </BOUNDS>
+   <BOUNDS height="0" left="3090" top="7269" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="2400" top="7080" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Internal Value" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="471" srcpinname="Transform Out" dstnodeid="4" dstpinname="Transform">
+   </LINK>
+   <LINK dstnodeid="471" dstpinname="Transform In" srcnodeid="1" srcpinname="Transform Out">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="471" dstpinname="Slider Size">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="XY" dstnodeid="471" dstpinname="CountXY">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="471" dstpinname="SizeXY">
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Output Node" dstnodeid="471" dstpinname="Mouse">
+   </LINK>
+   <LINK srcnodeid="471" srcpinname="Transform Out" dstnodeid="20" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="471" dstpinname="Slider Speed">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="471" dstpinname="Value Input">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Output" dstnodeid="471" dstpinname="Set Value">
+   </LINK>
+   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="471" dstpinname="Slider Color">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Output" dstnodeid="471" dstpinname="Mouse Over Color">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Output" dstnodeid="471" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="76" srcpinname="Output" dstnodeid="471" dstpinname="Activated Color">
+   </LINK>
+   <LINK srcnodeid="391" srcpinname="Y Output Value" dstnodeid="471" dstpinname="Is Long Slider">
+   </LINK>
+   <LINK srcnodeid="471" srcpinname="Color" dstnodeid="415" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="471" srcpinname="Color" dstnodeid="416" dstpinname="Input2">
+   </LINK>
+   <LINK srcnodeid="471" srcpinname="Hit" dstnodeid="436" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="471" srcpinname="Value Output" dstnodeid="444" dstpinname="Input">
    </LINK>
    </PATCH>

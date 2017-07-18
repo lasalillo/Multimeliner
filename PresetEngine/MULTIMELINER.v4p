@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" systemname="MULTIMELINER" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" scrollx="0" scrolly="0" bgcolor="11443049" locked="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" systemname="MULTIMELINER" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" scrollx="0" scrolly="360" bgcolor="11443049" locked="0">
    <BOUNDS type="Window" left="0" top="0" width="10500" height="9810">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -327,7 +327,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="4875" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.125">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.117">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1593,7 +1593,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3495" top="7050" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="1,2,10,18">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="1,2,10,20">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
