@@ -387,7 +387,7 @@
    </PIN>
    <PIN pinname="Change" visible="1">
    </PIN>
-   <PIN pinname="Index" visible="1" slicecount="1" values="11">
+   <PIN pinname="Index" visible="1" slicecount="1" values="13">
    </PIN>
    <PIN pinname="Insert" visible="1" slicecount="1" values="0">
    </PIN>
@@ -399,7 +399,7 @@
    </PIN>
    <PIN pinname="TrackName" visible="1">
    </PIN>
-   <PIN pinname="Destination" visible="1" slicecount="1" values="2">
+   <PIN pinname="Destination" visible="1" slicecount="1" values="15">
    </PIN>
    </NODE>
    <LINK srcnodeid="36" srcpinname="Y Output Value" dstnodeid="35" dstpinname="InsertOnIndex">
