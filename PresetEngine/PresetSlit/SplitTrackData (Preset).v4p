@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\PresetSplit\SplitTrackData (Preset).v4p" systemname="SplitTrackData (Preset)" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\PresetSplit\SplitTrackData (Preset).v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\PresetSlit\SplitTrackData (Preset).v4p" systemname="SplitTrackData (Preset)" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\PresetSplit\SplitTrackData (Preset).v4p" scrollx="0" scrolly="0">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3615" top="1590" width="285" height="660">
    </BOUNDS>
@@ -465,6 +465,8 @@
    </PIN>
    <PIN pinname="GroupID Bin Size" visible="1">
    </PIN>
+   <PIN pinname="SizeMulti" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="GroupID" dstnodeid="17" dstpinname="Y Input Value">
    </LINK>
@@ -549,5 +551,19 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="GroupID Bin Size" dstnodeid="36" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="37">
+   <BOUNDS type="Box" left="7005" top="6075" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7005" top="6075" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SizeMulti">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="SizeMulti" dstnodeid="37" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
