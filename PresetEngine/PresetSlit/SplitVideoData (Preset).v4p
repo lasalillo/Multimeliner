@@ -347,6 +347,8 @@
    </PIN>
    <PIN pinname="SizeMutiIndex" visible="1">
    </PIN>
+   <PIN pinname="AlphaInvertIndex" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="GroupID" dstnodeid="17" dstpinname="Y Input Value">
    </LINK>
@@ -363,8 +365,6 @@
    <LINK srcnodeid="6" srcpinname="Output" dstnodeid="34" dstpinname="PaletteCenterSizeIndex">
    </LINK>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="34" dstpinname="ColInvertIndex">
-   </LINK>
-   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="34" dstpinname="AlphaInvertIndex">
    </LINK>
    <LINK srcnodeid="34" srcpinname="ID" dstnodeid="18" dstpinname="Y Input Value">
    </LINK>
@@ -430,4 +430,6 @@
    </PACK>
    <PACK Name="ImagePack" Version="0.2.0">
    </PACK>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="34" dstpinname="AlphaInvertIndex">
+   </LINK>
    </PATCH>
