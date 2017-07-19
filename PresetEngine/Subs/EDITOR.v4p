@@ -190,7 +190,7 @@
    <LINKPOINT x="1755" y="2678">
    </LINKPOINT>
    </LINK>
-   <BOUNDS type="Window" left="10245" top="5970" width="7995" height="6315">
+   <BOUNDS type="Window" left="4755" top="5625" width="7995" height="6315">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -341,7 +341,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="930" top="4815" width="7785" height="6220">
    </BOUNDS>
-   <BOUNDS type="Window" left="990" top="5550" width="8670" height="6945">
+   <BOUNDS type="Window" left="11130" top="5925" width="8670" height="6945">
    </BOUNDS>
    <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="0">
    </PIN>

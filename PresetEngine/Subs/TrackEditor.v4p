@@ -643,7 +643,7 @@
    <LINK srcnodeid="62" srcpinname="Input Value" dstnodeid="63" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="64">
-   <BOUNDS type="Node" left="3405" top="45" width="100" height="100">
+   <BOUNDS type="Node" left="3390" top="15" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="ZoomFactor">
    </PIN>
@@ -661,7 +661,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="1.26">
+   <PIN pinname="Destination Minimum" slicecount="1" values="1.26" visible="1">
    </PIN>
    <PIN pinname="Destination Maximum" slicecount="1" visible="1" values="0">
    </PIN>
@@ -680,20 +680,8 @@
    </LINK>
    <LINK srcnodeid="66" srcpinname="Output 1" dstnodeid="61" dstpinname="Y Input Value">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="67">
-   <BOUNDS type="Box" left="4875" top="555" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="4875" top="555" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="64" srcpinname="Input Value" dstnodeid="67" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="Tweener (Value)" filename="%VVVV%\addonpack\lib\nodes\plugins\TweenerShaper.dll" nodename="Tweener (Value)" componentmode="Hidden" id="68">
-   <BOUNDS type="Node" left="2310" top="540" width="100" height="100">
+   <BOUNDS type="Node" left="3390" top="300" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Value Input" visible="1">
    </PIN>
@@ -707,20 +695,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="64" srcpinname="Input Value" dstnodeid="68" dstpinname="Value Input">
-   </LINK>
-   <NODE nodename="IOBox (String)" componentmode="InABox" id="69">
-   <BOUNDS type="Box" left="15" top="1245" width="2490" height="300">
-   </BOUNDS>
-   <BOUNDS type="Node" left="15" top="1245" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Default" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="File Mask" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="68" srcpinname="Used Transition TYPE" dstnodeid="69" dstpinname="Input String">
    </LINK>
    <LINK srcnodeid="68" srcpinname="Value Output" dstnodeid="65" dstpinname="Input">
    </LINK>
@@ -737,11 +711,11 @@
    <LINK srcnodeid="66" srcpinname="Output 1" dstnodeid="70" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="71">
-   <BOUNDS type="Box" left="5370" top="90" width="795" height="240">
+   <BOUNDS type="Box" left="6735" top="315" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5370" top="90" width="0" height="0">
+   <BOUNDS type="Node" left="6735" top="315" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.02">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -750,4 +724,46 @@
    </NODE>
    <LINK srcnodeid="71" srcpinname="Y Output Value" dstnodeid="65" dstpinname="Destination Maximum">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="72">
+   <BOUNDS type="Box" left="5820" top="300" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5820" top="300" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.26">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="72" srcpinname="Y Output Value" dstnodeid="65" dstpinname="Destination Minimum">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="73">
+   <BOUNDS type="Node" left="5835" top="525" width="735" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5835" top="525" width="735" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="MinSnap">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="74">
+   <BOUNDS type="Node" left="6690" top="555" width="1155" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6690" top="555" width="1155" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="MaxZoomSnap">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>

@@ -1235,7 +1235,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3825" top="6120" width="6105" height="7620">
    </BOUNDS>
-   <BOUNDS type="Window" left="10245" top="5970" width="7995" height="6315">
+   <BOUNDS type="Window" left="4755" top="5625" width="7995" height="6315">
    </BOUNDS>
    <PIN pinname="Reload" slicecount="1" visible="1" values="0">
    </PIN>

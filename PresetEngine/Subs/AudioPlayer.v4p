@@ -39,15 +39,15 @@
    </PIN>
    </NODE>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="3465" top="2715" width="100" height="100">
+   <BOUNDS type="Node" left="3465" top="3165" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
    <PIN pinname="Output 1" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="3465" top="3165">
+   </BOUNDS>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Inverse Output" dstnodeid="5" dstpinname="Input 1">
-   </LINK>
    <BOUNDS type="Window" left="4155" top="9870" width="8415" height="4995">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
@@ -75,9 +75,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11">
-   <BOUNDS type="Box" left="3495" top="3465" width="480" height="480">
+   <BOUNDS type="Box" left="3465" top="3915" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3495" top="3465" width="0" height="0">
+   <BOUNDS type="Node" left="3465" top="3915" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -93,7 +93,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="1785" top="840" width="100" height="100">
+   <BOUNDS type="Node" left="1815" top="615" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="Loop">
    </PIN>
@@ -105,7 +105,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="1035" top="240" width="100" height="100">
+   <BOUNDS type="Node" left="2700" top="525" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="LoopPoints">
    </PIN>
@@ -117,7 +117,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="19">
-   <BOUNDS type="Node" left="945" top="930" width="100" height="100">
+   <BOUNDS type="Node" left="2715" top="885" width="100" height="100">
    </BOUNDS>
    <PIN pinname="XY" visible="1">
    </PIN>
@@ -129,7 +129,7 @@
    <LINK srcnodeid="18" srcpinname="Input Value" dstnodeid="19" dstpinname="XY">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="225" top="285" width="100" height="100">
+   <BOUNDS type="Node" left="1155" top="150" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="Play">
    </PIN>
@@ -137,9 +137,11 @@
    </PIN>
    <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="2535" top="135" width="100" height="100">
+   <BOUNDS type="Node" left="2055" top="120" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="PlayerPointer">
    </PIN>
@@ -219,7 +221,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Substitute (String)" nodename="Substitute (String)" componentmode="Hidden" id="27">
-   <BOUNDS type="Node" left="4890" top="1965" width="100" height="100">
+   <BOUNDS type="Node" left="4470" top="1845" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -233,7 +235,7 @@
    <LINK srcnodeid="9" srcpinname="Output String" dstnodeid="27" dstpinname="Input">
    </LINK>
    <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="28">
-   <BOUNDS type="Node" left="4695" top="2475" width="100" height="100">
+   <BOUNDS type="Node" left="4845" top="2475" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -308,8 +310,6 @@
    </LINK>
    <LINK srcnodeid="21" srcpinname="Input Value" dstnodeid="0" dstpinname="Seek Time">
    </LINK>
-   <LINK srcnodeid="20" srcpinname="Input Value" dstnodeid="0" dstpinname="Play">
-   </LINK>
    <LINK srcnodeid="17" srcpinname="Input Value" dstnodeid="0" dstpinname="Loop">
    </LINK>
    <LINK srcnodeid="19" srcpinname="Y" dstnodeid="0" dstpinname="Loop End Time">
@@ -365,23 +365,59 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Play">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="32" dstpinname="Play">
    </LINK>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="34">
-   <BOUNDS type="Node" left="3465" top="3060" width="100" height="100">
+   <BOUNDS type="Node" left="3465" top="3510" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="3465" top="3510">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Output 1" dstnodeid="34" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="0" dstpinname="Do Seek">
-   <LINKPOINT x="4305" y="1350">
+   <LINKPOINT x="4290" y="1576">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="34" srcpinname="Output" dstnodeid="11" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="1515" top="1185" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Input Value" dstnodeid="35" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="0" dstpinname="Play">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="3465" top="2700" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Inverse Output" dstnodeid="36" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="5" dstpinname="Input 1">
    </LINK>
    </PATCH>

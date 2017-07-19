@@ -593,6 +593,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Loop">
    </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="92" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="1410" top="8925" width="795" height="240">
@@ -683,7 +685,7 @@
    <LINK srcnodeid="62" srcpinname="Length" dstnodeid="92" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="PlayerControls (Utilities TrackControls)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="PlayerControls (Utilities TrackControls)" componentmode="Hidden" id="21">
-   <BOUNDS type="Node" left="990" top="855" width="100" height="100">
+   <BOUNDS type="Node" left="1080" top="450" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
@@ -702,15 +704,11 @@
    </LINK>
    <LINK srcnodeid="21" srcpinname="Play" dstnodeid="44" dstpinname="Input">
    </LINK>
-   <LINK srcnodeid="21" srcpinname="Loop" dstnodeid="45" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="21" srcpinname="DoSeek" dstnodeid="46" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="21" srcpinname="DoSeekFromController" dstnodeid="47" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="53" srcpinname="Input Value" dstnodeid="21" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="Loop" dstnodeid="91" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="PlayerInterpol (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="PlayerInterpol (Preset)" componentmode="Hidden" id="93">
    <BOUNDS type="Node" left="780" top="7620" width="100" height="100">
@@ -1151,7 +1149,7 @@
    <LINK srcnodeid="142" srcpinname="Output" dstnodeid="141" dstpinname="Destination Maximum">
    </LINK>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="143">
-   <BOUNDS type="Node" left="2790" top="6675" width="100" height="100">
+   <BOUNDS type="Node" left="2790" top="6690" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1165,8 +1163,6 @@
    <LINK srcnodeid="141" srcpinname="Output" dstnodeid="143" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="38" srcpinname="Output" dstnodeid="143" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="Loop" dstnodeid="143" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="143" srcpinname="Output" dstnodeid="98" dstpinname="Seek Time">
    </LINK>
@@ -1191,5 +1187,43 @@
    <LINK srcnodeid="2" srcpinname="X" dstnodeid="141" dstpinname="Source Minimum">
    </LINK>
    <LINK srcnodeid="2" srcpinname="X" dstnodeid="141" dstpinname="Destination Minimum">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="146">
+   <BOUNDS type="Node" left="1200" top="990" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="147">
+   <BOUNDS type="Node" left="2940" top="135" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="SetValues">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="148">
+   <BOUNDS type="Node" left="2790" top="615" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="147" srcpinname="Input Value" dstnodeid="148" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="148" srcpinname="Output" dstnodeid="146" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Loop" dstnodeid="146" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="146" srcpinname="Output" dstnodeid="91" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="146" srcpinname="Output" dstnodeid="45" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="146" srcpinname="Output" dstnodeid="143" dstpinname="Switch">
    </LINK>
    </PATCH>

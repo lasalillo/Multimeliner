@@ -183,13 +183,13 @@
    <LINK srcnodeid="44" srcpinname="Output" dstnodeid="3" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="45">
-   <BOUNDS type="Node" left="1950" top="1320" width="100" height="100">
+   <BOUNDS type="Node" left="2025" top="1350" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="1950" top="1320">
+   <BOUNDS type="Box" left="2025" top="1350">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="45" srcpinname="Output" dstnodeid="41" dstpinname="Input">
@@ -721,7 +721,7 @@
    </PIN>
    <PIN pinname="EaseInOut" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Position" visible="1" slicecount="1" values="0">
+   <PIN pinname="Position" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Current" visible="1">
    </PIN>
@@ -749,6 +749,22 @@
    </PIN>
    <PIN pinname="Last" visible="1">
    </PIN>
+   <PIN pinname="Play" visible="1">
+   </PIN>
+   <PIN pinname="Loop" visible="1">
+   </PIN>
+   <PIN pinname="Loop Start" visible="1">
+   </PIN>
+   <PIN pinname="Loop End" visible="1">
+   </PIN>
+   <PIN pinname="Seek Time" visible="1">
+   </PIN>
+   <PIN pinname="Seek" visible="1">
+   </PIN>
+   <PIN pinname="Length" visible="1">
+   </PIN>
+   <PIN pinname="Clock" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="76" srcpinname="Output" dstnodeid="93" dstpinname="List">
    </LINK>
@@ -769,40 +785,6 @@
    <LINK srcnodeid="93" srcpinname="Index" dstnodeid="48" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="93" srcpinname="CountPerID" dstnodeid="49" dstpinname="Input">
-   </LINK>
-   <NODE systemname="PlayClock (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="PlayClock (Preset)" componentmode="Hidden" id="98">
-   <BOUNDS type="Node" left="2385" top="7260" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Clock" visible="1" slicecount="1" values="27.3986697873779">
-   </PIN>
-   <PIN pinname="Play" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Seek" visible="1">
-   </PIN>
-   <PIN pinname="Length" visible="1">
-   </PIN>
-   <PIN pinname="Loop" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Loop End" visible="1">
-   </PIN>
-   <PIN pinname="Loop Start" visible="1">
-   </PIN>
-   <PIN pinname="Seek Time" visible="1">
-   </PIN>
-   <PIN pinname="Result" visible="1">
-   </PIN>
-   <PIN pinname="Position" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="72" srcpinname="Output" dstnodeid="98" dstpinname="Length">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="Y" dstnodeid="98" dstpinname="Loop End">
-   </LINK>
-   <LINK srcnodeid="2" srcpinname="X" dstnodeid="98" dstpinname="Loop Start">
-   </LINK>
-   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="98" dstpinname="Loop">
-   </LINK>
-   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="98" dstpinname="Play">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="112" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3990" top="4530" width="480" height="480">
@@ -828,14 +810,10 @@
    </NODE>
    <LINK srcnodeid="46" srcpinname="Output" dstnodeid="112" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="112" srcpinname="Y Output Value" dstnodeid="98" dstpinname="Seek">
-   </LINK>
-   <LINK srcnodeid="98" srcpinname="Position" dstnodeid="93" dstpinname="Position">
-   </LINK>
    <NODE systemname="ClockGen" filename="ClockGen.v4p" nodename="ClockGen.v4p" componentmode="Hidden" id="114" managers="">
-   <BOUNDS type="Node" left="3541" top="6943" width="0" height="0">
+   <BOUNDS type="Node" left="3421" top="7168" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1201" top="4753" width="4680" height="4380">
+   <BOUNDS type="Box" left="1081" top="4978" width="4680" height="4380">
    </BOUNDS>
    <BOUNDS type="Window" left="-1" top="-1" width="4680" height="4380">
    </BOUNDS>
@@ -846,18 +824,6 @@
    <PIN pinname="SeekTime" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="114" srcpinname="Clock" dstnodeid="98" dstpinname="Clock">
-   </LINK>
-   <LINK srcnodeid="98" srcpinname="Position" dstnodeid="114" dstpinname="Position">
-   <LINKPOINT x="3798" y="7701">
-   </LINKPOINT>
-   <LINKPOINT x="4716" y="7377">
-   </LINKPOINT>
-   <LINKPOINT x="4734" y="6363">
-   </LINKPOINT>
-   <LINKPOINT x="4062" y="6384">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="46" srcpinname="Output" dstnodeid="114" dstpinname="Seek">
    </LINK>
    <NODE systemname="GetStatus (Utilities PlayerList)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="GetStatus (Utilities PlayerList)" componentmode="Hidden" id="118">
@@ -927,7 +893,7 @@
    <LINK srcnodeid="121" srcpinname="Output" dstnodeid="120" dstpinname="Input">
    </LINK>
    <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="124">
-   <BOUNDS type="Node" left="5640" top="7455" width="100" height="100">
+   <BOUNDS type="Node" left="2445" top="9000" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="MorphList">
    </PIN>
@@ -1164,8 +1130,6 @@
    </LINK>
    <LINK srcnodeid="38" srcpinname="Output" dstnodeid="143" dstpinname="Input 1">
    </LINK>
-   <LINK srcnodeid="143" srcpinname="Output" dstnodeid="98" dstpinname="Seek Time">
-   </LINK>
    <LINK srcnodeid="143" srcpinname="Output" dstnodeid="114" dstpinname="SeekTime">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="145">
@@ -1225,5 +1189,27 @@
    <LINK srcnodeid="146" srcpinname="Output" dstnodeid="45" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="146" srcpinname="Output" dstnodeid="143" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="93" dstpinname="Play">
+   </LINK>
+   <LINK srcnodeid="45" srcpinname="Output" dstnodeid="93" dstpinname="Loop">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="X" dstnodeid="93" dstpinname="Loop Start">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y" dstnodeid="93" dstpinname="Loop End">
+   </LINK>
+   <LINK srcnodeid="143" srcpinname="Output" dstnodeid="93" dstpinname="Seek Time">
+   </LINK>
+   <LINK srcnodeid="112" srcpinname="Y Output Value" dstnodeid="93" dstpinname="Seek">
+   </LINK>
+   <LINK srcnodeid="72" srcpinname="Output" dstnodeid="93" dstpinname="Length">
+   </LINK>
+   <LINK srcnodeid="114" srcpinname="Clock" dstnodeid="93" dstpinname="Clock">
+   </LINK>
+   <LINK srcnodeid="93" srcpinname="Position" dstnodeid="114" dstpinname="Position">
+   <LINKPOINT x="5110" y="7910">
+   </LINKPOINT>
+   <LINKPOINT x="4625" y="6700">
+   </LINKPOINT>
    </LINK>
    </PATCH>

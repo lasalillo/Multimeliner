@@ -1071,7 +1071,7 @@
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="207">
    <BOUNDS type="Node" left="2100" top="5280" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input Value" visible="1" slicecount="6" values="0,1.5,-2,2,-2,2">
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="SnapMap">
    </PIN>
