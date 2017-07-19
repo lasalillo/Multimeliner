@@ -11174,12 +11174,6 @@
               <Pin Id="RfM0LmyqigyMiIHAAK0jDm" Name="Index" Kind="OutputPin" />
               <Pin Id="BJMHmDFSJHVP1cuPUoRadK" Name="Pointer" Kind="InputPin" />
             </Node>
-            <Pad Id="LCiFOMRqYbdMLSo9m7hQ9U" Comment="Offset" Bounds="1519,238,6,0" ShowValueBox="true" isIOBox="true" Value="0.25">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
-                <Choice Kind="TypeFlag" Name="Float32" />
-                <CategoryReference Kind="Category" Name="Primitive" />
-              </p:TypeAnnotation>
-            </Pad>
             <Pad Id="HUiwiRBtzSeL8EjJ3KNMoI" Bounds="445,1413,38,38" ShowValueBox="true" isIOBox="true" />
             <Pad Id="AwWEjUBrAyxP1QFghrQdRj" SlotId="DBxm9gCcMneNrgraKQdmUZ" Bounds="140,2504">
               <p:ValueBoxSettings />
