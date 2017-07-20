@@ -1209,7 +1209,7 @@
    <LINK srcnodeid="25" srcpinname="Input Value" dstnodeid="177" dstpinname="Set">
    </LINK>
    <NODE systemname="MixerParametersSnap" filename="MixerParametersSnap.v4p" nodename="MixerParametersSnap.v4p" componentmode="Hidden" id="204">
-   <BOUNDS type="Node" left="480" top="4560" width="100" height="100">
+   <BOUNDS type="Node" left="480" top="4485" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Preset" visible="1" slicecount="1" values="||">
    </PIN>

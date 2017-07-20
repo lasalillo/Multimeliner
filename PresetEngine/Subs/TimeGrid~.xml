@@ -3977,6 +3977,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Mapping" slicecount="1" values="Clamp">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="411">
    <BOUNDS type="Box" left="1140" top="4305" width="795" height="240">

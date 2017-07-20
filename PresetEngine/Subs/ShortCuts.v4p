@@ -3,9 +3,9 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Node" left="270" top="225" width="2985" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="270" top="225" width="3465" height="4500">
+   <BOUNDS type="Box" left="270" top="225" width="3450" height="4710">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|CONTROLS:&cr;&lf;LB=Move pointer&cr;&lf;RB=SelectTrack&cr;&lf;A+RB=AddCue&cr;&lf;C+RB+MO=CopySelectedCue&cr;&lf;D+RB+MO=DeleteCue&cr;&lf;M+RB+MO=MoveCue (+Shift=Snap)&cr;&lf;F+Wheel+MO=EditFadeTime&cr;&lf;Alt+N+MO=EditCueName (Enter=Save)&cr;&lf;Alt+V+MO=EditValues (Enter=Save)&cr;&lf;Shift+T=EditTrackName (Enter=Save)&cr;&lf;Wheel=Zoom (+Shift faster)&cr;&lf;RB+Move=HZ Scroll  (+Shift faster)&cr;&lf;Wheel=VT Scroll&cr;&lf;Space=Play/Stop&cr;&lf;L+Shift=Loop ON/OFF&cr;&lf;L+LB/RB=EditLoopPoints&cr;&lf;|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|CONTROLS:&cr;&lf;LB=Move pointer&cr;&lf;RB=SelectTrack&cr;&lf;A+RB=AddCue&cr;&lf;C+RB+MO=CopySelectedCue&cr;&lf;D+RB+MO=DeleteCue&cr;&lf;M+RB+MO=MoveCue (+Shift=Snap)&cr;&lf;F+Wheel+MO=EditFadeTime&cr;&lf;Alt+N+MO=EditCueName (Enter=Save)&cr;&lf;Alt+V+MO=EditValues (Enter=Save)&cr;&lf;Shift+T=EditTrackName (Enter=Save)&cr;&lf;Wheel=Zoom (+Shift faster)&cr;&lf;RB+Move=HZ Scroll  (+Shift faster)&cr;&lf;Wheel=VT Scroll&cr;&lf;Space=Play/Stop&cr;&lf;L+Shift=Loop ON/OFF&cr;&lf;L+LB/RB=EditLoopPoints&cr;&lf;Tab=FollowPointer&cr;&lf;|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
@@ -23,9 +23,9 @@
    </PIN>
    </NODE>
    <NODE id="1" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="1" managers="">
-   <BOUNDS type="Node" left="255" top="4965" width="1635" height="270">
+   <BOUNDS type="Node" left="255" top="5415" width="1635" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="255" top="4965" width="4605" height="2340">
+   <BOUNDS type="Box" left="255" top="5415" width="4605" height="2340">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" pintype="Input" slicecount="1" values="|To do:&cr;&lf;Only controller enable (and gui) Mode, not player data and,&cr;&lf;Save all tracks State&cr;&lf;Init Track&cr;&lf;AutoSave&cr;&lf;Different Values bin size per track&cr;&lf;Interpolation mode per cue&cr;&lf;Live recording every n frames&cr;&lf;Panel to Enable Interpol by track, and add to the globals.&cr;&lf;|">
    </PIN>
@@ -72,7 +72,7 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <BOUNDS type="Window" left="0" top="9705" width="10575" height="5520">
+   <BOUNDS type="Window" left="0" top="9840" width="10575" height="5760">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>

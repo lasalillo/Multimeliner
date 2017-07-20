@@ -23,9 +23,9 @@
    </PIN>
    </NODE>
    <NODE systemname="ReceiveLaunchPad" filename="ReceiveLaunchPad.v4p" nodename="Subs\ReceiveLaunchPad.v4p" componentmode="Hidden" id="1">
-   <BOUNDS type="Node" left="2007" top="2492" width="2160" height="270">
+   <BOUNDS type="Node" left="1992" top="2417" width="2160" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="735" top="570" width="11335" height="8310">
+   <BOUNDS type="Box" left="720" top="495" width="11335" height="8310">
    </BOUNDS>
    <BOUNDS type="Window" left="12180" top="5910" width="11325" height="8310">
    </BOUNDS>
@@ -191,9 +191,11 @@
    </PIN>
    <PIN pinname="Controls" visible="1">
    </PIN>
-   <PIN pinname="FollowPointer" visible="1">
+   <PIN pinname="FollowPointer" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="EditMulti" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="GoToInit" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Controls" dstnodeid="7" dstpinname="Input Value">
@@ -220,8 +222,6 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Play" dstnodeid="2" dstpinname="Play">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="GoToInit" dstnodeid="2" dstpinname="GoToInit">
-   </LINK>
    <LINK srcnodeid="1" srcpinname="Loop" dstnodeid="2" dstpinname="Loop">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="2" dstpinname="End">
@@ -243,7 +243,7 @@
    </PIN>
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="FollowPointer">
    </PIN>
@@ -251,5 +251,39 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="2" dstpinname="FollowPointer">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="3585" top="2805" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="GoToInit" dstnodeid="14" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Output" dstnodeid="2" dstpinname="GoToInit">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15">
+   <BOUNDS type="Box" left="3240" top="900" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3240" top="900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="GoToInit">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="14" dstpinname="Input 2">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\TimeGrid.v4p" systemname="TimeGrid" filename="D:\_VVVV\_VL\User\TrackEdit\TimeGrid.v4p" scrollx="0" scrolly="5745">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\TimeGrid.v4p" systemname="TimeGrid" filename="D:\_VVVV\_VL\User\TrackEdit\TimeGrid.v4p" scrollx="13755" scrolly="870">
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2490" top="6495" width="100" height="100">
    </BOUNDS>
@@ -944,6 +944,8 @@
    <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="119">
@@ -2149,17 +2151,15 @@
    <LINK srcnodeid="200" srcpinname="XY" dstnodeid="202" dstpinname="TranslateXY">
    </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="199">
-   <BOUNDS type="Box" left="30480" top="9570" width="1140" height="315">
+   <BOUNDS type="Box" left="32385" top="6315" width="1140" height="315">
    </BOUNDS>
-   <BOUNDS type="Node" left="30480" top="9570" width="0" height="0">
+   <BOUNDS type="Node" left="32385" top="6315" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,0.48377,0.20944,1.00000|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="199" srcpinname="Color Output" dstnodeid="213" dstpinname="Color">
-   </LINK>
    <LINK srcnodeid="206" srcpinname="Output" dstnodeid="200" dstpinname="X">
    </LINK>
    <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="198" debug="0">
@@ -2191,8 +2191,6 @@
    <LINK srcnodeid="205" srcpinname="Layer" dstnodeid="214" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="214" srcpinname="Layer Out" dstnodeid="153" dstpinname="Layer 3">
-   </LINK>
-   <LINK srcnodeid="199" srcpinname="Color Output" dstnodeid="205" dstpinname="Color">
    </LINK>
    <NODE id="215" systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" hiddenwhenlocked="0" managers="" debug="0">
    <BOUNDS type="Node" left="24630" top="11385" width="100" height="100">
@@ -3337,6 +3335,8 @@
    </PIN>
    <PIN pinname="CopyMulti" visible="1">
    </PIN>
+   <PIN pinname="FolowPointer" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="112" srcpinname="TracksTransform Bin Size" dstnodeid="115" dstpinname="Spread Count">
    </LINK>
@@ -3709,6 +3709,8 @@
    </BOUNDS>
    <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.14456,0.58934,1.00000,1.00000|">
    </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="384" srcpinname="Color Output" dstnodeid="383" dstpinname="Input 2">
    </LINK>
@@ -3885,6 +3887,8 @@
    </PIN>
    <PIN pinname="Color" slicecount="1" visible="1" values="|0.62187,0.62187,0.62187,1.00000|">
    </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="393" srcpinname="Output" dstnodeid="392" dstpinname="Transform">
    </LINK>
@@ -4059,5 +4063,45 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="415" srcpinname="Y Output Value" dstnodeid="416" dstpinname="Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="417">
+   <BOUNDS type="Box" left="31665" top="5865" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="31665" top="5865" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="112" srcpinname="FolowPointer" dstnodeid="417" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="418">
+   <BOUNDS type="Node" left="31605" top="7290" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="199" srcpinname="Color Output" dstnodeid="418" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="417" srcpinname="Y Output Value" dstnodeid="418" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="418" srcpinname="Output" dstnodeid="213" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="418" srcpinname="Output" dstnodeid="205" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="384" srcpinname="Color Output" dstnodeid="418" dstpinname="Input 2">
    </LINK>
    </PATCH>

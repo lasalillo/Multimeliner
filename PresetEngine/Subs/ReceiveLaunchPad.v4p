@@ -293,7 +293,7 @@
    </PIN>
    </NODE>
    <NODE id="20" systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="6285" top="5370" width="100" height="100">
+   <BOUNDS type="Node" left="6285" top="5820" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
@@ -313,7 +313,7 @@
    </PIN>
    </NODE>
    <NODE id="21" systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="6585" top="4950" width="100" height="100">
+   <BOUNDS type="Node" left="6645" top="5055" width="100" height="100">
    </BOUNDS>
    <PIN pinname="OnChange" visible="1" pintype="Output">
    </PIN>
@@ -329,7 +329,7 @@
    </PIN>
    </NODE>
    <NODE id="22" systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="2085" top="4425" width="100" height="100">
+   <BOUNDS type="Node" left="4950" top="5895" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Switch" visible="1" slicecount="1" pintype="Input" values="0">
    </PIN>
@@ -351,9 +351,9 @@
    </PIN>
    </NODE>
    <NODE id="23" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Box" left="9900" top="6630" width="480" height="480">
+   <BOUNDS type="Box" left="8985" top="6585" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="9900" top="6630" width="0" height="0">
+   <BOUNDS type="Node" left="8985" top="6585" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" visible="1" slicecount="1" pintype="Input" values="0">
    </PIN>
@@ -536,7 +536,7 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="OnChange" dstnodeid="4" dstpinname="Input 1">
    </LINK>
-   <BOUNDS type="Window" left="12180" top="5910" width="11325" height="8310">
+   <BOUNDS type="Window" left="12180" top="5910" width="13740" height="8310">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -621,9 +621,9 @@
    <LINK srcnodeid="38" srcpinname="Down Edge" dstnodeid="41" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="44">
-   <BOUNDS type="Box" left="8985" top="6630" width="480" height="480">
+   <BOUNDS type="Box" left="9825" top="6675" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="8985" top="6630" width="0" height="0">
+   <BOUNDS type="Node" left="9825" top="6675" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -703,8 +703,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="78" srcpinname="Y Output Value" dstnodeid="75" dstpinname="Input 2">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="OnChange" dstnodeid="20" dstpinname="Input 2">
    </LINK>
    <NODE systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" id="82">
    <BOUNDS type="Node" left="9150" top="4140" width="100" height="100">
@@ -810,12 +808,10 @@
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output" dstnodeid="0" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="21" srcpinname="OnChange" dstnodeid="44" dstpinname="Y Input Value">
-   </LINK>
    <NODE id="93" systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Node" left="6525" top="4575" width="100" height="100">
+   <BOUNDS type="Node" left="6645" top="4575" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="6525" top="4575" width="2400" height="1800">
+   <BOUNDS type="Box" left="6645" top="4575" width="2400" height="1800">
    </BOUNDS>
    <PIN pinname="Output 1" visible="1" pintype="Output">
    </PIN>
@@ -841,8 +837,6 @@
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="93" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="93" srcpinname="Output 1" dstnodeid="21" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="21" srcpinname="OnChange" dstnodeid="22" dstpinname="Switch">
    </LINK>
    <NODE id="94" systemname="FrameDelay (Value)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (Value)" componentmode="Hidden">
    <BOUNDS type="Node" left="2340" top="3855" width="100" height="100">
@@ -1039,5 +1033,59 @@
    <LINK srcnodeid="90" srcpinname="Input Value" dstnodeid="99" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="99" srcpinname="Output 1" dstnodeid="88" dstpinname="TrackID">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100">
+   <BOUNDS type="Box" left="3240" top="4815" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3240" top="4815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Click" dstnodeid="100" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="102">
+   <BOUNDS type="Box" left="9030" top="525" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9030" top="525" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="GoToInit">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="103">
+   <BOUNDS type="Node" left="6675" top="5385" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="OnChange" dstnodeid="103" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="103" srcpinname="Output" dstnodeid="44" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="103" srcpinname="Output" dstnodeid="20" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="103" srcpinname="Output" dstnodeid="22" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="102" srcpinname="Y Output Value" dstnodeid="103" dstpinname="Input 2">
    </LINK>
    </PATCH>

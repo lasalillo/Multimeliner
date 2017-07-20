@@ -47,9 +47,9 @@
    <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="46" dstpinname="EnableColor">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
-   <BOUNDS type="Box" left="5445" top="3165" width="795" height="240">
+   <BOUNDS type="Box" left="2475" top="3135" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5445" top="3165" width="0" height="0">
+   <BOUNDS type="Node" left="2475" top="3135" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -59,9 +59,9 @@
    </PIN>
    </NODE>
    <NODE systemname="SnapParameters" filename="SnapParameters.v4p" nodename="SnapParameters.v4p" componentmode="Hidden" id="57">
-   <BOUNDS type="Node" left="1237" top="1416" width="4305" height="270">
+   <BOUNDS type="Node" left="832" top="1791" width="1650" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="0" width="9700" height="8140">
+   <BOUNDS type="Box" left="0" top="375" width="9700" height="8140">
    </BOUNDS>
    <BOUNDS type="Window" left="12330" top="5385" width="13425" height="9270">
    </BOUNDS>
@@ -101,9 +101,9 @@
    <LINK srcnodeid="57" srcpinname="ColorIndices" dstnodeid="46" dstpinname="ColorIndices">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="58">
-   <BOUNDS type="Box" left="750" top="780" width="795" height="240">
+   <BOUNDS type="Box" left="540" top="990" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="750" top="780" width="0" height="0">
+   <BOUNDS type="Node" left="540" top="990" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -113,9 +113,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="59">
-   <BOUNDS type="Box" left="810" top="3420" width="795" height="240">
+   <BOUNDS type="Box" left="510" top="3120" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="810" top="3420" width="0" height="0">
+   <BOUNDS type="Node" left="510" top="3120" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="Preset">
    </PIN>
