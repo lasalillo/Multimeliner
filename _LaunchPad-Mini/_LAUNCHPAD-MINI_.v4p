@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\_LaunchPad-Mini\_LAUNCHPAD-MINI_.v4p" scrollx="0" scrolly="5760" systemname="_LAUNCHPAD-MINI_" filename="D:\_VVVV\_VL\User\PresetEngine\_LaunchPad-Mini\_LAUNCHPAD-MINI_.v4p" bgcolor="15132390" locked="0">
-   <BOUNDS type="Window" left="16665" top="2055" width="10455" height="10260">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\_LaunchPad-Mini\_LAUNCHPAD-MINI_.v4p" scrollx="0" scrolly="0" systemname="_LAUNCHPAD-MINI_" filename="D:\_VVVV\_VL\User\PresetEngine\_LaunchPad-Mini\_LAUNCHPAD-MINI_.v4p" bgcolor="15132390" locked="0">
+   <BOUNDS type="Window" left="3795" top="4965" width="17640" height="10260">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -971,7 +971,7 @@
    <LINK srcnodeid="835" srcpinname="Z" dstnodeid="844" dstpinname="Down">
    </LINK>
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="846">
-   <BOUNDS type="Node" left="9270" top="5070" width="100" height="100">
+   <BOUNDS type="Node" left="8430" top="4635" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -1411,7 +1411,7 @@
    <LINK srcnodeid="841" srcpinname="Loop" dstnodeid="881" dstpinname="Y Input Value">
    </LINK>
    <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="882">
-   <BOUNDS type="Node" left="9405" top="4020" width="100" height="100">
+   <BOUNDS type="Node" left="9345" top="5040" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1514,8 +1514,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="882" srcpinname="Output" dstnodeid="889" dstpinname="Up">
-   </LINK>
    <LINK srcnodeid="883" srcpinname="Output" dstnodeid="888" dstpinname="Up">
    </LINK>
    <LINK srcnodeid="889" srcpinname="Output" dstnodeid="840" dstpinname="Play">
@@ -1569,8 +1567,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="894" srcpinname="Y Output Value" dstnodeid="893" dstpinname="Index">
-   </LINK>
-   <LINK srcnodeid="893" srcpinname="Output" dstnodeid="878" dstpinname="Up">
    </LINK>
    <LINK srcnodeid="736" srcpinname="EditValues" dstnodeid="840" dstpinname="EditValues">
    </LINK>
@@ -2173,5 +2169,127 @@
    <LINK srcnodeid="934" srcpinname="Output" dstnodeid="902" dstpinname="Input 3">
    </LINK>
    <LINK srcnodeid="786" srcpinname="Down Edge" dstnodeid="920" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="936">
+   <BOUNDS type="Box" left="11505" top="9525" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11505" top="9525" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="889" srcpinname="Output" dstnodeid="936" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="937">
+   <BOUNDS type="Node" left="9420" top="5715" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="882" srcpinname="Output" dstnodeid="937" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="937" srcpinname="Output" dstnodeid="889" dstpinname="Up">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="938">
+   <BOUNDS type="Node" left="11475" top="4725" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="PlayFromLaunchControl">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PlayFromLaunchControl">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="939">
+   <BOUNDS type="Box" left="13125" top="3120" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13125" top="3120" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="841" srcpinname="Play" dstnodeid="939" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="940">
+   <BOUNDS type="Node" left="13095" top="3870" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="PLAY">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="939" srcpinname="Y Output Value" dstnodeid="940" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="AND (Boolean)" nodename="AND (Boolean)" componentmode="Hidden" id="942">
+   <BOUNDS type="Node" left="11100" top="5430" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="938" srcpinname="Input Value" dstnodeid="942" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="943">
+   <BOUNDS type="Node" left="10905" top="4710" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="841" srcpinname="EditValues" dstnodeid="943" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="943" srcpinname="Output" dstnodeid="942" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="942" srcpinname="Output" dstnodeid="937" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="944">
+   <BOUNDS type="Node" left="10140" top="6015" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="893" srcpinname="Output" dstnodeid="944" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="944" srcpinname="Output" dstnodeid="878" dstpinname="Up">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="945">
+   <BOUNDS type="Node" left="11910" top="5760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="GoToInitFromLaunchControl">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="GoToInitFromLaunchControl">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="945" srcpinname="Input Value" dstnodeid="944" dstpinname="Input 2">
    </LINK>
    </PATCH>

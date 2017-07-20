@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\_LaunchPad-Mini\_CUES_Control.v4p" systemname="_CUES_Control" filename="D:\_ElbePhilharmonie\TEST\_Timeliner\_LaunchPad-Mini\_CUES_Control.v4p" scrollx="180" scrolly="0">
    <BOUNDS type="Window" left="3930" top="5085" width="6675" height="11130">
    </BOUNDS>
@@ -79,9 +79,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="475" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3450" top="1620" width="480" height="480">
+   <BOUNDS type="Box" left="3405" top="1860" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3450" top="1620" width="0" height="0">
+   <BOUNDS type="Node" left="3405" top="1860" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -570,22 +570,6 @@
    </NODE>
    <LINK srcnodeid="518" srcpinname="Y Output Value" dstnodeid="82" dstpinname="Exit">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="519">
-   <BOUNDS type="Box" left="2370" top="2430" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2370" top="2430" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="41">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="519" srcpinname="Y Output Value" dstnodeid="82" dstpinname="LightColor">
-   </LINK>
    <NODE systemname="Blinker (Animation)" nodename="Blinker (Animation)" componentmode="Hidden" id="520">
    <BOUNDS type="Node" left="1740" top="2805" width="100" height="100">
    </BOUNDS>
@@ -679,5 +663,29 @@
    <LINK srcnodeid="497" srcpinname="Y Output Value" dstnodeid="527" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="527" srcpinname="Output" dstnodeid="82" dstpinname="EditValues">
+   </LINK>
+   <NODE id="528" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <PIN pinname="Y Input Value" slicecount="64" visible="1" values="33,33,80,45,43,45,43,45,43,45,43,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41">
+   </PIN>
+   <BOUNDS type="Box" left="2295" top="195" width="2550" height="1425">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2295" top="195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="8">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="528" srcpinname="Y Output Value" dstnodeid="82" dstpinname="LightColor">
    </LINK>
    </PATCH>

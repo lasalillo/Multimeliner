@@ -21,7 +21,7 @@
    </PIN>
    <PIN pinname="Out" visible="1" slicecount="1" values="||">
    </PIN>
-   <BOUNDS type="Window" left="3795" top="4965" width="10455" height="10260">
+   <BOUNDS type="Window" left="3795" top="4965" width="17640" height="10260">
    </BOUNDS>
    <PIN pinname="Port" visible="1" slicecount="1" values="9999">
    </PIN>
@@ -143,9 +143,9 @@
    <NODE systemname="_MAIN_LaunchControlXL" filename="..\_LaunchControlXL\_MAIN_LaunchControlXL.v4p" nodename="..\_LaunchControlXL\_MAIN_LaunchControlXL.v4p" componentmode="Hidden" id="96" debug="0">
    <BOUNDS type="Node" left="756" top="2984" width="1965" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="0" top="90" width="15025" height="14140">
+   <BOUNDS type="Box" left="15" top="90" width="15025" height="14140">
    </BOUNDS>
-   <BOUNDS type="Window" left="4590" top="4035" width="15015" height="14130">
+   <BOUNDS type="Window" left="9735" top="2520" width="22875" height="14130">
    </BOUNDS>
    <PIN pinname="Update" visible="1">
    </PIN>
@@ -349,7 +349,7 @@
    <LINK srcnodeid="96" srcpinname="UpDwLR" dstnodeid="1" dstpinname="UpDwLR" linkstyle="Bezier">
    <LINKPOINT x="10" y="3065">
    </LINKPOINT>
-   <LINKPOINT x="5" y="1870">
+   <LINKPOINT x="10" y="1870">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="109">

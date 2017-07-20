@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.1.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\_LaunchPad-Mini\modules\_PRESETS_PAGE.v4p" systemname="_PRESETS_PAGE" filename="D:\_ElbePhilharmonie\TEST\_Timeliner\_LaunchPad-Mini\_VideoMixer\_PRESETS_PAGE.v4p" scrollx="0" scrolly="0">
    <NODE systemname="GT (Value)" nodename="GT (Value)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2010" top="3855" width="100" height="100">
@@ -2051,9 +2051,9 @@
    <LINK srcnodeid="348" srcpinname="Y Output Value" dstnodeid="345" dstpinname="Bin Size">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="349" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="11715" top="9255" width="795" height="240">
+   <BOUNDS type="Box" left="11565" top="4125" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="11715" top="9255" width="0" height="0">
+   <BOUNDS type="Node" left="11565" top="4125" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="13">
    </PIN>
@@ -2108,28 +2108,6 @@
    </NODE>
    <LINK srcnodeid="352" srcpinname="Y Output Value" dstnodeid="351" dstpinname="Input">
    </LINK>
-   <NODE id="335" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
-   <PIN pinname="Y Input Value" slicecount="64" visible="1" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,1,1">
-   </PIN>
-   <BOUNDS type="Box" left="8760" top="11820" width="2205" height="2160">
-   </BOUNDS>
-   <BOUNDS type="Node" left="8760" top="11820" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Columns" slicecount="1" values="8">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="8">
-   </PIN>
-   </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="353">
    <BOUNDS type="Node" left="10980" top="5160" width="100" height="100">
    </BOUNDS>
