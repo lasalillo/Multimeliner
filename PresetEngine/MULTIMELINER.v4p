@@ -117,6 +117,8 @@
    </PIN>
    <PIN pinname="InitialFadeTime" visible="1">
    </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="600" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="1650" top="5625" width="795" height="240">
@@ -132,7 +134,7 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="MorphTime">
    </PIN>
    </NODE>
-   <LINK srcnodeid="600" srcpinname="Y Output Value" dstnodeid="598" dstpinname="MorphTime" linkstyle="VHV">
+   <LINK srcnodeid="600" srcpinname="Y Output Value" dstnodeid="598" dstpinname="MorphTime" linkstyle="VHV" hiddenwhenlocked="1">
    <LINKPOINT x="1665" y="5993">
    </LINKPOINT>
    <LINKPOINT x="1605" y="5993">
@@ -158,7 +160,7 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="601" srcpinname="Y Output Value" dstnodeid="598" dstpinname="Soft" linkstyle="VHV">
+   <LINK srcnodeid="601" srcpinname="Y Output Value" dstnodeid="598" dstpinname="Soft" linkstyle="VHV" hiddenwhenlocked="1">
    <LINKPOINT x="1215" y="5993">
    </LINKPOINT>
    <LINKPOINT x="1080" y="5993">
@@ -184,7 +186,7 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="603" srcpinname="Y Output Value" dstnodeid="598" dstpinname="GetController" linkstyle="VHV">
+   <LINK srcnodeid="603" srcpinname="Y Output Value" dstnodeid="598" dstpinname="GetController" linkstyle="VHV" hiddenwhenlocked="1">
    <LINKPOINT x="540" y="5985">
    </LINKPOINT>
    <LINKPOINT x="540" y="5985">
@@ -1692,6 +1694,12 @@
    <LINKPOINT x="1385" y="3693">
    </LINKPOINT>
    <LINKPOINT x="1270" y="3673">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="596" srcpinname="Y Output Value" dstnodeid="598" dstpinname="Receive" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="600" y="4665">
+   </LINKPOINT>
+   <LINKPOINT x="2025" y="4665">
    </LINKPOINT>
    </LINK>
    </PATCH>

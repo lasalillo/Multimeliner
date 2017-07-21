@@ -301,11 +301,13 @@
    </PIN>
    <PIN pinname="FadeTime" visible="1">
    </PIN>
+   <PIN pinname="Enable" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="8280" top="825" width="795" height="240">
+   <BOUNDS type="Box" left="8475" top="825" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8280" top="825" width="0" height="0">
+   <BOUNDS type="Node" left="8475" top="825" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10003">
    </PIN>
@@ -419,15 +421,15 @@
    </BOUNDS>
    <PIN pinname="Server" visible="1">
    </PIN>
-   <PIN pinname="Enable" slicecount="1" values="1">
+   <PIN pinname="Enable" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="OnData" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39">
-   <BOUNDS type="Box" left="9300" top="840" width="780" height="240">
+   <BOUNDS type="Box" left="10050" top="825" width="720" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="9300" top="840" width="0" height="0">
+   <BOUNDS type="Node" left="10050" top="825" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10004">
    </PIN>
@@ -441,9 +443,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Port" linkstyle="VHV">
-   <LINKPOINT x="9090" y="3260">
+   <LINKPOINT x="9590" y="3240">
    </LINKPOINT>
-   <LINKPOINT x="8730" y="3115">
+   <LINKPOINT x="8980" y="3105">
    </LINKPOINT>
    </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="40">
@@ -669,9 +671,9 @@
    <LINK srcnodeid="177" srcpinname="Output" dstnodeid="6" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="178">
-   <BOUNDS type="Box" left="6705" top="825" width="795" height="240">
+   <BOUNDS type="Box" left="8370" top="210" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6705" top="825" width="0" height="0">
+   <BOUNDS type="Node" left="8370" top="210" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="127.0.0.1">
    </PIN>
@@ -757,9 +759,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="183">
-   <BOUNDS type="Box" left="7530" top="1275" width="795" height="240">
+   <BOUNDS type="Box" left="7950" top="1395" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7530" top="1275" width="0" height="0">
+   <BOUNDS type="Node" left="7950" top="1395" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -1229,5 +1231,39 @@
    <LINK srcnodeid="204" srcpinname="SnapMap" dstnodeid="207" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="208" srcpinname="Y Output Value" dstnodeid="204" dstpinname="Enable">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="217">
+   <BOUNDS type="Box" left="7560" top="195" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7560" top="195" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Receive">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="218">
+   <BOUNDS type="Node" left="7560" top="780" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Simulate" visible="1">
+   </PIN>
+   <PIN pinname="Bang" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="217" srcpinname="Y Output Value" dstnodeid="218" dstpinname="Simulate">
+   </LINK>
+   <LINK srcnodeid="218" srcpinname="Bang" dstnodeid="27" dstpinname="Enable">
+   </LINK>
+   <LINK srcnodeid="218" srcpinname="Bang" dstnodeid="38" dstpinname="Enable">
    </LINK>
    </PATCH>
