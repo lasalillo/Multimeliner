@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MergeGUI-Controller.v4p" systemname="MergeGUI-Controller" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MergeGUI-Controller.v4p" scrollx="0" scrolly="-360" bgcolor="6126557">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MergeGUI-Controller.v4p" systemname="MergeGUI-Controller" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\MergeGUI-Controller.v4p" scrollx="0" scrolly="0" bgcolor="6126557">
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="0" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="390" top="1680" width="795" height="240">
    </BOUNDS>
@@ -456,14 +456,6 @@
    <PIN pinname="Send String" slicecount="1" values="MasterChannel">
    </PIN>
    </NODE>
-   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="61">
-   <BOUNDS type="Node" left="1650" top="6135" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Send String" slicecount="1" values="ListToContent">
-   </PIN>
-   </NODE>
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="63">
    <BOUNDS type="Node" left="5865" top="4935" width="100" height="100">
    </BOUNDS>
@@ -702,24 +694,6 @@
    </NODE>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="179" dstpinname="Simulate">
    </LINK>
-   <NODE systemname="SetSlice (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="SetSlice (Preset)" componentmode="Hidden" id="156">
-   <BOUNDS type="Node" left="1665" top="5730" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Index" visible="1">
-   </PIN>
-   <PIN pinname="Data" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="List" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="156" dstpinname="Index" linkstyle="Bezier">
-   <LINKPOINT x="3090" y="2908">
-   </LINKPOINT>
-   <LINKPOINT x="2505" y="3318">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="156" srcpinname="List" dstnodeid="61" dstpinname="Input Value">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="180">
    <BOUNDS type="Box" left="9255" top="3345" width="615" height="1155">
    </BOUNDS>
@@ -852,8 +826,6 @@
    </LINK>
    <LINK srcnodeid="27" srcpinname="Output" dstnodeid="35" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="15" srcpinname="Input Value" dstnodeid="156" dstpinname="List">
-   </LINK>
    <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="0" dstpinname="Input Node">
    </LINK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="192">
@@ -941,8 +913,6 @@
    <LINK srcnodeid="161" srcpinname="Y Output Value" dstnodeid="195" dstpinname="HardReset">
    </LINK>
    <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="195" dstpinname="Data1">
-   </LINK>
-   <LINK srcnodeid="195" srcpinname="Data" dstnodeid="156" dstpinname="Data">
    </LINK>
    <LINK srcnodeid="185" srcpinname="Output" dstnodeid="194" dstpinname="Soft">
    </LINK>
@@ -1265,5 +1235,81 @@
    <LINK srcnodeid="218" srcpinname="Bang" dstnodeid="27" dstpinname="Enable">
    </LINK>
    <LINK srcnodeid="218" srcpinname="Bang" dstnodeid="38" dstpinname="Enable">
+   </LINK>
+   <NODE id="61" systemname="S (Node)" nodename="S (Node)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1680" top="6525" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="ListToContent">
+   </PIN>
+   </NODE>
+   <NODE id="156" systemname="SetSlice (Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="SetSlice (Preset)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1815" top="5745" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Data" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="List" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="List Bin Size" visible="1" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="195" srcpinname="Data" dstnodeid="156" dstpinname="Data">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Input Value" dstnodeid="156" dstpinname="List">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="156" dstpinname="Index" linkstyle="Bezier">
+   <LINKPOINT x="3140" y="2913">
+   </LINKPOINT>
+   <LINKPOINT x="2605" y="3328">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="219">
+   <BOUNDS type="Node" left="2910" top="750" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="MonoFlop (Animation Framebased)" filename="%VVVV%\addonpack\lib\nodes\plugins\MonoFlop.dll" nodename="MonoFlop (Animation Framebased)" componentmode="Hidden" id="220">
+   <BOUNDS type="Node" left="2880" top="1110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Frames" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="2880" top="1110">
+   </BOUNDS>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Input Value" dstnodeid="219" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="219" srcpinname="OnChange" dstnodeid="220" dstpinname="Set">
+   </LINK>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="222">
+   <BOUNDS type="Node" left="1710" top="6135" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="156" srcpinname="List" dstnodeid="222" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="222" srcpinname="Output" dstnodeid="61" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Input Value" dstnodeid="222" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="220" srcpinname="Output" dstnodeid="222" dstpinname="Switch">
    </LINK>
    </PATCH>

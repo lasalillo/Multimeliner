@@ -497,7 +497,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3915" top="8520" width="7755" height="5205">
    </BOUNDS>
-   <BOUNDS type="Window" left="285" top="3075" width="12525" height="8550">
+   <BOUNDS type="Window" left="8490" top="5685" width="12525" height="8550">
    </BOUNDS>
    <PIN pinname="ToContent" visible="1">
    </PIN>
