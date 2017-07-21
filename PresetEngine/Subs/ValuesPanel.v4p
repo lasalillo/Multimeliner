@@ -365,7 +365,7 @@
    </PIN>
    <PIN pinname="CountXY" visible="1">
    </PIN>
-   <PIN pinname="Internal Value" slicecount="7" values="0,0,0,0,0,0,0">
+   <PIN pinname="Internal Value" slicecount="14" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
@@ -1101,7 +1101,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Input 2" visible="1">
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -3395,7 +3395,7 @@
    </BOUNDS>
    <BOUNDS height="0" left="2400" top="7080" type="Window" width="0">
    </BOUNDS>
-   <PIN pinname="Internal Value" slicecount="7" values="0,0,0,0,0,0,0">
+   <PIN pinname="Internal Value" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    </NODE>
    <LINK srcnodeid="471" srcpinname="Transform Out" dstnodeid="4" dstpinname="Transform">

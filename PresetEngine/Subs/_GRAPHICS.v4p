@@ -281,13 +281,13 @@
    </BOUNDS>
    <BOUNDS type="Window" left="3990" top="8145" width="13350" height="8295">
    </BOUNDS>
-   <PIN pinname="TranslateY" visible="1" slicecount="1" values="0.61">
+   <PIN pinname="TranslateY" visible="1" slicecount="1" values="0.6">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
    <PIN pinname="Transform Out" visible="1">
    </PIN>
-   <PIN pinname="TranslateX" visible="1" slicecount="1" values="0.956">
+   <PIN pinname="TranslateX" visible="1" slicecount="1" values="0.922">
    </PIN>
    </NODE>
    <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="0" dstpinname="Layer 5">
