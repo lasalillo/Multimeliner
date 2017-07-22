@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\_LaunchControlXL\_MAIN_LaunchControlXL.v4p" systemname="_MAIN_LaunchControlXL" filename="D:\_MULTIMELINER\_LaunchControlXL\_MAIN_LaunchControlXL.v4p" scrollx="795" scrolly="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\_LaunchControlXL\_MAIN_LaunchControlXL.v4p" systemname="_MAIN_LaunchControlXL" filename="D:\_MULTIMELINER\_LaunchControlXL\_MAIN_LaunchControlXL.v4p" scrollx="5400" scrolly="0">
    <NODE systemname="_LaunchControlXL_MidiIn" filename="_LaunchControlXL_MidiIn.v4p" nodename="..\_LaunchControlXL\_LaunchControlXL_MidiIn.v4p" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="9630" top="945" width="100" height="100">
    </BOUNDS>
@@ -889,7 +889,7 @@
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="65">
    <BOUNDS type="Node" left="9285" top="5505" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="0" visible="1">
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -1111,9 +1111,9 @@
    <LINK srcnodeid="37" srcpinname="Output" dstnodeid="79" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="81">
-   <BOUNDS type="Box" left="1125" top="12510" width="795" height="240">
+   <BOUNDS type="Box" left="1305" top="480" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1125" top="12510" width="0" height="0">
+   <BOUNDS type="Node" left="1305" top="480" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="127.0.0.1">
    </PIN>
@@ -1148,6 +1148,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="71" dstpinname="Enable">
@@ -1883,6 +1885,8 @@
    </PIN>
    <PIN pinname="Enable" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Server" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="136">
    <BOUNDS type="Box" left="16215" top="7710" width="780" height="255">
@@ -1928,6 +1932,8 @@
    <PIN pinname="Port" slicecount="1" visible="1" values="10005">
    </PIN>
    <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Server" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="139">
@@ -2165,9 +2171,9 @@
    <LINK srcnodeid="166" srcpinname="Y Output Value" dstnodeid="24" dstpinname="Input 2">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="167">
-   <BOUNDS type="Box" left="20040" top="1230" width="480" height="1395">
+   <BOUNDS type="Box" left="21870" top="1095" width="480" height="1395">
    </BOUNDS>
-   <BOUNDS type="Node" left="20040" top="1230" width="0" height="0">
+   <BOUNDS type="Node" left="21870" top="1095" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2299,11 +2305,13 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <BOUNDS type="Box" left="18210" top="2055">
+   </BOUNDS>
    </NODE>
    <LINK srcnodeid="177" srcpinname="Output" dstnodeid="178" dstpinname="Set">
    </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="180">
-   <BOUNDS type="Node" left="18180" top="2505" width="100" height="100">
+   <BOUNDS type="Node" left="18210" top="2505" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
@@ -2311,7 +2319,7 @@
    </PIN>
    </NODE>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="179">
-   <BOUNDS type="Node" left="18180" top="2865" width="100" height="100">
+   <BOUNDS type="Node" left="18210" top="2865" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input Value" visible="1">
    </PIN>
@@ -2473,5 +2481,61 @@
    <LINK srcnodeid="80" srcpinname="Output" dstnodeid="55" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="80" srcpinname="Output" dstnodeid="57" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="197">
+   <BOUNDS type="Box" left="12570" top="120" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12570" top="120" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="127.0.0.1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Server">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="81" srcpinname="Output String" dstnodeid="135" dstpinname="Server">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Output String" dstnodeid="138" dstpinname="Server">
+   </LINK>
+   <LINK srcnodeid="81" srcpinname="Output String" dstnodeid="4" dstpinname="Server">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="199">
+   <BOUNDS type="Node" left="20715" top="2475" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="198">
+   <BOUNDS type="Node" left="20715" top="2835" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="GoToPointerFromLaunchControl">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="199" srcpinname="Up Edge" dstnodeid="198" dstpinname="Input Value">
+   </LINK>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="203">
+   <BOUNDS type="Node" left="19755" top="1530" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="SideButtons" dstnodeid="203" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="203" srcpinname="Output" dstnodeid="199" dstpinname="Input">
    </LINK>
    </PATCH>

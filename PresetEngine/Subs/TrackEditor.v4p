@@ -202,7 +202,7 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="ScaleY">
    </LINK>
-   <BOUNDS type="Window" left="2460" top="2250" width="8670" height="6945">
+   <BOUNDS type="Window" left="11130" top="5925" width="8670" height="6945">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -247,7 +247,7 @@
    </PIN>
    <PIN pinname="SetDefault" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Snap" visible="1" slicecount="1" values="1.18224298295125">
+   <PIN pinname="Snap" visible="1" slicecount="1" values="0.0999739453125001">
    </PIN>
    <PIN pinname="OnCue" visible="1">
    </PIN>
@@ -598,18 +598,6 @@
    </NODE>
    <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="35" dstpinname="Destination">
    </LINK>
-   <NODE systemname="FrameDelay (Globals)" filename="FrameDelay (Globals).v4p" nodename="FrameDelay (Globals).v4p" componentmode="Hidden" id="60">
-   <BOUNDS type="Node" left="4805" top="4500" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="3195" top="2658" width="3220" height="3685">
-   </BOUNDS>
-   <BOUNDS type="Window" left="7515" top="10020" width="4515" height="5835">
-   </BOUNDS>
-   <PIN pinname="Globals" visible="1" slicecount="1" values="||">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="60" srcpinname="Globals" dstnodeid="47" dstpinname="Input Value">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="61">
    <BOUNDS type="Box" left="3480" top="2535" width="795" height="240">
    </BOUNDS>
@@ -760,6 +748,16 @@
    </NODE>
    <LINK srcnodeid="20" srcpinname="MouseOnCue" dstnodeid="75" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="35" srcpinname="Globals" dstnodeid="60" dstpinname="Globals">
+   <NODE systemname="FrameDelay (Globals)" filename="FrameDelay (Globals).v4p" nodename="FrameDelay (Globals).v4p" componentmode="Hidden" id="76">
+   <BOUNDS type="Node" left="4805" top="4500" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3195" top="2658" width="3220" height="3685">
+   </BOUNDS>
+   <BOUNDS type="Window" left="7515" top="10020" width="4515" height="5835">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="76" srcpinname="Globals" dstnodeid="47" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Globals" dstnodeid="76" dstpinname="Globals">
    </LINK>
    </PATCH>

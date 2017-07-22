@@ -22,7 +22,7 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="EditEnable">
    </PIN>
    </NODE>
-   <NODE systemname="ReceiveLaunchPad" filename="ReceiveLaunchPad.v4p" nodename="Subs\ReceiveLaunchPad.v4p" componentmode="Hidden" id="1">
+   <NODE systemname="ReceiveLaunchPad" filename="ReceiveLaunchPad.v4p" nodename="Subs\ReceiveLaunchPad.v4p" componentmode="InAWindow" id="1">
    <BOUNDS type="Node" left="1512" top="2642" width="1935" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="240" top="720" width="11335" height="8310">
@@ -56,6 +56,8 @@
    <PIN pinname="Server" visible="1">
    </PIN>
    <PIN pinname="Enable" visible="1">
+   </PIN>
+   <PIN pinname="GoToPointer" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
@@ -213,6 +215,8 @@
    </PIN>
    <PIN pinname="MouseOnCue" visible="1">
    </PIN>
+   <PIN pinname="GoToIPointer" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Controls" dstnodeid="7" dstpinname="Input Value">
    </LINK>
@@ -287,5 +291,7 @@
    <LINK srcnodeid="24" srcpinname="Input Value" dstnodeid="25" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="25" srcpinname="Output 1" dstnodeid="22" dstpinname="MouseOnCue">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="GoToPointer" dstnodeid="22" dstpinname="GoToIPointer">
    </LINK>
    </PATCH>
