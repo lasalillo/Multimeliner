@@ -10120,7 +10120,7 @@
               <Pin Id="O9lrEyM9OQTQFZwksWzZgr" Name="Transform" Kind="InputPin" />
               <Pin Id="HImCSWzcTUVPg11bkbUO6w" Name="Output" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="SqfZvlaoZYVNQTZ2c7Gu8c" Bounds="-908,290" />
+            <ControlPoint Id="SqfZvlaoZYVNQTZ2c7Gu8c" Bounds="-872,-121" />
             <Node Bounds="-912,367,35,13" Id="Maeq1DHAH1ANBZl28xZp8z">
               <p:NodeReference LastCategoryFullName="3D.Matrix" LastSymbolSource="SharpDX.Mathematics.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -11982,7 +11982,7 @@
               <Pin Id="OPYuy4iTNlXPT4ro6J2O8K" Name="Sample" Kind="InputPin" />
               <Pin Id="SHiwycUQUA9NqeDHNiGwX6" Name="Value" Kind="OutputPin" />
             </Node>
-            <Node Bounds="38,1070,30,13" Id="QLu7m2FZRJIOVp37IDNGrA">
+            <Node Bounds="-39,1071,-65,13" Id="QLu7m2FZRJIOVp37IDNGrA">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CommonLanguageRuntimeLibrary">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="AND" />
@@ -11990,6 +11990,7 @@
               <Pin Id="K54gTyVbUMbQaPk6Y0pKKN" Name="Input" Kind="InputPin" />
               <Pin Id="PQvF234PTYFNbSE86n1vHE" Name="Input 2" Kind="InputPin" />
               <Pin Id="IgRvjNfv6eFOlViNW3FBUD" Name="Output" Kind="OutputPin" />
+              <Pin Id="RszgVqrVE6fPgKEOMQ84Fo" Name="Input 3" Kind="InputPin" />
             </Node>
             <Node Bounds="1591,661,48,13" Id="JXza4HVtaHpM1FSwprqXlF">
               <p:NodeReference LastCategoryFullName="VVVV.Preset" LastSymbolSource="VVVV.Value.PresetEngine.vl">
@@ -12223,7 +12224,7 @@
             <Pad Id="KmK0jbiVqobQAD3KMdB6hu" SlotId="C9N3BAjgz4BNmYCxi5Lcc1" Bounds="1611,578">
               <p:ValueBoxSettings />
             </Pad>
-            <Pad Id="DySh6BSN9oMMsGvJz7J6Kr" Comment="FollowPointer" Bounds="-116,40,40,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="DySh6BSN9oMMsGvJz7J6Kr" Comment="FollowPointer" Bounds="-129,43,40,19" ShowValueBox="true" isIOBox="true" />
             <Node Bounds="419,15,25,13" Id="CMniQDb9C5KNSQLLH291p5">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CommonLanguageRuntimeLibrary">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -12331,6 +12332,50 @@
             <ControlPoint Id="FgxBPRon6pRK9vXRgIqfxf" Bounds="-133,2863" />
             <Pad Id="Do4TrujyPtHQFfSrB3wBJL" Bounds="-549,1472,45,19" ShowValueBox="true" isIOBox="true" />
             <Pad Id="GGvJkBPQF7UOsPWwt2RmUm" Comment="XYPoints" Bounds="-374,2031,38,38" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="25,887,29,13" Id="N535nFCjEvyMNcYnTu52SV">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CommonLanguageRuntimeLibrary">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="NOT" />
+              </p:NodeReference>
+              <Pin Id="VTTtQnaNjktLfbtaVVrv1P" Name="Input" Kind="InputPin" />
+              <Pin Id="O9bjoUSJSI8QGI04GYSlhB" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="29,797,25,13" Id="JzNyA1r45txPFqegHzDyyr">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CommonLanguageRuntimeLibrary">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="OR" />
+              </p:NodeReference>
+              <Pin Id="PQmotHiMoGWMVktdnp989u" Name="Input" Kind="InputPin" />
+              <Pin Id="AlrXAIXafXUNNX6rHBDiCO" Name="Input 2" Kind="InputPin" />
+              <Pin Id="BGVci6Sxr41QDFu68vog6W" Name="Output" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="67,829,71,13" Id="BVL3iHvWP8pLmNzpAcBAbJ">
+              <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="MonoFlop (FrameBased)" />
+              </p:NodeReference>
+              <Pin Id="SI1mtmcigS4OAaXgjWpqzj" Name="Set" Kind="InputPin" />
+              <Pin Id="HnXHvBpXqTSLuGSnkvkg8q" Name="Reset" Kind="InputPin" />
+              <Pin Id="NGoDSyHt3K2OHjeFeByixS" Name="Frames" Kind="InputPin" />
+              <Pin Id="G9hpNjaU81oMUecoMUd6yx" Name="Retriggerable" Kind="InputPin" />
+              <Pin Id="NNVD1XMnyM3O9PxBSHrBK4" Name="Value" Kind="OutputPin" />
+              <Pin Id="IrmvCSU6MxONNBsHDYgT3j" Name="Inverse Output" Kind="OutputPin" />
+            </Node>
+            <Pad Id="Po5LPhbt3UpPhr2UW2T8K3" Comment="Frames" Bounds="239,716,24,19" ShowValueBox="true" isIOBox="true" Value="10">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Integer32" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Node Bounds="53,765,30,13" Id="SNF06iu2wMvMkx2aCljfgm">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CommonLanguageRuntimeLibrary">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="AND" />
+              </p:NodeReference>
+              <Pin Id="EgUWYrS9ybbPJegTBhhQjz" Name="Input" Kind="InputPin" />
+              <Pin Id="PTuJdbRH8ZMLhJlorBoNRO" Name="Input 2" Kind="InputPin" />
+              <Pin Id="LIDnOoYw8igM6Z7aRHH28d" Name="Output" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <ProcessDefinition Id="B6JYGXHDPllLMD6Y63ozxf">
             <Fragment Id="VpohWHZHb3NMuJ7vuYoE1x" Patch="DLWBd2T9saCQTq4mvhGzlc" Enabled="true" />
@@ -12830,6 +12875,14 @@
           <Link Id="D3nlQQxORUGOXF8Ur1rpcb" Ids="KK78hGWyMoQOaPLMisExuS,B9Efs5KVwI5MhfaoTdKgOS" />
           <Link Id="RPu5bbMjeBPNZOjomT6Jaf" Ids="Ar3whAVySteLXUam4qngA5,ITKz3ZP3cGKPh8QTS8uVs8" />
           <Link Id="J3d5eraRuHpNh1DWPC1aVh" Ids="KK78hGWyMoQOaPLMisExuS,GGvJkBPQF7UOsPWwt2RmUm" />
+          <Link Id="LMH1fx9ms9WOSs6xrsHXK0" Ids="Fbod0gEGBC3N25L4az7z6B,PQmotHiMoGWMVktdnp989u" />
+          <Link Id="NZchDG7yHnhNGSysXNCs07" Ids="Po5LPhbt3UpPhr2UW2T8K3,NGoDSyHt3K2OHjeFeByixS" />
+          <Link Id="FkLTKoazuCFPPp5HverQoC" Ids="O9bjoUSJSI8QGI04GYSlhB,RszgVqrVE6fPgKEOMQ84Fo" />
+          <Link Id="Ejl0FtCmhVhOIYMpLTSsas" Ids="BGVci6Sxr41QDFu68vog6W,SI1mtmcigS4OAaXgjWpqzj" />
+          <Link Id="Ic6bi9A8CXtPYq2UO0J1WY" Ids="NNVD1XMnyM3O9PxBSHrBK4,VTTtQnaNjktLfbtaVVrv1P" />
+          <Link Id="IY1geUzPCzvQKGWjLjPF0V" Ids="E8qojJjniVZLmkTTbu1ak0,PTuJdbRH8ZMLhJlorBoNRO" />
+          <Link Id="OduVhHanC5jQWOBFqXc92w" Ids="Kk8ht7j96wYQBZwMasp8SN,EgUWYrS9ybbPJegTBhhQjz" />
+          <Link Id="RedupB0bdqZOrd6Bt6fa2x" Ids="LIDnOoYw8igM6Z7aRHH28d,AlrXAIXafXUNNX6rHBDiCO" />
         </Patch>
       </Node>
       <!--
@@ -15398,7 +15451,7 @@
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="1651,950,70,13" Id="M7ezzfXGzolM24De5Agl2x">
+            <Node Bounds="1639,953,70,13" Id="M7ezzfXGzolM24De5Agl2x">
               <p:NodeReference LastCategoryFullName="IO.Keyboard" LastSymbolSource="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessNode" Name="KeyMatch" />
@@ -15589,7 +15642,7 @@
               <Pin Id="D5XoYicY78TLqhHV10dN4y" Name="Result" Kind="OutputPin" />
               <Pin Id="IITqY8mA77rNImnlmVWxtm" Name="Unchanged" Kind="OutputPin" />
             </Node>
-            <Node Bounds="1760,1127,145,13" Id="DLWY7lLpuEKQXwUZ27LIEv">
+            <Node Bounds="1760,1120,145,13" Id="DLWY7lLpuEKQXwUZ27LIEv">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CommonLanguageRuntimeLibrary">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationNode" Name="OR" />
@@ -16623,7 +16676,7 @@
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:TypeAnnotation>
             </Pad>
-            <Node Bounds="2048,848" Id="EDARiBusQnzOZMEqxcwm6Y">
+            <Node Bounds="1685,1472,65,13" Id="EDARiBusQnzOZMEqxcwm6Y">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CommonLanguageRuntimeLibrary">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="AND" />
@@ -16631,6 +16684,8 @@
               <Pin Id="RLksTkEVkHxP32Da7rfRwg" Name="Input" Kind="InputPin" />
               <Pin Id="SaATqPtPR78LtTycwOL9sZ" Name="Input 2" Kind="InputPin" />
               <Pin Id="NEYigXSpDVpNfIVdf2TGsW" Name="Output" Kind="OutputPin" />
+              <Pin Id="TuD2P4wHAb4OwGDltvz3Ej" Name="Input 3" Kind="InputPin" />
+              <Pin Id="BDqK10B8FiBPPcpaD7fJZ3" Name="Input 4" Kind="InputPin" />
             </Node>
             <Node Bounds="2015,645" Id="ShU6RcAFbVzNJIdyPXPCGi">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CommonLanguageRuntimeLibrary">

@@ -219,7 +219,7 @@
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="48">
    <BOUNDS type="Node" left="2175" top="8115" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="15" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="Input" visible="1" slicecount="23" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -229,7 +229,7 @@
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="49">
    <BOUNDS type="Node" left="5685" top="8040" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="15" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="Input" visible="1" slicecount="23" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -325,7 +325,7 @@
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="58">
    <BOUNDS type="Node" left="2340" top="9360" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input Value" visible="1" slicecount="15" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="Input Value" visible="1" slicecount="23" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="Fade">
    </PIN>
@@ -609,7 +609,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Join (Utilities Track)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Join (Utilities Track)" componentmode="Hidden" id="86">
-   <BOUNDS type="Node" left="1485" top="3360" width="100" height="100">
+   <BOUNDS type="Node" left="1455" top="3420" width="100" height="100">
    </BOUNDS>
    <PIN pinname="TrackInfo" visible="1">
    </PIN>
@@ -717,7 +717,7 @@
    </PIN>
    <PIN pinname="ToggleInterp Bin Size" visible="1" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="ToggleInterp" visible="1" slicecount="1" values="0">
+   <PIN pinname="ToggleInterp" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="EaseInOut" visible="1" slicecount="1" values="0">
    </PIN>
@@ -733,7 +733,7 @@
    </PIN>
    <PIN pinname="CountPerID" visible="1">
    </PIN>
-   <PIN pinname="EnableInterpol" slicecount="1" visible="1" values="0">
+   <PIN pinname="EnableInterpol" slicecount="28" visible="1" values="1,1,1,0,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1">
    </PIN>
    <PIN pinname="InterpolMode" visible="1" slicecount="28" values="2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
@@ -749,21 +749,21 @@
    </PIN>
    <PIN pinname="Last" visible="1">
    </PIN>
-   <PIN pinname="Play" visible="1">
+   <PIN pinname="Play" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Loop" visible="1">
+   <PIN pinname="Loop" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Loop Start" visible="1">
+   <PIN pinname="Loop Start" visible="1" slicecount="1" values="198.14421081543">
    </PIN>
-   <PIN pinname="Loop End" visible="1">
+   <PIN pinname="Loop End" visible="1" slicecount="1" values="225.881378173828">
    </PIN>
-   <PIN pinname="Seek Time" visible="1">
+   <PIN pinname="Seek Time" visible="1" slicecount="1" values="356.600006103516">
    </PIN>
-   <PIN pinname="Seek" visible="1">
+   <PIN pinname="Seek" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Length" visible="1">
+   <PIN pinname="Length" visible="1" slicecount="1" values="356.600006103516">
    </PIN>
-   <PIN pinname="Clock" visible="1">
+   <PIN pinname="Clock" visible="1" slicecount="1" values="356.642903403516">
    </PIN>
    </NODE>
    <LINK srcnodeid="76" srcpinname="Output" dstnodeid="93" dstpinname="List">
@@ -817,7 +817,7 @@
    </BOUNDS>
    <BOUNDS type="Window" left="-1" top="-1" width="4680" height="4380">
    </BOUNDS>
-   <PIN pinname="Position" visible="1">
+   <PIN pinname="Position" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Clock" visible="1">
    </PIN>
@@ -829,7 +829,7 @@
    <NODE systemname="GetStatus (Utilities PlayerList)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="GetStatus (Utilities PlayerList)" componentmode="Hidden" id="118">
    <BOUNDS type="Node" left="3270" top="7980" width="1350" height="270">
    </BOUNDS>
-   <PIN pinname="PlayerList" visible="1">
+   <PIN pinname="PlayerList" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="TimeToNext" visible="1">
    </PIN>
@@ -897,7 +897,7 @@
    </BOUNDS>
    <PIN pinname="Send String" slicecount="1" values="MorphList">
    </PIN>
-   <PIN pinname="Input Value" visible="1">
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="93" srcpinname="MorphList" dstnodeid="124" dstpinname="Input Value">
@@ -975,7 +975,7 @@
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="134">
    <BOUNDS type="Node" left="4920" top="4095" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="XY" visible="1">
+   <PIN pinname="XY" visible="1" slicecount="2" values="0,0">
    </PIN>
    <PIN pinname="X" visible="1">
    </PIN>

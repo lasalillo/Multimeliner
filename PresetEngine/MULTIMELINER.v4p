@@ -653,7 +653,7 @@
    <LINK srcnodeid="633" srcpinname="FPS" dstnodeid="662" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="667">
-   <BOUNDS type="Box" left="5745" top="7095" width="4215" height="870">
+   <BOUNDS type="Box" left="5745" top="7095" width="4875" height="825">
    </BOUNDS>
    <BOUNDS type="Node" left="5745" top="7095" width="0" height="0">
    </BOUNDS>
@@ -882,28 +882,10 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE id="709" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" stayontop="0" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="480" top="8145" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="480" top="8145" width="6000" height="4500">
-   </BOUNDS>
-   <BOUNDS type="Window" left="-26940" top="1995" width="18480" height="11805">
-   </BOUNDS>
-   <PIN pinname="AA Samples per Pixel" slicecount="1" visible="1" values="4">
-   </PIN>
-   <PIN pinname="Fullscreen" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Enable Depth Buffer" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <NODE id="707" systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="480" top="8520" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input Value" visible="1" slicecount="1" values="393302">
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="67000">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="WindowHandle">
    </PIN>
@@ -933,7 +915,7 @@
    <NODE id="7" systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="1650" top="8520" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input Value" visible="1" slicecount="2" values="1220,998">
+   <PIN pinname="Input Value" visible="1" slicecount="2" values="1216,748">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="R">
    </PIN>
@@ -947,7 +929,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1" pintype="Output">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" pintype="Configuration" values="||">
    </PIN>
@@ -959,7 +941,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="ShowLabels">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" pintype="Input" visible="-1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" pintype="Input" visible="-1" values="0">
    </PIN>
    <BOUNDS type="Window" left="0" top="0" width="0" height="0">
    </BOUNDS>
@@ -1064,10 +1046,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="574" srcpinname="Input Value" dstnodeid="709" dstpinname="View" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="608" srcpinname="Layer Out" dstnodeid="709" dstpinname="Layers" hiddenwhenlocked="0">
-   </LINK>
    <LINK srcnodeid="669" srcpinname="Y Output Value" dstnodeid="608" dstpinname="ShowValues" linkstyle="VHV">
    <LINKPOINT x="2550" y="7500">
    </LINKPOINT>
@@ -1084,16 +1062,6 @@
    <LINKPOINT x="660" y="7508">
    </LINKPOINT>
    <LINKPOINT x="660" y="7508">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="709" srcpinname="Actual BackBuffer SizeXY" dstnodeid="7" dstpinname="Input Value" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="709" srcpinname="Window Handle" dstnodeid="707" dstpinname="Input Value">
-   </LINK>
-   <LINK srcnodeid="607" srcpinname="Y Output Value" dstnodeid="709" dstpinname="Enabled" linkstyle="VHV" hiddenwhenlocked="0">
-   <LINKPOINT x="660" y="8010">
-   </LINKPOINT>
-   <LINKPOINT x="1770" y="8010">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Player" filename="Subs\Player.v4p" nodename="Subs\Player.v4p" componentmode="Hidden" id="241" debug="0">
@@ -1382,8 +1350,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="728" srcpinname="Y Output Value" dstnodeid="709" dstpinname="Fullscreen">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="729">
    <BOUNDS type="Box" left="8670" top="5475" width="480" height="480">
    </BOUNDS>
@@ -1666,10 +1632,6 @@
    <BOUNDS type="Window" left="-1" top="-1" width="3100" height="4075">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="709" srcpinname="Actual BackBuffer SizeXY" dstnodeid="743" dstpinname="Res" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="743" srcpinname="AASamples" dstnodeid="709" dstpinname="AA Samples per Pixel" hiddenwhenlocked="1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="744">
    <BOUNDS type="Box" left="1470" top="3360" width="285" height="240">
    </BOUNDS>
@@ -1701,5 +1663,49 @@
    </LINKPOINT>
    <LINKPOINT x="2025" y="4665">
    </LINKPOINT>
+   </LINK>
+   <NODE id="709" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" stayontop="0" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="480" top="8145" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="480" top="8145" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10320" top="0" width="18480" height="13785">
+   </BOUNDS>
+   <PIN pinname="AA Samples per Pixel" slicecount="1" visible="1" values="4">
+   </PIN>
+   <PIN pinname="Fullscreen" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enable Depth Buffer" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="VSync" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Do Not Wait" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Flip Sequential" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="574" srcpinname="Input Value" dstnodeid="709" dstpinname="View" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="608" srcpinname="Layer Out" dstnodeid="709" dstpinname="Layers" hiddenwhenlocked="0">
+   </LINK>
+   <LINK srcnodeid="709" srcpinname="Actual BackBuffer SizeXY" dstnodeid="7" dstpinname="Input Value" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="709" srcpinname="Window Handle" dstnodeid="707" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="607" srcpinname="Y Output Value" dstnodeid="709" dstpinname="Enabled" linkstyle="VHV" hiddenwhenlocked="0">
+   <LINKPOINT x="660" y="8010">
+   </LINKPOINT>
+   <LINKPOINT x="1770" y="8010">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="728" srcpinname="Y Output Value" dstnodeid="709" dstpinname="Fullscreen">
+   </LINK>
+   <LINK srcnodeid="709" srcpinname="Actual BackBuffer SizeXY" dstnodeid="743" dstpinname="Res" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="743" srcpinname="AASamples" dstnodeid="709" dstpinname="AA Samples per Pixel" hiddenwhenlocked="1">
    </LINK>
    </PATCH>

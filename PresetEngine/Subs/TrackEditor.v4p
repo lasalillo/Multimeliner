@@ -247,7 +247,7 @@
    </PIN>
    <PIN pinname="SetDefault" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Snap" visible="1">
+   <PIN pinname="Snap" visible="1" slicecount="1" values="1.18224298295125">
    </PIN>
    <PIN pinname="OnCue" visible="1">
    </PIN>
@@ -610,8 +610,6 @@
    </NODE>
    <LINK srcnodeid="60" srcpinname="Globals" dstnodeid="47" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="35" srcpinname="Globals" dstnodeid="60" dstpinname="Globals">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="61">
    <BOUNDS type="Box" left="3480" top="2535" width="795" height="240">
    </BOUNDS>
@@ -761,5 +759,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="20" srcpinname="MouseOnCue" dstnodeid="75" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Globals" dstnodeid="60" dstpinname="Globals">
    </LINK>
    </PATCH>
