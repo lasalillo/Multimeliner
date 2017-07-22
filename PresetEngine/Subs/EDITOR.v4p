@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\EDITOR.v4p" systemname="EDITOR" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\EDITOR.v4p" bgcolor="11431168" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\EDITOR.v4p" systemname="EDITOR" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\EDITOR.v4p" bgcolor="11431168" scrollx="0" scrolly="450">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)" hiddenwhenlocked="0">
    <BOUNDS type="Box" left="1080" top="465" width="480" height="480">
    </BOUNDS>
@@ -385,6 +385,8 @@
    </PIN>
    <PIN pinname="Period" visible="1">
    </PIN>
+   <PIN pinname="Save Completed" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="41" dstpinname="Filename">
    </LINK>
@@ -675,9 +677,9 @@
    <LINK srcnodeid="62" srcpinname="Y Output Value" dstnodeid="41" dstpinname="AutoBackUp">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="63">
-   <BOUNDS type="Box" left="7245" top="1830" width="795" height="240">
+   <BOUNDS type="Box" left="7350" top="1815" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7245" top="1830" width="0" height="0">
+   <BOUNDS type="Node" left="7350" top="1815" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="120">
    </PIN>
@@ -685,7 +687,7 @@
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Period">
+   <PIN pinname="Descriptive Name" slicecount="1" values="AutoBackUpPeriod">
    </PIN>
    </NODE>
    <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="41" dstpinname="Period">
@@ -701,5 +703,23 @@
    <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="64" dstpinname="Simulate">
    </LINK>
    <LINK srcnodeid="64" srcpinname="Bang" dstnodeid="16" dstpinname="Evaluate">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="65">
+   <BOUNDS type="Box" left="2430" top="5235" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2430" top="5235" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Save Completed|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="41" srcpinname="Save Completed" dstnodeid="65" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

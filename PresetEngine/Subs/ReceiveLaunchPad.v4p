@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ReceiveLaunchPad.v4p" systemname="ReceiveLaunchPad" filename="D:\_MULTIMELINER\PresetEngine\Subs\ReceiveLaunchPad.v4p" scrollx="0" scrolly="360">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ReceiveLaunchPad.v4p" systemname="ReceiveLaunchPad" filename="D:\_MULTIMELINER\PresetEngine\Subs\ReceiveLaunchPad.v4p" scrollx="0" scrolly="1080">
    <NODE id="0" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="6255" top="6945" width="480" height="480">
    </BOUNDS>
@@ -239,7 +239,7 @@
    <NODE id="13" systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="5355" top="3435" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" pintype="Input" values="9">
+   <PIN pinname="Input" visible="1" slicecount="1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="OnChange" visible="1" pintype="Output">
    </PIN>
@@ -643,9 +643,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="55">
-   <BOUNDS type="Box" left="11745" top="6555" width="480" height="480">
+   <BOUNDS type="Box" left="12240" top="6510" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="11745" top="6555" width="0" height="0">
+   <BOUNDS type="Node" left="12240" top="6510" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -902,66 +902,6 @@
    </NODE>
    <LINK srcnodeid="88" srcpinname="Out" dstnodeid="86" dstpinname="Input 2">
    </LINK>
-   <NODE id="34" systemname="Split (Utilities Launchpad)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Split (Utilities Launchpad)" componentmode="Hidden">
-   <BOUNDS type="Node" left="4890" top="2595" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4890" top="2595">
-   </BOUNDS>
-   <PIN pinname="GoToInit" visible="1">
-   </PIN>
-   <PIN pinname="In" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="EditValues" visible="1">
-   </PIN>
-   <PIN pinname="Click" visible="1">
-   </PIN>
-   <PIN pinname="Copy" visible="1">
-   </PIN>
-   <PIN pinname="Add" visible="1">
-   </PIN>
-   <PIN pinname="Loop" visible="1">
-   </PIN>
-   <PIN pinname="Play" visible="1">
-   </PIN>
-   <PIN pinname="TrackID" visible="1">
-   </PIN>
-   <PIN pinname="GoToPointer" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="34" srcpinname="CueID" dstnodeid="27" dstpinname="Index" linkstyle="VHV">
-   <LINKPOINT x="5200" y="3125">
-   </LINKPOINT>
-   <LINKPOINT x="3035" y="3130">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="86" srcpinname="Output" dstnodeid="34" dstpinname="In">
-   </LINK>
-   <LINK srcnodeid="34" srcpinname="TrackID" dstnodeid="3" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="34" srcpinname="Play" dstnodeid="13" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="34" srcpinname="Loop" dstnodeid="12" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="34" srcpinname="Add" dstnodeid="10" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="34" srcpinname="Copy" dstnodeid="5" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="34" srcpinname="Click" dstnodeid="2" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="34" srcpinname="EditValues" dstnodeid="38" dstpinname="Input">
-   </LINK>
-   <NODE id="7" systemname="FromRaw (Utilities Launchpad)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="FromRaw (Utilities Launchpad)" componentmode="Hidden">
-   <BOUNDS type="Node" left="4935" top="1650" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Raw" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="ToLaunchpad" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="7" dstpinname="Raw">
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="ToLaunchpad" dstnodeid="86" dstpinname="Input 1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="96">
    <BOUNDS type="Box" left="7815" top="240" width="480" height="480">
    </BOUNDS>
@@ -1036,8 +976,6 @@
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
    </NODE>
-   <LINK srcnodeid="34" srcpinname="Click" dstnodeid="100" dstpinname="Y Input Value">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="102">
    <BOUNDS type="Box" left="8910" top="1350" width="480" height="480">
    </BOUNDS>
@@ -1093,13 +1031,11 @@
    <NODE id="105" systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden">
    <BOUNDS type="Node" left="11325" top="3540" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="1" values="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="OnChange" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="34" srcpinname="GoToPointer" dstnodeid="105" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="107">
    <BOUNDS type="Box" left="10620" top="6600" width="480" height="480">
    </BOUNDS>
@@ -1117,8 +1053,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="106" srcpinname="Output 1" dstnodeid="107" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="34" srcpinname="GoToInit" dstnodeid="93" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="106" srcpinname="Output 1" dstnodeid="20" dstpinname="Input 3">
    </LINK>
@@ -1225,5 +1159,79 @@
    <LINK srcnodeid="114" srcpinname="Down Edge" dstnodeid="20" dstpinname="Input 4">
    </LINK>
    <LINK srcnodeid="114" srcpinname="Down Edge" dstnodeid="112" dstpinname="Input 2">
+   </LINK>
+   <NODE id="115" systemname="Split (Utilities Launchpad)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Split (Utilities Launchpad)" componentmode="Hidden">
+   <BOUNDS type="Node" left="4890" top="2595" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4890" top="2595">
+   </BOUNDS>
+   <PIN pinname="FolowPointer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="115" srcpinname="CueID" dstnodeid="27" dstpinname="Index" linkstyle="VHV">
+   <LINKPOINT x="5200" y="3125">
+   </LINKPOINT>
+   <LINKPOINT x="3035" y="3130">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="86" srcpinname="Output" dstnodeid="115" dstpinname="In">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="TrackID" dstnodeid="3" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Play" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Loop" dstnodeid="12" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Add" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Copy" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Click" dstnodeid="2" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="EditValues" dstnodeid="38" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Click" dstnodeid="100" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="GoToPointer" dstnodeid="105" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="GoToInit" dstnodeid="93" dstpinname="Input 1">
+   </LINK>
+   <NODE id="116" systemname="FromRaw (Utilities Launchpad)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="FromRaw (Utilities Launchpad)" componentmode="Hidden">
+   <BOUNDS type="Node" left="4935" top="1650" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="116" dstpinname="Raw">
+   </LINK>
+   <LINK srcnodeid="116" srcpinname="ToLaunchpad" dstnodeid="86" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="117">
+   <BOUNDS type="Box" left="11190" top="6405" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11190" top="6405" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="FolowPointer">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="118">
+   <BOUNDS type="Node" left="11190" top="5580" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="115" srcpinname="FolowPointer" dstnodeid="118" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="118" srcpinname="OnChange" dstnodeid="117" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

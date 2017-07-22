@@ -1245,6 +1245,8 @@
    </PIN>
    <PIN pinname="AutoBackUp" visible="1">
    </PIN>
+   <PIN pinname="Save Completed" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="701" srcpinname="Output String" dstnodeid="612" dstpinname="AudioFile" linkstyle="VHV">
    <LINKPOINT x="5060" y="4773">
@@ -1535,7 +1537,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3825" top="5580" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1547,7 +1549,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="AutoBackUp">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="737" srcpinname="Y Output Value" dstnodeid="612" dstpinname="AutoBackUp" linkstyle="VHV" hiddenwhenlocked="1">
@@ -1707,5 +1709,27 @@
    <LINK srcnodeid="709" srcpinname="Actual BackBuffer SizeXY" dstnodeid="743" dstpinname="Res" hiddenwhenlocked="1">
    </LINK>
    <LINK srcnodeid="743" srcpinname="AASamples" dstnodeid="709" dstpinname="AA Samples per Pixel" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="745">
+   <BOUNDS type="Box" left="5580" top="6525" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5580" top="6525" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Write">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="612" srcpinname="Save Completed" dstnodeid="745" dstpinname="Y Input Value" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="6380" y="6438">
+   </LINKPOINT>
+   <LINKPOINT x="5725" y="6448">
+   </LINKPOINT>
    </LINK>
    </PATCH>

@@ -171,7 +171,7 @@
    </BOUNDS>
    <PIN pinname="Value" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="File Path" visible="1" slicecount="1" values="||">
+   <PIN pinname="File Path" visible="1" slicecount="1" values="..\Presets\Backs\VideoLinked0722141359.xml">
    </PIN>
    <PIN pinname="Write" visible="1" slicecount="1" values="0">
    </PIN>
@@ -201,6 +201,8 @@
    </PIN>
    <PIN pinname="Change" visible="1">
    </PIN>
+   <PIN pinname="Reset" visible="1" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
    <BOUNDS type="Box" left="5925" top="1665" width="795" height="240">
@@ -219,9 +221,9 @@
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="46" dstpinname="Period">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48">
-   <BOUNDS type="Box" left="3555" top="4770" width="480" height="480">
+   <BOUNDS type="Box" left="5010" top="4965" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="3555" top="4770" width="0" height="0">
+   <BOUNDS type="Node" left="5010" top="4965" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -230,6 +232,8 @@
    <PIN pinname="Value Type" slicecount="1" values="Boolean">
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Save Completed|">
    </PIN>
    </NODE>
    <LINK srcnodeid="32" srcpinname="On Completed" dstnodeid="48" dstpinname="Y Input Value">
@@ -263,6 +267,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="AutoBackUp">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="53" dstpinname="Input 2">
    </LINK>
@@ -279,5 +285,17 @@
    <LINK srcnodeid="55" srcpinname="Result" dstnodeid="25" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="55" srcpinname="On Completed" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="56">
+   <BOUNDS type="Node" left="6060" top="2790" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="56" srcpinname="Up Edge" dstnodeid="46" dstpinname="Reset">
    </LINK>
    </PATCH>
