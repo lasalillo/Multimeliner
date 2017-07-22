@@ -269,7 +269,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3660" top="3585" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.61">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.6">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -285,7 +285,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2685" top="3585" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.956">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.01">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -780,8 +780,8 @@
    </NODE>
    <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="56" dstpinname="Layer In">
    </LINK>
-   <LINK srcnodeid="56" srcpinname="Layer Out" dstnodeid="32" dstpinname="Input Node">
-   </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="1" dstpinname="CenterY">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="32" dstpinname="Input Node">
    </LINK>
    </PATCH>

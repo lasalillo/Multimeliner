@@ -687,7 +687,7 @@
    </PIN>
    <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Color" slicecount="1" values="|0.01112,0.01112,0.01112,0.68304|" visible="1">
+   <PIN pinname="Color" slicecount="1" visible="1" values="|0.01112,0.01112,0.01112,0.68304|">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
@@ -1500,8 +1500,6 @@
    </LINK>
    <LINK srcnodeid="154" srcpinname="Geometry Out" dstnodeid="155" dstpinname="Geometry">
    </LINK>
-   <LINK srcnodeid="66" srcpinname="Layer Out" dstnodeid="13" dstpinname="Layer 6">
-   </LINK>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="156">
    <BOUNDS type="Node" left="23610" top="7575" width="100" height="100">
    </BOUNDS>
@@ -1643,8 +1641,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="155" srcpinname="Layer" dstnodeid="173" dstpinname="Layer 1">
-   </LINK>
-   <LINK srcnodeid="173" srcpinname="Layer Out" dstnodeid="13" dstpinname="Layer 7">
    </LINK>
    <NODE systemname="HSL (Color Join)" nodename="HSL (Color Join)" componentmode="Hidden" id="176">
    <BOUNDS type="Node" left="24405" top="7125" width="100" height="100">
@@ -2245,7 +2241,7 @@
    <NODE systemname="Vector (2d Join)" nodename="Vector (2d Join)" componentmode="Hidden" id="222">
    <BOUNDS type="Node" left="17940" top="6390" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Y" slicecount="1" values="1" visible="1">
+   <PIN pinname="Y" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="X" visible="1">
    </PIN>
@@ -3467,7 +3463,7 @@
    <LINK srcnodeid="302" srcpinname="Output" dstnodeid="51" dstpinname="Input">
    </LINK>
    <NODE systemname="TextMetrics (String)" nodename="TextMetrics (String)" componentmode="Hidden" id="304">
-   <BOUNDS type="Node" left="11310" top="8490" width="100" height="100">
+   <BOUNDS type="Node" left="11190" top="8700" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Font" visible="1">
    </PIN>
@@ -3675,5 +3671,9 @@
    <LINK srcnodeid="315" srcpinname="Output" dstnodeid="323" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="323" srcpinname="Output" dstnodeid="322" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="66" srcpinname="Layer Out" dstnodeid="13" dstpinname="Layer 7">
+   </LINK>
+   <LINK srcnodeid="173" srcpinname="Layer Out" dstnodeid="13" dstpinname="Layer 6">
    </LINK>
    </PATCH>

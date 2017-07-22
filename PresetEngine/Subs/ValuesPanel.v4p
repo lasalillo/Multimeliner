@@ -338,7 +338,7 @@
    </LINK>
    <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="15" dstpinname="X">
    </LINK>
-   <BOUNDS type="Window" left="2040" top="6300" width="13575" height="9960">
+   <BOUNDS type="Window" left="1020" top="2325" width="13575" height="9960">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -1101,7 +1101,7 @@
    </BOUNDS>
    <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   <PIN pinname="Input 2" visible="1">
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
