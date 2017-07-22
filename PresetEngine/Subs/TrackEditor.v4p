@@ -202,7 +202,7 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="ScaleY">
    </LINK>
-   <BOUNDS type="Window" left="11130" top="5925" width="8670" height="6945">
+   <BOUNDS type="Window" left="2460" top="2250" width="8670" height="6945">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -248,6 +248,10 @@
    <PIN pinname="SetDefault" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Snap" visible="1">
+   </PIN>
+   <PIN pinname="OnCue" visible="1">
+   </PIN>
+   <PIN pinname="MouseOnCue" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Transform Out" dstnodeid="20" dstpinname="Transform">
@@ -641,7 +645,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Destination Minimum" slicecount="1" values="1.26" visible="1">
+   <PIN pinname="Destination Minimum" slicecount="1" visible="1" values="1.26">
    </PIN>
    <PIN pinname="Destination Maximum" slicecount="1" visible="1" values="0">
    </PIN>
@@ -748,4 +752,14 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="75">
+   <BOUNDS type="Node" left="3615" top="5025" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="MouseOnCue">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="MouseOnCue" dstnodeid="75" dstpinname="Input Value">
+   </LINK>
    </PATCH>
