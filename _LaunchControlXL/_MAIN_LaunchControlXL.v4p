@@ -2538,18 +2538,6 @@
    </LINK>
    <LINK srcnodeid="199" srcpinname="Up Edge" dstnodeid="198" dstpinname="Input Value">
    </LINK>
-   <NODE systemname="TimerFlop (Animation)" filename="%VVVV%\addonpack\lib\nodes\plugins\TimerFlop.dll" nodename="TimerFlop (Animation)" componentmode="Hidden" id="204">
-   <BOUNDS type="Node" left="20925" top="1710" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Set" visible="1">
-   </PIN>
-   <PIN pinname="Time" slicecount="1" values="0.5">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="203" srcpinname="Output" dstnodeid="204" dstpinname="Set">
-   </LINK>
    <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="205">
    <BOUNDS type="Node" left="20955" top="3720" width="100" height="100">
    </BOUNDS>
@@ -2558,6 +2546,6 @@
    <PIN pinname="Send String" slicecount="1" values="FolowPointer">
    </PIN>
    </NODE>
-   <LINK srcnodeid="204" srcpinname="Output" dstnodeid="205" dstpinname="Input Value">
+   <LINK srcnodeid="203" srcpinname="Output" dstnodeid="205" dstpinname="Input Value">
    </LINK>
    </PATCH>
