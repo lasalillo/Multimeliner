@@ -94,12 +94,12 @@
    <PIN pinname="Layer Out" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="ValuesPanel" filename="ValuesPanel.v4p" nodename="Subs\ValuesPanel.v4p" componentmode="Hidden" id="3">
+   <NODE systemname="ValuesPanel" filename="ValuesPanel.v4p" nodename="Subs\ValuesPanel.v4p" componentmode="Hidden" id="3" debug="0">
    <BOUNDS type="Node" left="1977" top="3144" width="1125" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="855" top="195" width="13575" height="9960">
    </BOUNDS>
-   <BOUNDS type="Window" left="1020" top="2325" width="13575" height="9960">
+   <BOUNDS type="Window" left="-525" top="6480" width="13575" height="9960">
    </BOUNDS>
    <PIN pinname="Values" visible="1" slicecount="21" values="1,1,1,1,1,1,1,0.763552010059357,0.719917297363281,0.608033418655395,0.744904696941376,0.744904696941376,0.589386105537415,1,0.682622671127319,0.769705653190613,0.744904696941376,1,0.634381711483002,0.715683996677399,0.589386105537415">
    </PIN>
