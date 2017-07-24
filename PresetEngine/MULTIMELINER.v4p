@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" systemname="MULTIMELINER" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" scrollx="0" scrolly="0" bgcolor="11443049" locked="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" systemname="MULTIMELINER" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" scrollx="0" scrolly="-360" bgcolor="11443049" locked="0">
    <BOUNDS type="Window" left="0" top="0" width="10500" height="9795">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="244" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6660" top="5100" width="630" height="240">
+   <BOUNDS type="Box" left="6660" top="5100" width="285" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="6660" top="5100" width="0" height="0">
    </BOUNDS>
@@ -1062,14 +1062,18 @@
    <LINKPOINT x="5845" y="6595">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="241" srcpinname="Length" dstnodeid="702" dstpinname="Y Input Value">
+   <LINK srcnodeid="241" srcpinname="Length" dstnodeid="702" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="7245" y="6480">
+   </LINKPOINT>
+   <LINKPOINT x="7785" y="6480">
+   </LINKPOINT>
    </LINK>
    <LINK srcnodeid="241" srcpinname="Position" dstnodeid="694" dstpinname="SeekTime">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="712">
-   <BOUNDS type="Box" left="8535" top="3795" width="1440" height="240">
+   <BOUNDS type="Box" left="8670" top="3780" width="1440" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8535" top="3795" width="0" height="0">
+   <BOUNDS type="Node" left="8670" top="3780" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="192.168.178.20">
    </PIN>
@@ -1087,15 +1091,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="712" srcpinname="Output String" dstnodeid="646" dstpinname="Content" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="8445" y="6153">
+   <LINKPOINT x="8535" y="6143">
    </LINKPOINT>
-   <LINKPOINT x="4065" y="6298">
+   <LINKPOINT x="4110" y="6293">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="724">
-   <BOUNDS type="Box" left="8445" top="3225" width="1290" height="240">
+   <BOUNDS type="Box" left="8205" top="2685" width="1290" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="8445" top="3225" width="0" height="0">
+   <BOUNDS type="Node" left="8205" top="2685" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="127.0.0.1">
    </PIN>
@@ -1113,15 +1117,15 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="724" srcpinname="Output String" dstnodeid="646" dstpinname="Controllers" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="8245" y="5943">
+   <LINKPOINT x="8085" y="5583">
    </LINKPOINT>
-   <LINKPOINT x="4145" y="6013">
+   <LINKPOINT x="4065" y="5833">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="724" srcpinname="Output String" dstnodeid="598" dstpinname="Server" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="8260" y="4800">
+   <LINKPOINT x="8100" y="4440">
    </LINKPOINT>
-   <LINKPOINT x="1850" y="4740">
+   <LINKPOINT x="1770" y="4560">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="726">
@@ -1136,7 +1140,11 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Position">
    </PIN>
    </NODE>
-   <LINK srcnodeid="241" srcpinname="Position" dstnodeid="726" dstpinname="Y Input Value">
+   <LINK srcnodeid="241" srcpinname="Position" dstnodeid="726" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="7020" y="6488">
+   </LINKPOINT>
+   <LINKPOINT x="7005" y="6488">
+   </LINKPOINT>
    </LINK>
    <NODE id="612" componentmode="Hidden" systemname="EDITOR" filename="Subs\EDITOR.v4p" nodename="Subs\EDITOR.v4p" debug="0">
    <PIN pinname="Evaluate" visible="-1" slicecount="1" pintype="Input" values="1">
@@ -1339,7 +1347,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6150" top="4380" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="13">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1507,7 +1515,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3495" top="7050" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="1,2,10,20">
+   <PIN pinname="Y Input Value" slicecount="4" visible="1" values="1,2,10,22">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1545,9 +1553,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="724" srcpinname="Output String" dstnodeid="595" dstpinname="Server" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="8260" y="3630">
+   <LINKPOINT x="8100" y="3270">
    </LINKPOINT>
-   <LINKPOINT x="1010" y="3570">
+   <LINKPOINT x="930" y="3390">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="710" srcpinname="Y Output Value" dstnodeid="595" dstpinname="FollowPointer" linkstyle="VHV" hiddenwhenlocked="1">
@@ -1750,4 +1758,24 @@
    </LINK>
    <LINK srcnodeid="608" srcpinname="Layer Out" dstnodeid="709" dstpinname="Layers" hiddenwhenlocked="0">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="747">
+   <BOUNDS type="Box" left="8670" top="3045" width="1440" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8670" top="3045" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="192.178.2.4">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="192.168.1.1">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="IP">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|NCASE IP|">
+   </PIN>
+   </NODE>
    </PATCH>

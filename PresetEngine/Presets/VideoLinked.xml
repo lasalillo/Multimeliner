@@ -2,7 +2,7 @@
   "List": {
     "array": {
       "array": {
-        "length": 68,
+        "length": 70,
         "array": [
           {
             "ID": 1,
@@ -3116,7 +3116,7 @@
           {
             "ID": 58,
             "GroupID": 20,
-            "Name": "Def-71",
+            "Name": "Def-65",
             "Time": 1.0,
             "Values": {
               "array": {
@@ -3177,6 +3177,36 @@
           {
             "ID": 59,
             "GroupID": 21,
+            "Name": "Def-66",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 258
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 260
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 60,
+            "GroupID": 22,
+            "Name": "Def-67",
+            "Time": 1.0,
+            "Values": {
+              "_flags": "cached",
+              "id": 258
+            },
+            "Toggle": {
+              "_flags": "cached",
+              "id": 260
+            },
+            "FadeTime": 1.0
+          },
+          {
+            "ID": 61,
+            "GroupID": 23,
             "Name": "New-58 C C C",
             "Time": 0.0001,
             "Values": {
@@ -3236,8 +3266,8 @@
             "FadeTime": 3.0
           },
           {
-            "ID": 60,
-            "GroupID": 21,
+            "ID": 62,
+            "GroupID": 23,
             "Name": "New-62",
             "Time": 94.61363,
             "Values": {
@@ -3297,8 +3327,8 @@
             "FadeTime": 1.0
           },
           {
-            "ID": 61,
-            "GroupID": 21,
+            "ID": 63,
+            "GroupID": 23,
             "Name": "New-58 C C",
             "Time": 115.4079,
             "Values": {
@@ -3358,8 +3388,8 @@
             "FadeTime": 3.0
           },
           {
-            "ID": 62,
-            "GroupID": 21,
+            "ID": 64,
+            "GroupID": 23,
             "Name": "New-58 C C C",
             "Time": 152.922379,
             "Values": {
@@ -3419,8 +3449,8 @@
             "FadeTime": 0.125
           },
           {
-            "ID": 63,
-            "GroupID": 22,
+            "ID": 65,
+            "GroupID": 24,
             "Name": "New-61",
             "Time": 0.0001,
             "Values": {
@@ -3480,8 +3510,8 @@
             "FadeTime": 1.0
           },
           {
-            "ID": 64,
-            "GroupID": 22,
+            "ID": 66,
+            "GroupID": 24,
             "Name": "New-54 C C",
             "Time": 159.415558,
             "Values": {
@@ -3541,8 +3571,8 @@
             "FadeTime": 0.125000477
           },
           {
-            "ID": 65,
-            "GroupID": 22,
+            "ID": 67,
+            "GroupID": 24,
             "Name": "New-54 C C",
             "Time": 161.347458,
             "Values": {
@@ -3602,8 +3632,8 @@
             "FadeTime": 1.62500048
           },
           {
-            "ID": 66,
-            "GroupID": 22,
+            "ID": 68,
+            "GroupID": 24,
             "Name": "New-54 C C C C",
             "Time": 201.776917,
             "Values": {
@@ -3663,8 +3693,8 @@
             "FadeTime": 0.125
           },
           {
-            "ID": 67,
-            "GroupID": 22,
+            "ID": 69,
+            "GroupID": 24,
             "Name": "New-54 C C C C C",
             "Time": 208.810822,
             "Values": {
@@ -3724,8 +3754,8 @@
             "FadeTime": 0.125
           },
           {
-            "ID": 68,
-            "GroupID": 22,
+            "ID": 70,
+            "GroupID": 24,
             "Name": "New-54 C C C C C",
             "Time": 211.825836,
             "Values": {
@@ -3789,12 +3819,12 @@
     }
   },
   "Globals": {
-    "TracksCount": 23,
+    "TracksCount": 25,
     "TrackSize": 0.125,
     "Length": 356.6,
     "LoopPoints": {
-      "X": 84.29282,
-      "Y": 138.477066
+      "X": 53.9754677,
+      "Y": 75.26212
     },
     "TrackNames": {
       "array": {
@@ -3819,7 +3849,9 @@
           "Camera",
           "FeedbackFilter",
           "Bubble",
-          "______",
+          "____",
+          "____",
+          "____",
           "Generators",
           "CTR Return"
         ]

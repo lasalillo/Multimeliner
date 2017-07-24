@@ -931,7 +931,7 @@
    <LINK srcnodeid="240" srcpinname="Output" dstnodeid="232" dstpinname="ListToContent">
    </LINK>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="247">
-   <BOUNDS type="Node" left="10770" top="2310" width="100" height="100">
+   <BOUNDS type="Node" left="10680" top="3300" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="SnapMap">
    </PIN>
@@ -939,9 +939,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="246">
-   <BOUNDS type="Box" left="10755" top="2775" width="1020" height="1665">
+   <BOUNDS type="Box" left="10665" top="3765" width="1020" height="1665">
    </BOUNDS>
-   <BOUNDS type="Node" left="10755" top="2775" width="0" height="0">
+   <BOUNDS type="Node" left="10665" top="3765" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

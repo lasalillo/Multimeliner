@@ -9,13 +9,13 @@
    </PIN>
    <PIN pinname="Input 2" visible="1" slicecount="21" values="64,1,62,0,7,0,0,0,0,5,0,1,0,0,0,0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" values="3">
+   <PIN pinname="Input Count" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Input 3" visible="1">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input 4" visible="1">
+   <PIN pinname="Input 4" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE id="23" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
@@ -153,5 +153,19 @@
    <LINK srcnodeid="32" srcpinname="PaletteIndex" dstnodeid="18" dstpinname="Input 2">
    </LINK>
    <LINK srcnodeid="25" srcpinname="Output Node" dstnodeid="32" dstpinname="Data">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="34">
+   <BOUNDS type="Node" left="5535" top="555" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="TrackSelected">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="TrackSelected">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="34" srcpinname="Input Value" dstnodeid="18" dstpinname="Input 4">
    </LINK>
    </PATCH>
