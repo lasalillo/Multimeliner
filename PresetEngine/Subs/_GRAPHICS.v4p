@@ -17,9 +17,9 @@
    </PIN>
    <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Enabled" visible="1">
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Layer 5" visible="1">
+   <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
    </PIN>
@@ -290,8 +290,6 @@
    <PIN pinname="TranslateX" visible="1" slicecount="1" values="0.922">
    </PIN>
    </NODE>
-   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="0" dstpinname="Layer 5">
-   </LINK>
    <LINK srcnodeid="3" srcpinname="InfoPanelTransf" dstnodeid="13" dstpinname="Transform Out">
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="14">
@@ -331,8 +329,6 @@
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Simulate">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Bang" dstnodeid="1" dstpinname="Evaluate">
-   </LINK>
-   <LINK srcnodeid="16" srcpinname="Bang" dstnodeid="0" dstpinname="Enabled">
    </LINK>
    <LINK srcnodeid="16" srcpinname="Bang" dstnodeid="2" dstpinname="Evaluate">
    </LINK>
@@ -382,8 +378,6 @@
    </LINK>
    <LINK srcnodeid="20" srcpinname="Output" dstnodeid="10" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="0" dstpinname="Layer 6">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21">
    <BOUNDS type="Box" left="2805" top="660" width="345" height="240">
    </BOUNDS>
@@ -422,12 +416,18 @@
    </LINK>
    <LINK srcnodeid="14" srcpinname="Bang" dstnodeid="22" dstpinname="Enabled">
    </LINK>
-   <LINK srcnodeid="22" srcpinname="Layer Out" dstnodeid="0" dstpinname="Layer 4">
-   </LINK>
    <LINK srcnodeid="18" srcpinname="Layer" dstnodeid="0" dstpinname="Layer 1">
    </LINK>
-   <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="0" dstpinname="Layer 2">
+   <LINK srcnodeid="22" srcpinname="Layer Out" dstnodeid="0" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="0" dstpinname="Layer 6">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="Bang" dstnodeid="0" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="0" dstpinname="Layer 5">
    </LINK>
    <LINK srcnodeid="2" srcpinname="Layer Out" dstnodeid="0" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output Node" dstnodeid="0" dstpinname="Layer 2">
    </LINK>
    </PATCH>

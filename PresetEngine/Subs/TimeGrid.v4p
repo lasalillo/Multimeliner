@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\TimeGrid.v4p" systemname="TimeGrid" filename="D:\_VVVV\_VL\User\TrackEdit\TimeGrid.v4p" scrollx="0" scrolly="7560">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\TimeGrid.v4p" systemname="TimeGrid" filename="D:\_VVVV\_VL\User\TrackEdit\TimeGrid.v4p" scrollx="12345" scrolly="2670">
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2490" top="6495" width="100" height="100">
    </BOUNDS>
@@ -143,7 +143,7 @@
    </PIN>
    </NODE>
    <NODE id="12" systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" hiddenwhenlocked="0" managers="" debug="0">
-   <BOUNDS type="Node" left="4905" top="13710" width="100" height="100">
+   <BOUNDS type="Node" left="5085" top="13500" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Transform" slicecount="1" visible="1" pintype="Input" values="||">
    </PIN>
@@ -151,7 +151,7 @@
    </PIN>
    <PIN pinname="Layer" visible="1" pintype="Output">
    </PIN>
-   <BOUNDS type="Box" left="1080" top="8475" width="2400" height="1800">
+   <BOUNDS type="Box" left="1260" top="8265" width="2400" height="1800">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
    </BOUNDS>
@@ -203,7 +203,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2250" top="16815" width="750" height="240">
    </BOUNDS>
-   <PIN pinname="Input Node" visible="1">
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="6" dstpinname="Transform In">
@@ -1253,13 +1253,13 @@
    </BOUNDS>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
-   <PIN pinname="Layer 2" visible="1">
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
    <PIN pinname="Input Count" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Layer 3" visible="1">
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 4" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1267,8 +1267,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Layer" dstnodeid="153" dstpinname="Layer 1">
-   </LINK>
-   <LINK srcnodeid="120" srcpinname="Layer Out" dstnodeid="153" dstpinname="Layer 2">
    </LINK>
    <NODE systemname="Blend (DX11.RenderState)" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="154" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll">
    <BOUNDS type="Node" left="4575" top="11535" width="100" height="100">
@@ -2190,8 +2188,6 @@
    </LINK>
    <LINK srcnodeid="205" srcpinname="Layer" dstnodeid="214" dstpinname="Layer 2">
    </LINK>
-   <LINK srcnodeid="214" srcpinname="Layer Out" dstnodeid="153" dstpinname="Layer 3">
-   </LINK>
    <NODE id="215" systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" hiddenwhenlocked="0" managers="" debug="0">
    <BOUNDS type="Node" left="24630" top="11385" width="100" height="100">
    </BOUNDS>
@@ -2649,10 +2645,6 @@
    <LINK srcnodeid="257" srcpinname="Y Output Value" dstnodeid="258" dstpinname="XYZW">
    </LINK>
    <LINK srcnodeid="258" srcpinname="W" dstnodeid="256" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="256" srcpinname="Output" dstnodeid="207" dstpinname="Input">
-   </LINK>
-   <LINK srcnodeid="256" srcpinname="Output" dstnodeid="255" dstpinname="Input">
    </LINK>
    <NODE systemname="NOT (Boolean)" nodename="NOT (Boolean)" componentmode="Hidden" id="260">
    <BOUNDS type="Node" left="10335" top="3720" width="100" height="100">
@@ -3235,19 +3227,15 @@
    <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="337">
    <BOUNDS type="Node" left="2220" top="15555" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Layer 2" visible="1">
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 1" visible="1">
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer Out" visible="1">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="153" srcpinname="Layer Out" dstnodeid="337" dstpinname="Layer 2">
-   </LINK>
-   <LINK srcnodeid="337" srcpinname="Layer Out" dstnodeid="14" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="WavefilePicture" filename="WavefilePicture.v4p" nodename="WavefilePicture.v4p" componentmode="Hidden" id="360">
    <BOUNDS type="Node" left="845" top="8810" width="0" height="0">
    </BOUNDS>
@@ -3261,9 +3249,9 @@
    </PIN>
    <PIN pinname="Translate" visible="1">
    </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="360" srcpinname="Layer Out" dstnodeid="337" dstpinname="Layer 1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="361">
    <BOUNDS type="Box" left="780" top="1065" width="480" height="480">
    </BOUNDS>
@@ -3389,8 +3377,6 @@
    <LINK srcnodeid="91" srcpinname="Output Node" dstnodeid="94" dstpinname="View">
    </LINK>
    <LINK srcnodeid="11" srcpinname="Transform Out" dstnodeid="94" dstpinname="Transform">
-   </LINK>
-   <LINK srcnodeid="94" srcpinname="Transform" dstnodeid="12" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="85" srcpinname="Input Value" dstnodeid="94" dstpinname="RXY">
    </LINK>
@@ -4123,5 +4109,43 @@
    <LINK srcnodeid="417" srcpinname="Y Output Value" dstnodeid="420" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="420" srcpinname="Output" dstnodeid="418" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="360" srcpinname="Layer Out" dstnodeid="337" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="337" srcpinname="Layer Out" dstnodeid="14" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Layer Out" dstnodeid="337" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="120" srcpinname="Layer Out" dstnodeid="153" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="214" srcpinname="Layer Out" dstnodeid="153" dstpinname="Layer 3">
+   </LINK>
+   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="421">
+   <BOUNDS type="Node" left="5355" top="10110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="94" srcpinname="Transform" dstnodeid="421" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="421" srcpinname="Output" dstnodeid="12" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="422">
+   <BOUNDS type="Node" left="29370" top="6495" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="256" srcpinname="Output" dstnodeid="422" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="422" srcpinname="Output" dstnodeid="207" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="422" srcpinname="Output" dstnodeid="255" dstpinname="Input">
+   <LINKPOINT x="31290" y="8040">
+   </LINKPOINT>
    </LINK>
    </PATCH>

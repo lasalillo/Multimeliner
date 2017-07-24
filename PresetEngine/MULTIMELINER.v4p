@@ -145,7 +145,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1215" top="5625" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -157,7 +157,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Soft">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="601" srcpinname="Y Output Value" dstnodeid="598" dstpinname="Soft" linkstyle="VHV" hiddenwhenlocked="1">
@@ -515,6 +515,8 @@
    </PIN>
    <PIN pinname="ToTracking" visible="1">
    </PIN>
+   <PIN pinname="Send" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="647" hiddenwhenlocked="1">
    <BOUNDS type="Box" left="4245" top="6885" width="795" height="240">
@@ -706,20 +708,6 @@
    <PIN pinname="Y Input Value">
    </PIN>
    </NODE>
-   <NODE systemname="AudioTexture" filename="Subs\AudioTexture.v4p" nodename="Subs\AudioTexture.v4p" componentmode="Hidden" id="700">
-   <BOUNDS type="Node" left="6675" top="3795" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Filename" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="12675" top="7425" width="9000" height="6000">
-   </BOUNDS>
-   <PIN pinname="Write" slicecount="1" values="0">
-   </PIN>
-   <BOUNDS type="Box" left="6675" top="3795">
-   </BOUNDS>
-   </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="701">
    <BOUNDS type="Box" left="4890" top="3225" width="2355" height="240">
    </BOUNDS>
@@ -740,8 +728,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="701" srcpinname="Output String" dstnodeid="700" dstpinname="Filename" hiddenwhenlocked="1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="702">
    <BOUNDS type="Box" left="7785" top="6600" width="795" height="240">
    </BOUNDS>
@@ -885,7 +871,7 @@
    <NODE id="707" systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" hiddenwhenlocked="1">
    <BOUNDS type="Node" left="480" top="8520" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input Value" visible="1" slicecount="1" values="67000">
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="263572">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="WindowHandle">
    </PIN>
@@ -913,9 +899,9 @@
    </PIN>
    </NODE>
    <NODE id="7" systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="1650" top="8520" width="100" height="100">
+   <BOUNDS type="Node" left="1665" top="8520" width="300" height="270">
    </BOUNDS>
-   <PIN pinname="Input Value" visible="1" slicecount="2" values="1216,748">
+   <PIN pinname="Input Value" visible="1" slicecount="2" values="1216,880">
    </PIN>
    <PIN pinname="Send String" slicecount="1" values="R">
    </PIN>
@@ -1000,34 +986,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <NODE id="608" componentmode="Hidden" systemname="_GRAPHICS" filename="Subs\_GRAPHICS.v4p" nodename="Subs\_GRAPHICS.v4p" hiddenwhenlocked="0" managers="" debug="0">
-   <BOUNDS type="Node" left="630" top="7635" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="630" top="7635" width="4812" height="6540">
-   </BOUNDS>
-   <PIN pinname="ShowLabels" visible="1">
-   </PIN>
-   <PIN pinname="EnableGUI" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="1635" top="5685" width="4815" height="5910">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Window Handle" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="Patch" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ID" pintype="Output" visible="-1">
-   </PIN>
-   <PIN pinname="ShowValues" visible="1">
-   </PIN>
-   <PIN pinname="Marker" visible="1">
-   </PIN>
-   </NODE>
    <NODE id="574" systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" hiddenwhenlocked="1" managers="">
    <BOUNDS type="Node" left="1905" top="7635" width="100" height="100">
    </BOUNDS>
@@ -1046,24 +1004,6 @@
    <PIN pinname="ID" pintype="Output" visible="-1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="669" srcpinname="Y Output Value" dstnodeid="608" dstpinname="ShowValues" linkstyle="VHV">
-   <LINKPOINT x="2550" y="7500">
-   </LINKPOINT>
-   <LINKPOINT x="1800" y="7500">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="606" srcpinname="Y Output Value" dstnodeid="608" dstpinname="ShowLabels" hiddenwhenlocked="0" linkstyle="VHV">
-   <LINKPOINT x="1590" y="7493">
-   </LINKPOINT>
-   <LINKPOINT x="1065" y="7493">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="607" srcpinname="Y Output Value" dstnodeid="608" dstpinname="EnableGUI" hiddenwhenlocked="0" linkstyle="VHV">
-   <LINKPOINT x="660" y="7508">
-   </LINKPOINT>
-   <LINKPOINT x="660" y="7508">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Player" filename="Subs\Player.v4p" nodename="Subs\Player.v4p" componentmode="Hidden" id="241" debug="0">
    <BOUNDS type="Node" left="6660" top="6120" width="735" height="270">
    </BOUNDS>
@@ -1205,7 +1145,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3825" top="6120" width="6105" height="7620">
    </BOUNDS>
-   <BOUNDS type="Window" left="4755" top="5625" width="7995" height="6315">
+   <BOUNDS type="Window" left="4755" top="5625" width="9195" height="6540">
    </BOUNDS>
    <PIN pinname="Reload" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1246,6 +1186,10 @@
    <PIN pinname="AutoBackUp" visible="1">
    </PIN>
    <PIN pinname="Save Completed" visible="1">
+   </PIN>
+   <PIN pinname="AutoBackUpPeriod" visible="1">
+   </PIN>
+   <PIN pinname="Success" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="701" srcpinname="Output String" dstnodeid="612" dstpinname="AudioFile" linkstyle="VHV">
@@ -1533,11 +1477,11 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="737">
-   <BOUNDS type="Box" left="3825" top="5580" width="285" height="240">
+   <BOUNDS type="Box" left="3840" top="5595" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3825" top="5580" width="0" height="0">
+   <BOUNDS type="Node" left="3840" top="5595" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1549,13 +1493,13 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="AutoBackUp">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="737" srcpinname="Y Output Value" dstnodeid="612" dstpinname="AutoBackUp" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="5700" y="6073">
+   <LINKPOINT x="5710" y="6083">
    </LINKPOINT>
-   <LINKPOINT x="5070" y="5838">
+   <LINKPOINT x="5075" y="5843">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="738">
@@ -1582,12 +1526,6 @@
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
    </NODE>
-   <LINK srcnodeid="738" srcpinname="Y Output Value" dstnodeid="608" dstpinname="Marker" linkstyle="VHV">
-   <LINKPOINT x="3495" y="7703">
-   </LINKPOINT>
-   <LINKPOINT x="1425" y="7703">
-   </LINKPOINT>
-   </LINK>
    <NODE id="595" componentmode="Hidden" systemname="TrackControls" filename="Subs\TrackControls.v4p" nodename="Subs\TrackControls.v4p">
    <BOUNDS type="Node" left="540" top="3780" width="0" height="0">
    </BOUNDS>
@@ -1633,6 +1571,8 @@
    </BOUNDS>
    <BOUNDS type="Window" left="-1" top="-1" width="3100" height="4075">
    </BOUNDS>
+   <PIN pinname="Res" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="744">
    <BOUNDS type="Box" left="1470" top="3360" width="285" height="240">
@@ -1666,50 +1606,6 @@
    <LINKPOINT x="2025" y="4665">
    </LINKPOINT>
    </LINK>
-   <NODE id="709" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" stayontop="0" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="480" top="8145" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="480" top="8145" width="6000" height="4500">
-   </BOUNDS>
-   <BOUNDS type="Window" left="10320" top="0" width="18480" height="13785">
-   </BOUNDS>
-   <PIN pinname="AA Samples per Pixel" slicecount="1" visible="1" values="4">
-   </PIN>
-   <PIN pinname="Fullscreen" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
-   </PIN>
-   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Enable Depth Buffer" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="VSync" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Do Not Wait" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Flip Sequential" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="574" srcpinname="Input Value" dstnodeid="709" dstpinname="View" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="608" srcpinname="Layer Out" dstnodeid="709" dstpinname="Layers" hiddenwhenlocked="0">
-   </LINK>
-   <LINK srcnodeid="709" srcpinname="Actual BackBuffer SizeXY" dstnodeid="7" dstpinname="Input Value" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="709" srcpinname="Window Handle" dstnodeid="707" dstpinname="Input Value">
-   </LINK>
-   <LINK srcnodeid="607" srcpinname="Y Output Value" dstnodeid="709" dstpinname="Enabled" linkstyle="VHV" hiddenwhenlocked="0">
-   <LINKPOINT x="660" y="8010">
-   </LINKPOINT>
-   <LINKPOINT x="1770" y="8010">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="728" srcpinname="Y Output Value" dstnodeid="709" dstpinname="Fullscreen">
-   </LINK>
-   <LINK srcnodeid="709" srcpinname="Actual BackBuffer SizeXY" dstnodeid="743" dstpinname="Res" hiddenwhenlocked="1">
-   </LINK>
-   <LINK srcnodeid="743" srcpinname="AASamples" dstnodeid="709" dstpinname="AA Samples per Pixel" hiddenwhenlocked="1">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="745">
    <BOUNDS type="Box" left="5580" top="6525" width="285" height="240">
    </BOUNDS>
@@ -1731,5 +1627,127 @@
    </LINKPOINT>
    <LINKPOINT x="5725" y="6448">
    </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="746">
+   <BOUNDS type="Box" left="4170" top="5610" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4170" top="5610" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="120">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="746" srcpinname="Y Output Value" dstnodeid="612" dstpinname="AutoBackUpPeriod" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="4760" y="5988">
+   </LINKPOINT>
+   <LINKPOINT x="5935" y="5953">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="612" srcpinname="Success" dstnodeid="646" dstpinname="Send" hiddenwhenlocked="1" linkstyle="VHV">
+   <LINKPOINT x="5160" y="7455">
+   </LINKPOINT>
+   <LINKPOINT x="5070" y="7455">
+   </LINKPOINT>
+   </LINK>
+   <NODE id="709" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" stayontop="0" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="480" top="8145" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="480" top="8145" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10320" top="0" width="18480" height="13710">
+   </BOUNDS>
+   <PIN pinname="AA Samples per Pixel" slicecount="1" visible="1" values="4">
+   </PIN>
+   <PIN pinname="Fullscreen" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Actual BackBuffer SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enable Depth Buffer" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="VSync" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Do Not Wait" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Flip Sequential" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="574" srcpinname="Input Value" dstnodeid="709" dstpinname="View" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="709" srcpinname="Actual BackBuffer SizeXY" dstnodeid="7" dstpinname="Input Value" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="709" srcpinname="Window Handle" dstnodeid="707" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="607" srcpinname="Y Output Value" dstnodeid="709" dstpinname="Enabled" linkstyle="VHV" hiddenwhenlocked="0">
+   <LINKPOINT x="660" y="8010">
+   </LINKPOINT>
+   <LINKPOINT x="1770" y="8010">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="728" srcpinname="Y Output Value" dstnodeid="709" dstpinname="Fullscreen">
+   </LINK>
+   <LINK srcnodeid="709" srcpinname="Actual BackBuffer SizeXY" dstnodeid="743" dstpinname="Res" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="743" srcpinname="AASamples" dstnodeid="709" dstpinname="AA Samples per Pixel" hiddenwhenlocked="1">
+   </LINK>
+   <NODE id="608" componentmode="Hidden" systemname="_GRAPHICS" filename="Subs\_GRAPHICS.v4p" nodename="Subs\_GRAPHICS.v4p" hiddenwhenlocked="0" managers="" debug="0">
+   <BOUNDS type="Node" left="630" top="7635" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="630" top="7635" width="4812" height="6540">
+   </BOUNDS>
+   <PIN pinname="ShowLabels" visible="1">
+   </PIN>
+   <PIN pinname="EnableGUI" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="1635" top="5685" width="4815" height="5910">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ShowValues" visible="1">
+   </PIN>
+   <PIN pinname="Marker" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="669" srcpinname="Y Output Value" dstnodeid="608" dstpinname="ShowValues" linkstyle="VHV">
+   <LINKPOINT x="2550" y="7500">
+   </LINKPOINT>
+   <LINKPOINT x="1800" y="7500">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="606" srcpinname="Y Output Value" dstnodeid="608" dstpinname="ShowLabels" hiddenwhenlocked="0" linkstyle="VHV">
+   <LINKPOINT x="1590" y="7493">
+   </LINKPOINT>
+   <LINKPOINT x="1065" y="7493">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="607" srcpinname="Y Output Value" dstnodeid="608" dstpinname="EnableGUI" hiddenwhenlocked="0" linkstyle="VHV">
+   <LINKPOINT x="660" y="7508">
+   </LINKPOINT>
+   <LINKPOINT x="660" y="7508">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="738" srcpinname="Y Output Value" dstnodeid="608" dstpinname="Marker" linkstyle="VHV">
+   <LINKPOINT x="3495" y="7703">
+   </LINKPOINT>
+   <LINKPOINT x="1425" y="7703">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="608" srcpinname="Layer Out" dstnodeid="709" dstpinname="Layers" hiddenwhenlocked="0">
    </LINK>
    </PATCH>

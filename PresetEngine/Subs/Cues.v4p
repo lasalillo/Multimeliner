@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Cues.v4p" systemname="Cues" filename="D:\_VVVV\_VL\User\PresetEngine\Cues.v4p" scrollx="0" scrolly="675">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Cues.v4p" systemname="Cues" filename="D:\_VVVV\_VL\User\PresetEngine\Cues.v4p" scrollx="15" scrolly="0">
    <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="4470" top="5565" width="100" height="100">
    </BOUNDS>
@@ -2361,7 +2361,7 @@
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="230">
-   <BOUNDS type="Node" left="5025" top="570" width="100" height="100">
+   <BOUNDS type="Node" left="5025" top="135" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="Tracks">
    </PIN>
@@ -2463,15 +2463,13 @@
    <LINK srcnodeid="142" srcpinname="Output Node" dstnodeid="151" dstpinname="Data">
    </LINK>
    <NODE systemname="GetGroupID (Utilities Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="GetGroupID (Utilities Preset)" componentmode="Hidden" id="128">
-   <BOUNDS type="Node" left="3960" top="4830" width="100" height="100">
+   <BOUNDS type="Node" left="4095" top="4650" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Data" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="GroupID" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="128" srcpinname="GroupID" dstnodeid="17" dstpinname="Index">
-   </LINK>
    <NODE systemname="GetName (Utilities Preset)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="GetName (Utilities Preset)" componentmode="Hidden" id="107">
    <BOUNDS type="Node" left="5370" top="4680" width="100" height="100">
    </BOUNDS>
@@ -2543,12 +2541,12 @@
    </PIN>
    <PIN pinname="D" visible="1">
    </PIN>
+   <PIN pinname="FolowPointer" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="11" srcpinname="SelectedID" dstnodeid="101" dstpinname="Y Input Value">
    </LINK>
    <LINK srcnodeid="11" srcpinname="State" dstnodeid="130" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="230" srcpinname="Input Value" dstnodeid="11" dstpinname="TrackInfo">
    </LINK>
    <LINK srcnodeid="11" srcpinname="Active" dstnodeid="38" dstpinname="Data">
    </LINK>
@@ -2881,7 +2879,7 @@
    </PIN>
    <PIN pinname="Size" slicecount="1" values="30">
    </PIN>
-   <PIN pinname="Transform" visible="1">
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Color" visible="1">
    </PIN>
@@ -2893,8 +2891,6 @@
    <LINK srcnodeid="5" srcpinname="Layer" dstnodeid="13" dstpinname="Layer 2">
    </LINK>
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="5" dstpinname="Color">
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="5" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="262" srcpinname="Output" dstnodeid="5" dstpinname="Apply">
    </LINK>
@@ -2923,8 +2919,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Output" dstnodeid="18" dstpinname="Color">
-   </LINK>
-   <LINK srcnodeid="32" srcpinname="Transform Out" dstnodeid="18" dstpinname="Transform">
    </LINK>
    <LINK srcnodeid="262" srcpinname="Output" dstnodeid="18" dstpinname="Apply">
    </LINK>
@@ -3675,5 +3669,75 @@
    <LINK srcnodeid="66" srcpinname="Layer Out" dstnodeid="13" dstpinname="Layer 7">
    </LINK>
    <LINK srcnodeid="173" srcpinname="Layer Out" dstnodeid="13" dstpinname="Layer 6">
+   </LINK>
+   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="324">
+   <BOUNDS type="Node" left="5055" top="6690" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Default" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Transform Out" dstnodeid="324" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="324" srcpinname="Output" dstnodeid="5" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="325">
+   <BOUNDS type="Node" left="7890" top="6810" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Default" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="327">
+   <BOUNDS type="Box" left="11265" top="870" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11265" top="870" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="FolowPointer" dstnodeid="327" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="230" srcpinname="Input Value" dstnodeid="11" dstpinname="TrackInfo">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Transform Out" dstnodeid="325" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="325" srcpinname="Output" dstnodeid="18" dstpinname="Transform">
+   </LINK>
+   <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="328">
+   <BOUNDS type="Node" left="4095" top="5085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="128" srcpinname="GroupID" dstnodeid="328" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="328" srcpinname="Output" dstnodeid="17" dstpinname="Index">
+   </LINK>
+   <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="329">
+   <BOUNDS type="Node" left="2475" top="7545" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="ScaleXY" slicecount="2" values="0,0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="329" srcpinname="Transform Out" dstnodeid="324" dstpinname="Default">
+   </LINK>
+   <LINK srcnodeid="329" srcpinname="Transform Out" dstnodeid="325" dstpinname="Default">
    </LINK>
    </PATCH>
