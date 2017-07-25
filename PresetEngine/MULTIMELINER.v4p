@@ -5,9 +5,9 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="244" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6660" top="5400" width="285" height="240">
+   <BOUNDS type="Box" left="6810" top="5400" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6660" top="5400" width="0" height="0">
+   <BOUNDS type="Node" left="6810" top="5400" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -29,9 +29,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="245" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6990" top="5730" width="630" height="240">
+   <BOUNDS type="Box" left="7140" top="5730" width="630" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6990" top="5730" width="0" height="0">
+   <BOUNDS type="Node" left="7140" top="5730" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -277,7 +277,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="2670" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Presets\VideoLinked.xml">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Presets\AudioOffset.xml">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.txt">
    </PIN>
@@ -343,7 +343,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="5310" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="356.6">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="366.69">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -761,7 +761,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="8670" top="6120" width="5275" height="4240">
    </BOUNDS>
-   <BOUNDS type="Window" left="4155" top="9870" width="8415" height="4995">
+   <BOUNDS type="Window" left="4500" top="5850" width="9690" height="7410">
    </BOUNDS>
    <PIN pinname="Filename" slicecount="1" visible="1" values="|..\..\..\..\Platano\AUDIO\discurse dub version.wav|">
    </PIN>
@@ -772,6 +772,8 @@
    <PIN pinname="Seek" visible="1">
    </PIN>
    <PIN pinname="Play" visible="1">
+   </PIN>
+   <PIN pinname="StartOffset" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="694" srcpinname="Seek" dstnodeid="698" dstpinname="Y Input Value">
@@ -1013,9 +1015,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Player" filename="Subs\Player.v4p" nodename="Subs\Player.v4p" componentmode="Hidden" id="241" debug="0">
-   <BOUNDS type="Node" left="6660" top="6120" width="735" height="270">
+   <BOUNDS type="Node" left="6810" top="6120" width="735" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="6660" top="6120" width="6555" height="9270">
+   <BOUNDS type="Box" left="6810" top="6120" width="6555" height="9270">
    </BOUNDS>
    <BOUNDS type="Window" left="930" top="4125" width="8790" height="10785">
    </BOUNDS>
@@ -1065,15 +1067,15 @@
    <LINK srcnodeid="245" srcpinname="Y Output Value" dstnodeid="241" dstpinname="ToggleInterp">
    </LINK>
    <LINK srcnodeid="241" srcpinname="Info" dstnodeid="667" dstpinname="Input String" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="7280" y="6875">
+   <LINKPOINT x="7380" y="6875">
    </LINKPOINT>
-   <LINKPOINT x="5845" y="6595">
+   <LINKPOINT x="5895" y="6595">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="241" srcpinname="Length" dstnodeid="702" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="7245" y="6480">
+   <LINKPOINT x="7345" y="6480">
    </LINKPOINT>
-   <LINKPOINT x="7785" y="6480">
+   <LINKPOINT x="7835" y="6480">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="241" srcpinname="Position" dstnodeid="694" dstpinname="SeekTime">
@@ -1143,9 +1145,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="241" srcpinname="Position" dstnodeid="726" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="7020" y="6488">
+   <LINKPOINT x="7120" y="6488">
    </LINKPOINT>
-   <LINKPOINT x="7005" y="6488">
+   <LINKPOINT x="7055" y="6488">
    </LINKPOINT>
    </LINK>
    <NODE id="612" componentmode="Hidden" systemname="EDITOR" filename="Subs\EDITOR.v4p" nodename="Subs\EDITOR.v4p" debug="0">
@@ -1200,6 +1202,8 @@
    <PIN pinname="AutoBackUpPeriod" visible="1">
    </PIN>
    <PIN pinname="Success" visible="1">
+   </PIN>
+   <PIN pinname="AudioOffset" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="701" srcpinname="Output String" dstnodeid="612" dstpinname="AudioFile" linkstyle="VHV">
@@ -1311,7 +1315,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8670" top="5475" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1323,7 +1327,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="AUDIO">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="729" srcpinname="Y Output Value" dstnodeid="694" dstpinname="Play">
@@ -1669,7 +1673,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="480" top="8595" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="10320" top="-180" width="18480" height="13740">
+   <BOUNDS type="Window" left="10320" top="0" width="18480" height="13740">
    </BOUNDS>
    <PIN pinname="AA Samples per Pixel" slicecount="1" visible="1" values="4">
    </PIN>
@@ -1860,6 +1864,28 @@
    <LINKPOINT x="8550" y="8610">
    </LINKPOINT>
    <LINKPOINT x="3990" y="8610">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="755">
+   <BOUNDS type="Box" left="7305" top="3240" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7305" top="3240" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="70">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="StartOffset">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="755" srcpinname="Y Output Value" dstnodeid="612" dstpinname="AudioOffset" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="7305" y="4800">
+   </LINKPOINT>
+   <LINKPOINT x="5580" y="4800">
    </LINKPOINT>
    </LINK>
    </PATCH>

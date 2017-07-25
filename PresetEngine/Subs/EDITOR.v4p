@@ -271,9 +271,9 @@
    <LINK srcnodeid="23" srcpinname="Output" dstnodeid="21" dstpinname="Input Value">
    </LINK>
    <NODE systemname="Globals" filename="Globals.v4p" nodename="Subs\Globals.v4p" componentmode="Hidden" id="15" hiddenwhenlocked="0">
-   <BOUNDS type="Node" left="3120" top="4830" width="0" height="0">
+   <BOUNDS type="Node" left="3090" top="5295" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="3120" top="4830" width="8820" height="9430">
+   <BOUNDS type="Box" left="3090" top="5295" width="8820" height="9430">
    </BOUNDS>
    <BOUNDS type="Window" left="12510" top="3075" width="10155" height="10590">
    </BOUNDS>
@@ -301,11 +301,13 @@
    </PIN>
    <PIN pinname="Set" visible="1">
    </PIN>
+   <PIN pinname="AudioOffset" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Init" hiddenwhenlocked="0" linkstyle="Bezier">
-   <LINKPOINT x="2500" y="2760">
+   <LINKPOINT x="2490" y="2915">
    </LINKPOINT>
-   <LINKPOINT x="3305" y="2760">
+   <LINKPOINT x="3285" y="3070">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="15" dstpinname="InitialTrackName" hiddenwhenlocked="0">
@@ -723,5 +725,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="41" srcpinname="Save Completed" dstnodeid="65" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="66">
+   <BOUNDS type="Box" left="5070" top="4815" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5070" top="4815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.16">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="AudioOffset">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="15" dstpinname="AudioOffset">
    </LINK>
    </PATCH>

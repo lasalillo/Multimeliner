@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\WavefilePicture.v4p" systemname="WavefilePicture" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\WavefilePicture.v4p" scrollx="1950" scrolly="195">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\WavefilePicture.v4p" systemname="WavefilePicture" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\WavefilePicture.v4p" scrollx="0" scrolly="0">
    <NODE systemname="Quad (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Quad (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2610" top="6120" width="100" height="100">
    </BOUNDS>
@@ -191,7 +191,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="15">
-   <BOUNDS type="Node" left="1335" top="1290" width="100" height="100">
+   <BOUNDS type="Node" left="1680" top="585" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="Length">
    </PIN>
@@ -215,7 +215,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="17">
-   <BOUNDS type="Node" left="1665" top="1725" width="100" height="100">
+   <BOUNDS type="Node" left="225" top="825" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="SongLength">
    </PIN>
@@ -245,7 +245,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (String)" nodename="R (String)" componentmode="Hidden" id="20">
-   <BOUNDS type="Node" left="1005" top="750" width="100" height="100">
+   <BOUNDS type="Node" left="405" top="420" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="WavefilePic">
    </PIN>
@@ -591,5 +591,33 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="45" srcpinname="Color Output" dstnodeid="0" dstpinname="Color">
+   </LINK>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="46">
+   <BOUNDS type="Node" left="1815" top="1335" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Input Value" dstnodeid="46" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="46" srcpinname="Output" dstnodeid="9" dstpinname="CenterX">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="48">
+   <BOUNDS type="Node" left="1125" top="75" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="AudioOffset">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="AudioOffset">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="48" srcpinname="Input Value" dstnodeid="46" dstpinname="Input">
    </LINK>
    </PATCH>

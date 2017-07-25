@@ -229,7 +229,7 @@
    <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="30">
    <BOUNDS type="Node" left="3585" top="8130" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="8" values="track,trackgf,trackrererer,track5555,track1111,track4444,trackwewewew,track5454545409090">
+   <PIN pinname="Input" visible="1" slicecount="25" values="__TRACKING,__Camera_Names,__GLOBALS,Video1_Names,Video1_Values,Video2_Names,Video2_Values,Video3_Names,Video3_Values,Video4_Names,Video4_Values,LongShadows,DistFlow,|2D Shadows|,Fluids,Particles,Starfield,Camera,FeedbackFilter,Bubble,____,____,____,Generators,|CTR Return|">
    </PIN>
    <PIN pinname="Index" visible="1">
    </PIN>
@@ -311,7 +311,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Keyboard)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Keyboard)" componentmode="Hidden" id="44">
-   <BOUNDS type="Node" left="6150" top="570" width="100" height="100">
+   <BOUNDS type="Node" left="5445" top="555" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="Keyboard">
    </PIN>
@@ -321,7 +321,7 @@
    </PIN>
    <PIN pinname="Display Channel" slicecount="1" values="0">
    </PIN>
-   <BOUNDS type="Box" left="6150" top="570">
+   <BOUNDS type="Box" left="5445" top="555">
    </BOUNDS>
    </NODE>
    <NODE systemname="S (String)" nodename="S (String)" componentmode="Hidden" id="45">
@@ -475,6 +475,8 @@
    </PIN>
    <PIN pinname="AudioFile" visible="1">
    </PIN>
+   <PIN pinname="AudioOffset" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="53" srcpinname="Length" dstnodeid="54" dstpinname="Input Value">
    </LINK>
@@ -527,13 +529,13 @@
    <LINK srcnodeid="48" srcpinname="Input Value" dstnodeid="38" dstpinname="Input">
    </LINK>
    <NODE systemname="Join (Utilities Globals)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Join (Utilities Globals)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="1995" top="5535" width="100" height="100">
+   <BOUNDS type="Node" left="1575" top="5430" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="TracksCount" slicecount="1" visible="1" values="43">
+   <PIN pinname="TracksCount" slicecount="1" visible="1" values="22">
    </PIN>
-   <PIN pinname="TrackSize" visible="1" slicecount="1" values="0.133">
+   <PIN pinname="TrackSize" visible="1" slicecount="1" values="0.125">
    </PIN>
    <PIN pinname="Length" visible="1" slicecount="1" values="356.6">
    </PIN>
@@ -541,7 +543,9 @@
    </PIN>
    <PIN pinname="TrackNames" visible="1" slicecount="1" values="track">
    </PIN>
-   <PIN pinname="AudioFile" visible="1" slicecount="1" values="|C:\_AUDIO\01 - I Know No Weekend.wav|">
+   <PIN pinname="AudioFile" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="AudioOffset" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="58" dstpinname="TrackSize">
@@ -563,39 +567,41 @@
    </BOUNDS>
    <PIN pinname="WriterData" visible="1">
    </PIN>
-   <PIN pinname="TrackCount" visible="1">
+   <PIN pinname="TrackCount" visible="1" slicecount="1" values="22">
    </PIN>
-   <PIN pinname="TrackSize" visible="1">
+   <PIN pinname="TrackSize" visible="1" slicecount="1" values="0.125">
    </PIN>
-   <PIN pinname="Length" visible="1">
+   <PIN pinname="Length" visible="1" slicecount="1" values="356.6">
    </PIN>
    <PIN pinname="Globals" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="TrackNames" visible="1" slicecount="1" values="||">
+   <PIN pinname="TrackNames" visible="1" slicecount="1" values="track">
    </PIN>
-   <PIN pinname="SetDefault" visible="1">
+   <PIN pinname="SetDefault" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="SetLoopStart" visible="1">
+   <PIN pinname="SetLoopStart" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="SetLoopEnd" visible="1">
+   <PIN pinname="SetLoopEnd" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Pointer" visible="1">
+   <PIN pinname="Pointer" visible="1" slicecount="1" values="267.734527587891">
    </PIN>
-   <PIN pinname="Init" visible="1">
+   <PIN pinname="Init" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Keyboard" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="TrackID" visible="1" slicecount="1" values="0">
+   <PIN pinname="TrackID" visible="1" slicecount="1" values="8">
    </PIN>
-   <PIN pinname="TrackActive" visible="1">
+   <PIN pinname="TrackActive" visible="1" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="EditName" visible="1">
+   <PIN pinname="EditName" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="TrackNames Bin Size" visible="1">
+   <PIN pinname="TrackNames Bin Size" visible="1" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="AudioFile" visible="1">
+   <PIN pinname="AudioFile" visible="1" slicecount="1" values="|C:\_AUDIO\01 - I Know No Weekend.wav|">
    </PIN>
-   <PIN pinname="Set" visible="1">
+   <PIN pinname="Set" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="AudioOffset" visible="1" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="4" dstpinname="TrackCount">
@@ -699,5 +705,35 @@
    <LINK srcnodeid="66" srcpinname="Output" dstnodeid="4" dstpinname="Globals">
    </LINK>
    <LINK srcnodeid="69" srcpinname="Input Value" dstnodeid="66" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="70">
+   <BOUNDS type="Box" left="7275" top="3495" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7275" top="3495" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="AudioOffset">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="70" srcpinname="Y Output Value" dstnodeid="4" dstpinname="AudioOffset">
+   </LINK>
+   <LINK srcnodeid="70" srcpinname="Y Output Value" dstnodeid="58" dstpinname="AudioOffset">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="75">
+   <BOUNDS type="Node" left="6885" top="8100" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" visible="1" values="AudioOffset">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="53" srcpinname="AudioOffset" dstnodeid="75" dstpinname="Input Value">
    </LINK>
    </PATCH>

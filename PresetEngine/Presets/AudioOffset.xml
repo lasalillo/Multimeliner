@@ -877,7 +877,7 @@
             "ID": 16,
             "GroupID": 8,
             "Name": "Def-70",
-            "Time": 1.0,
+            "Time": 0.99999994,
             "Values": {
               "_flags": "cached",
               "id": 55
@@ -4097,7 +4097,7 @@
   "Globals": {
     "TracksCount": 25,
     "TrackSize": 0.125,
-    "Length": 356.6,
+    "Length": 366.69,
     "LoopPoints": {
       "X": 40.7519264,
       "Y": 49.1375923
@@ -4133,7 +4133,7 @@
         ]
       }
     },
-    "AudioFile": "C:\\_AUDIO\\01 - I Know No Weekend.wav"
-    "AudioOffset": 0
+    "AudioFile": "C:\\_AUDIO\\01 - I Know No Weekend.wav",
+    "AudioOffset": 70.0
   }
 }
