@@ -171,7 +171,7 @@
    </BOUNDS>
    <PIN pinname="Value" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="File Path" visible="1" slicecount="1" values="..\Presets\Backs\VideoLinked0722141359.xml">
+   <PIN pinname="File Path" visible="1" slicecount="1" values="..\Presets\Backs\VideoLinked0725224246.xml">
    </PIN>
    <PIN pinname="Write" visible="1" slicecount="1" values="0">
    </PIN>
@@ -274,18 +274,6 @@
    </LINK>
    <LINK srcnodeid="53" srcpinname="Output" dstnodeid="32" dstpinname="Write">
    </LINK>
-   <NODE systemname="Reader (WriterData)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Reader (WriterData)" componentmode="Hidden" id="55">
-   <BOUNDS type="Node" left="1500" top="4410" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="55" dstpinname="Read">
-   </LINK>
-   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="55" dstpinname="File Path">
-   </LINK>
-   <LINK srcnodeid="55" srcpinname="Result" dstnodeid="25" dstpinname="Input Value">
-   </LINK>
-   <LINK srcnodeid="55" srcpinname="On Completed" dstnodeid="12" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="56">
    <BOUNDS type="Node" left="6060" top="2790" width="100" height="100">
    </BOUNDS>
@@ -297,5 +285,17 @@
    <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="56" srcpinname="Up Edge" dstnodeid="46" dstpinname="Reset">
+   </LINK>
+   <NODE systemname="Reader (WriterData)" filename="..\vl\VVVV.Value.PresetEngine.vl" nodename="Reader (WriterData)" componentmode="Hidden" id="63">
+   <BOUNDS type="Node" left="1500" top="4410" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="63" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="63" dstpinname="File Path">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Result" dstnodeid="25" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="On Completed" dstnodeid="12" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

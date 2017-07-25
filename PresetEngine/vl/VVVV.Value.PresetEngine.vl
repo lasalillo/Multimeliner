@@ -10173,7 +10173,7 @@
               <Pin Id="OBHMw4y1vEbOOSWCyZzIYk" Name="Output" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="DGioexntHf8OmKFmgPIRNK" Bounds="-255,-198" />
-            <Pad Id="Uje2rc0twzSOzYgqqI0Ui1" Comment="X" Bounds="-279,2072,45,19" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="Uje2rc0twzSOzYgqqI0Ui1" Comment="X" Bounds="-270,2281,45,19" ShowValueBox="true" isIOBox="true" />
             <Pad Id="N2dtRhujMwKMvwNZue8iEH" Comment="ZoomFactor" Bounds="-403,1836,45,19" ShowValueBox="true" isIOBox="true" />
             <Pad Id="A6ls8TIMB33MJi9VPRZud1" Comment="Length" Bounds="-206,1917,45,19" ShowValueBox="true" isIOBox="true" />
             <Node Bounds="-599,714,102,13" Id="HICce9WhnvSLvRWRUPpkJR">
@@ -12421,6 +12421,19 @@
               <Pin Id="LIDnOoYw8igM6Z7aRHH28d" Name="Output" Kind="OutputPin" />
             </Node>
             <Pad Id="P5ViSxFzPtQMUif1gtKPq5" Comment="AddCopy" Bounds="-337,2837,40,19" ShowValueBox="true" isIOBox="true" />
+            <Node Bounds="-276,2212,85,13" Id="F4MtJVPXliYNOGW01ijOD5">
+              <p:NodeReference LastCategoryFullName="Math.Ranges" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="MapClamp" />
+                <CategoryReference Kind="Category" Name="Ranges" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="CVamvogqvMyMOianN9qwh7" Name="Input" Kind="InputPin" />
+              <Pin Id="U94vMAGxrVrMAAAtONh50T" Name="Input Minimum" Kind="InputPin" />
+              <Pin Id="NcpRTBQdMUJQUeoQCbuBsP" Name="Input Maximum" Kind="InputPin" />
+              <Pin Id="LZqaF8r9aBcPpVIdK2N0yt" Name="Output Minimum" Kind="InputPin" />
+              <Pin Id="FOYABUvoNv6QYjStghcwX4" Name="Output Maximum" Kind="InputPin" />
+              <Pin Id="FErPri7CrlAPlqYWVM81JZ" Name="Output" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <ProcessDefinition Id="B6JYGXHDPllLMD6Y63ozxf">
             <Fragment Id="VpohWHZHb3NMuJ7vuYoE1x" Patch="DLWBd2T9saCQTq4mvhGzlc" Enabled="true" />
@@ -12875,7 +12888,6 @@
           <Link Id="RhCSQVirkfPMhU8IG7R1kO" Ids="QVWzU0Y4PVuLAnunUQ49D4,TI9bSCpBO9HPC4l86AUK75" />
           <Link Id="H0N8vcQJtbVMmTs2vDpLWZ" Ids="HUiwiRBtzSeL8EjJ3KNMoI,H7ZYonhNzsFN98IqAclqwN" />
           <Link Id="F4AJABtibHMP6ApCflfdU4" Ids="A6ls8TIMB33MJi9VPRZud1,DTuRhW4d8kLLffFILz91U3" />
-          <Link Id="ABfsgaYHKlkNa1XtXu7rwE" Ids="HgzbEvK9R0PMXpI7RyziV5,Uje2rc0twzSOzYgqqI0Ui1" />
           <Link Id="A4U0H6wAwxsQWvZ194TlX4" Ids="HgzbEvK9R0PMXpI7RyziV5,LeQ5ZyUsNj7OOX1sWeY5uC" />
           <Link Id="K9rMR2hBuMeQBs3YDNYdEk" Ids="MdzkSBRkRfvOQ0K523YGKd,Itw9Pez2gcCN3Tqi42YJtk" />
           <Link Id="O9z7jVWyXi4OjFnQ3fCRmM" Ids="HTL51zkunB4OOfwRX07Hh1,NuMUK9p3VufNHhdW5ddDTV" />
@@ -12930,6 +12942,10 @@
           <Link Id="RedupB0bdqZOrd6Bt6fa2x" Ids="LIDnOoYw8igM6Z7aRHH28d,AlrXAIXafXUNNX6rHBDiCO" />
           <Link Id="BrPyVPw7IfeO8bGHNWDysE" Ids="UUXRpvNHUGHOcGfwOui5jK,P5ViSxFzPtQMUif1gtKPq5" />
           <Link Id="VsS8lizgf8TPd70VsCVkYD" Ids="VtIl5I51MakNuSBxEUjPBW,Kjc5Vu9Z9ePMqhu2f9HHcQ" />
+          <Link Id="PND5ZZzcTARNLuMchhRCqz" Ids="A6ls8TIMB33MJi9VPRZud1,FOYABUvoNv6QYjStghcwX4" />
+          <Link Id="VngJ97uEHQxQOWfNEqBJKQ" Ids="A6ls8TIMB33MJi9VPRZud1,NcpRTBQdMUJQUeoQCbuBsP" />
+          <Link Id="TsbfigNuI9GLa36IB3NXit" Ids="HgzbEvK9R0PMXpI7RyziV5,CVamvogqvMyMOianN9qwh7" />
+          <Link Id="MpIzJhLxos4N00ZLrHDmTG" Ids="FErPri7CrlAPlqYWVM81JZ,Uje2rc0twzSOzYgqqI0Ui1" />
         </Patch>
       </Node>
       <!--
