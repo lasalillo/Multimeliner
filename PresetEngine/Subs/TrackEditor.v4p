@@ -202,7 +202,7 @@
    </LINK>
    <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="ScaleY">
    </LINK>
-   <BOUNDS type="Window" left="11130" top="5925" width="8670" height="6945">
+   <BOUNDS type="Window" left="2265" top="6360" width="8670" height="6945">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -247,7 +247,7 @@
    </PIN>
    <PIN pinname="SetDefault" visible="1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Snap" visible="1" slicecount="1" values="0.0999739453125001">
+   <PIN pinname="Snap" visible="1" slicecount="1" values="1.22965614401291">
    </PIN>
    <PIN pinname="OnCue" visible="1">
    </PIN>
@@ -393,7 +393,7 @@
    </PIN>
    <PIN pinname="Change" visible="1">
    </PIN>
-   <PIN pinname="Index" visible="1" slicecount="1" values="13">
+   <PIN pinname="Index" visible="1" slicecount="1" values="20">
    </PIN>
    <PIN pinname="Insert" visible="1" slicecount="1" values="0">
    </PIN>
@@ -748,7 +748,7 @@
    </NODE>
    <LINK srcnodeid="20" srcpinname="MouseOnCue" dstnodeid="75" dstpinname="Input Value">
    </LINK>
-   <NODE systemname="FrameDelay (Globals)" filename="FrameDelay (Globals).v4p" nodename="FrameDelay (Globals).v4p" componentmode="Hidden" id="76">
+   <NODE systemname="FrameDelay (Globals)" filename="FrameDelay (Globals).v4p" nodename="FrameDelay (Globals).v4p" componentmode="Hidden" id="77">
    <BOUNDS type="Node" left="4805" top="4500" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3195" top="2658" width="3220" height="3685">
@@ -756,8 +756,8 @@
    <BOUNDS type="Window" left="7515" top="10020" width="4515" height="5835">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="76" srcpinname="Globals" dstnodeid="47" dstpinname="Input Value">
+   <LINK srcnodeid="77" srcpinname="Globals" dstnodeid="47" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="35" srcpinname="Globals" dstnodeid="76" dstpinname="Globals">
+   <LINK srcnodeid="35" srcpinname="Globals" dstnodeid="77" dstpinname="Globals">
    </LINK>
    </PATCH>

@@ -746,8 +746,6 @@
    </LINK>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="93" dstpinname="ToggleInterp">
    </LINK>
-   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="93" dstpinname="EaseInOut">
-   </LINK>
    <LINK srcnodeid="93" srcpinname="Position" dstnodeid="5" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="93" srcpinname="Current" dstnodeid="60" dstpinname="Input Value">
@@ -1187,5 +1185,7 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="44" srcpinname="Output" dstnodeid="93" dstpinname="Play">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Y Output Value" dstnodeid="93" dstpinname="EaseInOut">
    </LINK>
    </PATCH>

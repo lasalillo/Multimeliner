@@ -1055,7 +1055,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="256">
-   <BOUNDS type="Node" left="8775" top="2475" width="100" height="100">
+   <BOUNDS type="Node" left="8775" top="2625" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1063,7 +1063,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="257">
-   <BOUNDS type="Node" left="8775" top="2070" width="100" height="100">
+   <BOUNDS type="Node" left="8775" top="2220" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
    </PIN>

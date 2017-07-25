@@ -127,9 +127,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="13">
-   <BOUNDS type="Box" left="3900" top="1890" width="285" height="240">
+   <BOUNDS type="Box" left="3150" top="1815" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3900" top="1890" width="0" height="0">
+   <BOUNDS type="Node" left="3150" top="1815" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -139,13 +139,15 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Bang">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="OnData">
+   </PIN>
    </NODE>
    <NODE systemname="_MAIN_LaunchControlXL" filename="..\_LaunchControlXL\_MAIN_LaunchControlXL.v4p" nodename="..\_LaunchControlXL\_MAIN_LaunchControlXL.v4p" componentmode="Hidden" id="96" debug="0">
    <BOUNDS type="Node" left="756" top="2984" width="1965" height="270">
    </BOUNDS>
    <BOUNDS type="Box" left="15" top="90" width="15025" height="14140">
    </BOUNDS>
-   <BOUNDS type="Window" left="9735" top="2520" width="22875" height="14130">
+   <BOUNDS type="Window" left="1095" top="2100" width="22875" height="14130">
    </BOUNDS>
    <PIN pinname="Update" visible="1">
    </PIN>
