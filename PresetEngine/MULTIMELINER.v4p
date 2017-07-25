@@ -5,9 +5,9 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="244" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="6660" top="5100" width="285" height="240">
+   <BOUNDS type="Box" left="6660" top="5400" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="6660" top="5100" width="0" height="0">
+   <BOUNDS type="Node" left="6660" top="5400" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -29,9 +29,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="245" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="7005" top="5610" width="630" height="240">
+   <BOUNDS type="Box" left="6990" top="5730" width="630" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7005" top="5610" width="0" height="0">
+   <BOUNDS type="Node" left="6990" top="5730" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
