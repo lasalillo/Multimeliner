@@ -1315,7 +1315,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="8670" top="5475" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1327,7 +1327,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="AUDIO">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="729" srcpinname="Y Output Value" dstnodeid="694" dstpinname="Play">
@@ -1673,7 +1673,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="480" top="8595" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="10320" top="0" width="18480" height="13740">
+   <BOUNDS type="Window" left="10290" top="0" width="18510" height="13725">
    </BOUNDS>
    <PIN pinname="AA Samples per Pixel" slicecount="1" visible="1" values="4">
    </PIN>
