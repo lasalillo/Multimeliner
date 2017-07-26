@@ -147,7 +147,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="15" top="90" width="15025" height="14140">
    </BOUNDS>
-   <BOUNDS type="Window" left="1095" top="2100" width="22875" height="14130">
+   <BOUNDS type="Window" left="1095" top="2100" width="26565" height="14130">
    </BOUNDS>
    <PIN pinname="Update" visible="1">
    </PIN>

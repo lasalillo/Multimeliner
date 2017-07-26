@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\_LaunchPad-Mini\_LAUNCHPAD-MINI_.v4p" scrollx="0" scrolly="975" systemname="_LAUNCHPAD-MINI_" filename="D:\_VVVV\_VL\User\PresetEngine\_LaunchPad-Mini\_LAUNCHPAD-MINI_.v4p" bgcolor="15132390" locked="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\_LaunchPad-Mini\_LAUNCHPAD-MINI_.v4p" scrollx="30" scrolly="-360" systemname="_LAUNCHPAD-MINI_" filename="D:\_VVVV\_VL\User\PresetEngine\_LaunchPad-Mini\_LAUNCHPAD-MINI_.v4p" bgcolor="15132390" locked="0">
    <BOUNDS type="Window" left="3795" top="4965" width="17640" height="10260">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -1518,8 +1518,6 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="883" srcpinname="Output" dstnodeid="888" dstpinname="Up">
-   </LINK>
    <LINK srcnodeid="889" srcpinname="Output" dstnodeid="840" dstpinname="Play">
    </LINK>
    <LINK srcnodeid="888" srcpinname="Output" dstnodeid="840" dstpinname="Loop">
@@ -2479,5 +2477,43 @@
    <LINK srcnodeid="956" srcpinname="Output" dstnodeid="961" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="961" srcpinname="Up Edge" dstnodeid="957" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="962">
+   <BOUNDS type="Node" left="10170" top="7530" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="883" srcpinname="Output" dstnodeid="962" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="962" srcpinname="Output" dstnodeid="888" dstpinname="Up">
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="963">
+   <BOUNDS type="Node" left="14460" top="5670" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="LoopFromLaunchControl">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="LoopFromLaunchControl">
+   </PIN>
+   <PIN pinname="Display Channel" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="963" srcpinname="Input Value" dstnodeid="962" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="964">
+   <BOUNDS type="Node" left="14115" top="3915" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="LOOP">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="841" srcpinname="Loop" dstnodeid="964" dstpinname="Input Value">
    </LINK>
    </PATCH>
