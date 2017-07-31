@@ -125,9 +125,9 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
    <BOUNDS type="Node" left="5910" top="225" width="2985" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="5910" top="225" width="2010" height="2670">
+   <BOUNDS type="Box" left="5910" top="225" width="2040" height="3195">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|SEND DATA:&cr;&lf;&cr;&lf;TRACKING:&cr;&lf;Parameters Track 0&cr;&lf;Camera  Tracks 1,2&cr;&lf;&cr;&lf;CONTENT:&cr;&lf;first 3 tracks are not sent to content|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|SEND DATA:&cr;&lf;&cr;&lf;TRACKING:&cr;&lf;Parameters Track 0&cr;&lf;Camera  Track 1&cr;&lf;&cr;&lf;GLOBALS:&cr;&lf;Global mix parameters&cr;&lf;&cr;&lf;CONTENT:&cr;&lf;first 3 tracks are not sent to content|">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>

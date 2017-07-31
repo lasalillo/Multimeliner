@@ -749,9 +749,9 @@
    </PIN>
    </NODE>
    <NODE systemname="ShortCuts" filename="Subs\ShortCuts.v4p" nodename="Subs\ShortCuts.v4p" componentmode="Hidden" id="708" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="7440" top="8685" width="0" height="0">
+   <BOUNDS type="Node" left="8715" top="9030" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="7440" top="8685" width="5985" height="7770">
+   <BOUNDS type="Box" left="8715" top="9030" width="5985" height="7770">
    </BOUNDS>
    <BOUNDS type="Window" left="0" top="9840" width="10575" height="5760">
    </BOUNDS>
@@ -1861,9 +1861,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="757">
-   <BOUNDS type="Box" left="5880" top="8040" width="4860" height="240">
+   <BOUNDS type="Box" left="5865" top="8145" width="4860" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5880" top="8040" width="0" height="0">
+   <BOUNDS type="Node" left="5865" top="8145" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1895,6 +1895,8 @@
    </PIN>
    <PIN pinname="StartOffset" visible="1" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="AudioOffset" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="694" srcpinname="Seek" dstnodeid="698" dstpinname="Y Input Value">
    </LINK>
@@ -1905,9 +1907,27 @@
    <LINK srcnodeid="729" srcpinname="Y Output Value" dstnodeid="694" dstpinname="Play">
    </LINK>
    <LINK srcnodeid="694" srcpinname="Filename" dstnodeid="757" dstpinname="Input String" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="9195" y="7200">
+   <LINKPOINT x="9195" y="7235">
    </LINKPOINT>
-   <LINKPOINT x="5940" y="7200">
+   <LINKPOINT x="5940" y="7270">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="758">
+   <BOUNDS type="Box" left="5865" top="8625" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5865" top="8625" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="s">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="AudioOffset">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="694" srcpinname="AudioOffset" dstnodeid="758" dstpinname="Y Input Value" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="9375" y="7488">
+   </LINKPOINT>
+   <LINKPOINT x="5925" y="7498">
    </LINKPOINT>
    </LINK>
    </PATCH>
