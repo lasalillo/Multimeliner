@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ValuesPanel.v4p" systemname="ValuesPanel" filename="D:\_VVVV\_VL\User\PresetEngine\ValuesPanel.v4p" scrollx="0" scrolly="10770">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ValuesPanel.v4p" systemname="ValuesPanel" filename="D:\_VVVV\_VL\User\PresetEngine\ValuesPanel.v4p" scrollx="0" scrolly="7905">
    <NODE componentmode="InABox" id="0" nodename="IOBox (Color)" systemname="IOBox (Color)">
    <BOUNDS height="0" left="10890" top="3354" type="Node" width="0">
    </BOUNDS>
@@ -2743,7 +2743,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1861" top="12919" width="5215" height="7990">
    </BOUNDS>
-   <BOUNDS type="Window" left="3990" top="390" width="21570" height="15975">
+   <BOUNDS type="Window" left="690" top="255" width="21570" height="15975">
    </BOUNDS>
    <PIN pinname="ToBlend" visible="1" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
@@ -2881,24 +2881,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="227" srcpinname="Output" dstnodeid="432" dstpinname="Y Input Value">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="433">
-   <BOUNDS type="Box" left="7650" top="8130" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7650" top="8130" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Left Button|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="10" srcpinname="Left Button" dstnodeid="433" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="434">
    <BOUNDS type="Box" left="12300" top="1980" width="795" height="960">

@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" systemname="MULTIMELINER" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" scrollx="0" scrolly="-360" bgcolor="11443049" locked="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" systemname="MULTIMELINER" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" scrollx="0" scrolly="0" bgcolor="11443049" locked="0">
    <BOUNDS type="Window" left="0" top="0" width="10500" height="10305">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -277,7 +277,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="2670" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Presets\AudioOffset.xml">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg_Horatio_ARI.xml">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.txt">
    </PIN>
@@ -343,7 +343,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="5310" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1560">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="190">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -663,9 +663,9 @@
    <LINK srcnodeid="633" srcpinname="FPS" dstnodeid="662" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="667">
-   <BOUNDS type="Box" left="5745" top="7095" width="4875" height="825">
+   <BOUNDS type="Box" left="5865" top="7095" width="4875" height="825">
    </BOUNDS>
-   <BOUNDS type="Node" left="5745" top="7095" width="0" height="0">
+   <BOUNDS type="Node" left="5865" top="7095" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -697,7 +697,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Duration">
    </PIN>
-   <PIN pinname="Y Input Value">
+   <PIN pinname="Y Input Value" slicecount="1" values="1140.033">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="698">
@@ -713,7 +713,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Y Input Value">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="701">
@@ -721,7 +721,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="3225" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|C:\_AUDIO\01 - I Know No Weekend.wav|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\Dropbox\Rotonda\_ROTONDA\_MUSIC\Gugg2_21.07.wav">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -756,30 +756,6 @@
    <BOUNDS type="Window" left="0" top="9840" width="10575" height="5760">
    </BOUNDS>
    </NODE>
-   <NODE id="694" componentmode="Hidden" systemname="AudioPlayer" filename="Subs\AudioPlayer.v4p" nodename="Subs\AudioPlayer.v4p">
-   <BOUNDS type="Node" left="8670" top="6120" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="8670" top="6120" width="5275" height="4240">
-   </BOUNDS>
-   <BOUNDS type="Window" left="4500" top="5850" width="9690" height="7410">
-   </BOUNDS>
-   <PIN pinname="Filename" slicecount="1" visible="1" values="|..\..\..\..\Platano\AUDIO\discurse dub version.wav|">
-   </PIN>
-   <PIN pinname="Duration" visible="1">
-   </PIN>
-   <PIN pinname="Speed" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Seek" visible="1">
-   </PIN>
-   <PIN pinname="Play" visible="1">
-   </PIN>
-   <PIN pinname="StartOffset" visible="1" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="694" srcpinname="Seek" dstnodeid="698" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="694" srcpinname="Duration" dstnodeid="695" dstpinname="Y Input Value">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="710">
    <BOUNDS type="Box" left="1470" top="2715" width="480" height="480">
    </BOUNDS>
@@ -1067,9 +1043,9 @@
    <LINK srcnodeid="245" srcpinname="Y Output Value" dstnodeid="241" dstpinname="ToggleInterp">
    </LINK>
    <LINK srcnodeid="241" srcpinname="Info" dstnodeid="667" dstpinname="Input String" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="7380" y="6875">
+   <LINKPOINT x="7420" y="6875">
    </LINKPOINT>
-   <LINKPOINT x="5895" y="6595">
+   <LINKPOINT x="5975" y="6595">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="241" srcpinname="Length" dstnodeid="702" dstpinname="Y Input Value" linkstyle="VHV">
@@ -1077,8 +1053,6 @@
    </LINKPOINT>
    <LINKPOINT x="7835" y="6480">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="241" srcpinname="Position" dstnodeid="694" dstpinname="SeekTime">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="712">
    <BOUNDS type="Box" left="8805" top="3510" width="1440" height="240">
@@ -1330,8 +1304,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="729" srcpinname="Y Output Value" dstnodeid="694" dstpinname="Play">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="730">
    <BOUNDS type="Box" left="4410" top="7170" width="795" height="240">
    </BOUNDS>
@@ -1867,11 +1839,11 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="755">
-   <BOUNDS type="Box" left="7305" top="3240" width="795" height="240">
+   <BOUNDS type="Box" left="7305" top="3240" width="930" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="7305" top="3240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-270">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1886,6 +1858,56 @@
    <LINKPOINT x="7305" y="4800">
    </LINKPOINT>
    <LINKPOINT x="5580" y="4800">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="757">
+   <BOUNDS type="Box" left="5880" top="8040" width="4860" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5880" top="8040" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="AudioFilename">
+   </PIN>
+   </NODE>
+   <NODE id="694" componentmode="Hidden" systemname="AudioPlayer" filename="Subs\AudioPlayer.v4p" nodename="Subs\AudioPlayer.v4p">
+   <BOUNDS type="Node" left="8670" top="6120" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8670" top="6120" width="5275" height="4240">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4500" top="5850" width="9690" height="7410">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="|..\..\..\..\Platano\AUDIO\discurse dub version.wav|">
+   </PIN>
+   <PIN pinname="Duration" visible="1">
+   </PIN>
+   <PIN pinname="Speed" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Seek" visible="1">
+   </PIN>
+   <PIN pinname="Play" visible="1">
+   </PIN>
+   <PIN pinname="StartOffset" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="694" srcpinname="Seek" dstnodeid="698" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="694" srcpinname="Duration" dstnodeid="695" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="241" srcpinname="Position" dstnodeid="694" dstpinname="SeekTime">
+   </LINK>
+   <LINK srcnodeid="729" srcpinname="Y Output Value" dstnodeid="694" dstpinname="Play">
+   </LINK>
+   <LINK srcnodeid="694" srcpinname="Filename" dstnodeid="757" dstpinname="Input String" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="9195" y="7200">
+   </LINKPOINT>
+   <LINKPOINT x="5940" y="7200">
    </LINKPOINT>
    </LINK>
    </PATCH>
