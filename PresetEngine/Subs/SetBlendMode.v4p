@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\SetBlendMode.v4p" systemname="SetBlendMode" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\SetBlendMode.v4p" scrollx="8115" scrolly="120">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\SetBlendMode.v4p" systemname="SetBlendMode" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\SetBlendMode.v4p" scrollx="6570" scrolly="1935">
    <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="0">
    <BOUNDS type="Node" left="1890" top="1290" width="100" height="100">
    </BOUNDS>
@@ -1127,11 +1127,11 @@
    <LINK srcnodeid="89" srcpinname="Output" dstnodeid="90" dstpinname="Input">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="88">
-   <BOUNDS type="Box" left="25665" top="3630" width="540" height="660">
+   <BOUNDS type="Box" left="25665" top="3630" width="825" height="825">
    </BOUNDS>
    <BOUNDS type="Node" left="25665" top="3630" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="2" visible="1" values="|GPol |,|GCyl  |">
+   <PIN pinname="Input String" slicecount="3" visible="1" values="|LumaPo |,|GPol |,|GCyl  |">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="text">
    </PIN>
@@ -1139,7 +1139,7 @@
    </PIN>
    <PIN pinname="Maximum Characters" slicecount="1" values="-1">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
+   <PIN pinname="Rows" slicecount="1" values="3">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
@@ -1977,11 +1977,11 @@
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="28" visible="1" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0">
+   <PIN pinname="Y Input Value" slicecount="28" visible="1" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0">
+   <PIN pinname="X Input Value" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0">
    </PIN>
    </NODE>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="162">
