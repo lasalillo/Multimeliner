@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" systemname="MULTIMELINER" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" scrollx="0" scrolly="0" bgcolor="11443049" locked="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" systemname="MULTIMELINER" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" scrollx="0" scrolly="360" bgcolor="11443049" locked="0">
    <BOUNDS type="Window" left="0" top="0" width="10500" height="10305">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -815,7 +815,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1" pintype="Output">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" pintype="Configuration" values="||">
    </PIN>
@@ -827,7 +827,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="ShowLabels">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" pintype="Input" visible="-1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" pintype="Input" visible="-1" values="1">
    </PIN>
    <BOUNDS type="Window" left="0" top="0" width="0" height="0">
    </BOUNDS>
@@ -1543,7 +1543,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="480" top="8595" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="10290" top="0" width="18510" height="13725">
+   <BOUNDS type="Window" left="10215" top="-45" width="18585" height="15645">
    </BOUNDS>
    <PIN pinname="AA Samples per Pixel" slicecount="1" visible="1" values="4">
    </PIN>
