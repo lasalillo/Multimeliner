@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\AudioTexture.v4p" scrollx="0" scrolly="0" systemname="AudioTexture" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\AudioTexture.v4p">
-   <BOUNDS type="Window" left="12675" top="7425" width="9000" height="6000">
+   <BOUNDS type="Window" left="14235" top="7530" width="9000" height="6000">
    </BOUNDS>
    <NODE systemname="WaveForm (Spreads)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="WaveForm (Spreads)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2775" top="1965" width="100" height="100">
@@ -23,7 +23,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5460" top="840" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\..\Audio\02 - Venter (Evian Christ TF 12 Mix).wav|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\..\Dropbox\Rotonda\_ROTONDA\_MUSIC\gugg0_03.08.wav">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -312,7 +312,7 @@
    </NODE>
    <LINK srcnodeid="23" srcpinname="Transform Out" dstnodeid="5" dstpinname="Texture Transform">
    </LINK>
-   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="Hidden" id="24">
+   <NODE systemname="Preview (DX11.Texture)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Preview (DX11.Texture)" componentmode="InAWindow" id="24">
    <BOUNDS type="Node" left="3585" top="4335" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3585" top="4335" width="6000" height="4500">

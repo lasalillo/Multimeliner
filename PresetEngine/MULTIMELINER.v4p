@@ -492,7 +492,7 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="SendData" filename="Subs\SendData.v4p" nodename="Subs\SendData.v4p" componentmode="Hidden" id="646" hiddenwhenlocked="1" debug="0">
+   <NODE systemname="SendData" filename="Subs\SendData.v4p" nodename="Subs\SendData.v4p" componentmode="Hidden" id="646" hiddenwhenlocked="1" debug="0" stayontop="0">
    <BOUNDS type="Node" left="5925" top="8655" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="5925" top="8655" width="7755" height="5205">

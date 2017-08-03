@@ -1288,4 +1288,10 @@
    </NODE>
    <LINK srcnodeid="277" srcpinname="OnData" dstnodeid="279" dstpinname="Y Input Value">
    </LINK>
+   <LINK srcnodeid="277" srcpinname="OnData" dstnodeid="23" dstpinname="Simulate" linkstyle="Bezier">
+   <LINKPOINT x="13095" y="5280">
+   </LINKPOINT>
+   <LINKPOINT x="13740" y="1020">
+   </LINKPOINT>
+   </LINK>
    </PATCH>

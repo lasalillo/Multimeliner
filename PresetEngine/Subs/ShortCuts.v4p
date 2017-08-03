@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ShortCuts.v4p" systemname="ShortCuts" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ShortCuts.v4p" bgcolor="16777215" scrollx="0" scrolly="-360">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ShortCuts.v4p" systemname="ShortCuts" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ShortCuts.v4p" bgcolor="16777215" scrollx="0" scrolly="0">
    <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
    <BOUNDS type="Node" left="270" top="225" width="2985" height="270">
    </BOUNDS>
@@ -164,6 +164,20 @@
    <PIN pinname="Font" slicecount="1" values="|Franklin Gothic Book|">
    </PIN>
    <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="8">
+   <BOUNDS type="Node" left="4965" top="5430" width="1350" height="3000">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4965" top="5430" width="1725" height="3525">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|LongShadows&cr;&lf;2D Shadows&cr;&lf;Bubble&cr;&lf;Last Part (EMPTY)&cr;&lf;Fluids&cr;&lf;EMPTY&cr;&lf;DistFlow&cr;&lf;Particles&cr;&lf;Starfield&cr;&lf;Camera&cr;&lf;FeedbackFilter&cr;&lf;Impulse&cr;&lf;Liquish&cr;&lf;CTR_Return|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
    </PATCH>
