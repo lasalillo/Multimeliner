@@ -165,7 +165,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5670" top="4530" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-2">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -179,7 +179,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5685" top="4845" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -243,7 +243,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4740" top="5130" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="5" visible="1" values="-2,-1,0,1,2">
+   <PIN pinname="Y Input Value" slicecount="5" visible="1" values="-1,-0.5,0,0.5,1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -277,7 +277,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5640" top="6210" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-2">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -291,7 +291,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5670" top="6465" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -305,7 +305,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5550" top="5130" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="5" visible="1" values="0.02,0.03,0.022,0.03,0.02">
+   <PIN pinname="Y Input Value" slicecount="5" visible="1" values="0.02,0.01,0.01,0.01,0.02">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -323,9 +323,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="21" systemname="IOBox (Enumerations)">
-   <BOUNDS type="Box" left="3300" top="6000" width="810" height="240">
+   <BOUNDS type="Box" left="585" top="5820" width="810" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3300" top="6000" width="0" height="0">
+   <BOUNDS type="Node" left="585" top="5820" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Enum" slicecount="1" visible="1" values="Linear">
    </PIN>
@@ -578,7 +578,7 @@
    </LINK>
    <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Y">
    </LINK>
-   <BOUNDS type="Window" left="12330" top="5385" width="13425" height="9270">
+   <BOUNDS type="Window" left="5340" top="5235" width="13425" height="9270">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -587,9 +587,9 @@
    <LINK srcnodeid="7" srcpinname="Output" dstnodeid="34" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4830" top="3510" width="795" height="960">
+   <BOUNDS type="Box" left="4710" top="3510" width="795" height="960">
    </BOUNDS>
-   <BOUNDS type="Node" left="4830" top="3510" width="0" height="0">
+   <BOUNDS type="Node" left="4710" top="3510" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="5" visible="1" values="-2,-1,0,1,2">
    </PIN>

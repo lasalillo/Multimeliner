@@ -277,7 +277,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="2670" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg_Oratio_ARI.xml">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg3_DS.xml">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.txt">
    </PIN>
@@ -343,7 +343,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="5310" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="190">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="332">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -509,7 +509,7 @@
    </PIN>
    <PIN pinname="Server" visible="1">
    </PIN>
-   <PIN pinname="Enable" slicecount="1" values="1">
+   <PIN pinname="Enable" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Controllers" visible="1">
    </PIN>
@@ -635,7 +635,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="3225" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\Dropbox\Rotonda\_ROTONDA\_MUSIC\gugg2_21.07.wav">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\_AUDIO\gugg3_03.08.wav">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1223,7 +1223,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6150" top="4380" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="22">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1343,7 +1343,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="6150" top="4800" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="15">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="16">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1725,7 +1725,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7305" top="3240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-270">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1810,6 +1810,32 @@
    <LINKPOINT x="8870" y="7483">
    </LINKPOINT>
    <LINKPOINT x="4915" y="7488">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="759">
+   <BOUNDS type="Box" left="9405" top="7965" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9405" top="7965" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="EnableSend">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="759" srcpinname="Y Output Value" dstnodeid="646" dstpinname="Enable" linkstyle="VHV">
+   <LINKPOINT x="9430" y="8495">
+   </LINKPOINT>
+   <LINKPOINT x="7400" y="8575">
    </LINKPOINT>
    </LINK>
    </PATCH>
