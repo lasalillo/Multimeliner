@@ -25,11 +25,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2145" top="495" width="2850" height="870">
+   <BOUNDS type="Box" left="1695" top="405" width="3195" height="1770">
    </BOUNDS>
-   <BOUNDS type="Node" left="2145" top="495" width="0" height="0">
+   <BOUNDS type="Node" left="1695" top="405" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="3" visible="1" values="Presets\TEST5_Merged.xml,Presets\TEST5_Merged.xml,Presets\TEST5_Merged.xml">
+   <PIN pinname="Input String" slicecount="7" visible="1" values="..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg0_ARI.xml,..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg1_ARI.xml,..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg2_ARI.xml,..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg3_ARI.xml,..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg4_ARI.xml,..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg5_ARI.xml,..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg6_ARI.xml">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -39,7 +39,7 @@
    </PIN>
    <PIN pinname="String Type" slicecount="1" values="Filename">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
+   <PIN pinname="Rows" slicecount="1" values="7">
    </PIN>
    <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
    </PIN>
@@ -53,7 +53,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5295" top="540" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Presets\TEST6_Merged.xml">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Presets\GUGG_Merged.xml">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -91,15 +91,15 @@
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8">
-   <BOUNDS type="Box" left="2145" top="3630" width="795" height="960">
+   <BOUNDS type="Box" left="1560" top="3615" width="840" height="1575">
    </BOUNDS>
-   <BOUNDS type="Node" left="2145" top="3630" width="0" height="0">
+   <BOUNDS type="Node" left="1560" top="3615" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="4">
+   <PIN pinname="Rows" slicecount="1" values="7">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -111,15 +111,15 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9">
-   <BOUNDS type="Box" left="2985" top="3630" width="780" height="660">
+   <BOUNDS type="Box" left="2535" top="3615" width="825" height="1575">
    </BOUNDS>
-   <BOUNDS type="Node" left="2985" top="3630" width="0" height="0">
+   <BOUNDS type="Node" left="2535" top="3615" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Rows" slicecount="1" values="3">
+   <PIN pinname="Rows" slicecount="1" values="7">
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>

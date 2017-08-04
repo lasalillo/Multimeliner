@@ -277,7 +277,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="2670" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg3_DS.xml">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg2_ARI.xml">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.txt">
    </PIN>
@@ -343,7 +343,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="5310" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="332">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="193">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -635,7 +635,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="3225" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\_AUDIO\gugg3_03.08.wav">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\_AUDIO\gugg0_03.08.wav">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -815,7 +815,7 @@
    </BOUNDS>
    <PIN pinname="Y Output Value" visible="1" pintype="Output">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" pintype="Input" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" pintype="Configuration" values="||">
    </PIN>
@@ -827,7 +827,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" pintype="Configuration" values="ShowLabels">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" pintype="Input" visible="-1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" pintype="Input" visible="-1" values="1">
    </PIN>
    <BOUNDS type="Window" left="0" top="0" width="0" height="0">
    </BOUNDS>
@@ -1725,9 +1725,9 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7305" top="3240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-610">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
+   <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
