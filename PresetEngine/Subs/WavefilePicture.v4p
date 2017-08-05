@@ -335,11 +335,11 @@
    <LINK srcnodeid="44" srcpinname="Y Output Value" dstnodeid="43" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Color)" componentmode="InABox" id="45">
-   <BOUNDS type="Box" left="4305" top="5355" width="1005" height="495">
+   <BOUNDS type="Box" left="4305" top="5355" width="2535" height="450">
    </BOUNDS>
    <BOUNDS type="Node" left="4305" top="5355" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.30765|">
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,0.14082|">
    </PIN>
    <PIN pinname="Color Output" visible="1">
    </PIN>
