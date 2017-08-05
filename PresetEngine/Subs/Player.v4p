@@ -171,13 +171,13 @@
    <LINK srcnodeid="45" srcpinname="Output" dstnodeid="41" dstpinname="Input">
    </LINK>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="46">
-   <BOUNDS type="Node" left="2940" top="1320" width="100" height="100">
+   <BOUNDS type="Node" left="3045" top="1335" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="2940" top="1320">
+   <BOUNDS type="Box" left="3045" top="1335">
    </BOUNDS>
    </NODE>
    <NODE systemname="AvoidNIL (Spreads)" filename="%VVVV%\lib\nodes\modules\Spreads\AvoidNIL (Spreads).v4p" nodename="AvoidNIL (Spreads)" componentmode="Hidden" id="47">

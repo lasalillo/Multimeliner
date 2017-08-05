@@ -145,7 +145,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1215" top="5625" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -157,7 +157,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Soft">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="601" srcpinname="Y Output Value" dstnodeid="598" dstpinname="Soft" linkstyle="VHV" hiddenwhenlocked="1">
@@ -779,9 +779,9 @@
    </PIN>
    </NODE>
    <NODE id="669" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <BOUNDS type="Box" left="2550" top="7200" width="795" height="345">
    </BOUNDS>
@@ -1543,7 +1543,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="480" top="8595" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="10290" top="-90" width="18510" height="15690">
+   <BOUNDS type="Window" left="10275" top="0" width="18525" height="10380">
    </BOUNDS>
    <PIN pinname="AA Samples per Pixel" slicecount="1" visible="1" values="4">
    </PIN>
@@ -1725,7 +1725,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7305" top="3240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-610">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="70">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
