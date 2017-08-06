@@ -1,9 +1,9 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\AudioPlayer.v4p" systemname="AudioPlayer" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\AudioPlayer.v4p" scrollx="0" scrolly="0">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1710" top="3555" width="795" height="240">
+   <BOUNDS type="Box" left="1155" top="3540" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="1710" top="3555" width="0" height="0">
+   <BOUNDS type="Node" left="1155" top="3540" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -15,9 +15,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3060" top="3570" width="795" height="240">
+   <BOUNDS type="Box" left="2280" top="3765" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3060" top="3570" width="0" height="0">
+   <BOUNDS type="Node" left="2280" top="3765" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -105,7 +105,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="18">
-   <BOUNDS type="Node" left="3000" top="1500" width="100" height="100">
+   <BOUNDS type="Node" left="3285" top="765" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="LoopPoints">
    </PIN>
@@ -145,9 +145,11 @@
    </PIN>
    <PIN pinname="Input Value" visible="1">
    </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PlayerPointer">
+   </PIN>
    </NODE>
    <NODE systemname="Subtract (Value)" nodename="Subtract (Value)" componentmode="Hidden" id="22">
-   <BOUNDS type="Node" left="4005" top="2460" width="100" height="100">
+   <BOUNDS type="Node" left="3990" top="2505" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -191,9 +193,9 @@
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="23" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25">
-   <BOUNDS type="Box" left="4665" top="2385" width="795" height="240">
+   <BOUNDS type="Box" left="4650" top="2250" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4665" top="2385" width="0" height="0">
+   <BOUNDS type="Node" left="4650" top="2250" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.06">
    </PIN>
@@ -399,7 +401,7 @@
    <LINK srcnodeid="36" srcpinname="Output" dstnodeid="5" dstpinname="Input 1">
    </LINK>
    <NODE systemname="Add (Value)" nodename="Add (Value)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="2955" top="1185" width="100" height="100">
+   <BOUNDS type="Node" left="2790" top="1185" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -593,5 +595,17 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="41" srcpinname="Output" dstnodeid="52" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="53">
+   <BOUNDS type="Box" left="2265" top="3540" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2265" top="3540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Position" dstnodeid="53" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
