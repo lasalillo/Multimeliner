@@ -507,7 +507,7 @@
    </PIN>
    <PIN pinname="Desired Input Channels" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Control Panel" slicecount="1" values="0">
+   <PIN pinname="Control Panel" slicecount="1" values="0" visible="1">
    </PIN>
    <PIN pinname="Desired Output Channels" visible="1">
    </PIN>
@@ -607,5 +607,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Position" dstnodeid="53" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
+   <BOUNDS type="Box" left="8340" top="1695" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8340" top="1695" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Control Panel|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="47" dstpinname="Control Panel">
    </LINK>
    </PATCH>
