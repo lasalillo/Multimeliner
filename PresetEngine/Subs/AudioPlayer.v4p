@@ -317,7 +317,7 @@
    <LINK srcnodeid="9" srcpinname="Output String" dstnodeid="0" dstpinname="Filename">
    </LINK>
    <NODE systemname="AudioOut (VAudio)" nodename="AudioOut (VAudio)" componentmode="Hidden" id="2" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll">
-   <BOUNDS type="Node" left="1530" top="3945" width="100" height="100">
+   <BOUNDS type="Node" left="1605" top="3975" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Audio" visible="1" slicecount="1" values="||">
    </PIN>

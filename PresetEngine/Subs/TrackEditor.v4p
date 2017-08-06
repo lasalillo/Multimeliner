@@ -748,7 +748,7 @@
    </NODE>
    <LINK srcnodeid="20" srcpinname="MouseOnCue" dstnodeid="75" dstpinname="Input Value">
    </LINK>
-   <NODE systemname="FrameDelay (Globals)" filename="FrameDelay (Globals).v4p" nodename="FrameDelay (Globals).v4p" componentmode="Hidden" id="80">
+   <NODE systemname="FrameDelay (Globals)" filename="FrameDelay (Globals).v4p" nodename="FrameDelay (Globals).v4p" componentmode="Hidden" id="81">
    <BOUNDS type="Node" left="4805" top="4500" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="3195" top="2658" width="3220" height="3685">
@@ -756,8 +756,8 @@
    <BOUNDS type="Window" left="7515" top="10020" width="4515" height="5835">
    </BOUNDS>
    </NODE>
-   <LINK srcnodeid="80" srcpinname="Globals" dstnodeid="47" dstpinname="Input Value">
+   <LINK srcnodeid="81" srcpinname="Globals" dstnodeid="47" dstpinname="Input Value">
    </LINK>
-   <LINK srcnodeid="35" srcpinname="Globals" dstnodeid="80" dstpinname="Globals">
+   <LINK srcnodeid="35" srcpinname="Globals" dstnodeid="81" dstpinname="Globals">
    </LINK>
    </PATCH>

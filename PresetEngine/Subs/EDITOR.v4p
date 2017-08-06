@@ -303,6 +303,8 @@
    </PIN>
    <PIN pinname="AudioOffset" visible="1">
    </PIN>
+   <PIN pinname="Length" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Init" hiddenwhenlocked="0" linkstyle="Bezier">
    <LINKPOINT x="2490" y="2915">
@@ -741,5 +743,19 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="15" dstpinname="AudioOffset">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="67">
+   <BOUNDS type="Box" left="3615" top="5790" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3615" top="5790" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Length">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Length" dstnodeid="67" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

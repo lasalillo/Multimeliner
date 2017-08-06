@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" systemname="MULTIMELINER" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" scrollx="0" scrolly="-360" bgcolor="11443049" locked="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" systemname="MULTIMELINER" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\MULTIMELINER.v4p" scrollx="0" scrolly="0" bgcolor="11443049" locked="0">
    <BOUNDS type="Window" left="0" top="0" width="10500" height="10305">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -277,7 +277,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="2670" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="Presets\GUGG_Merged.xml">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\Dropbox\Rotonda\_ROTONDA\TimelinerPRESETs\Gugg2_ARI.xml">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="file.txt">
    </PIN>
@@ -343,7 +343,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="5310" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="193">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="178">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -493,9 +493,9 @@
    </PIN>
    </NODE>
    <NODE systemname="SendData" filename="Subs\SendData.v4p" nodename="Subs\SendData.v4p" componentmode="Hidden" id="646" hiddenwhenlocked="1" debug="0" stayontop="0">
-   <BOUNDS type="Node" left="5925" top="8655" width="0" height="0">
+   <BOUNDS type="Node" left="6630" top="8700" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="5925" top="8655" width="7755" height="5205">
+   <BOUNDS type="Box" left="6630" top="8700" width="7755" height="5205">
    </BOUNDS>
    <BOUNDS type="Window" left="8115" top="3300" width="15225" height="9195">
    </BOUNDS>
@@ -635,7 +635,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="4890" top="3225" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\_AUDIO\gugg0_03.08.wav">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\_AUDIO\gugg0_05.08.wav">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -779,9 +779,9 @@
    </PIN>
    </NODE>
    <NODE id="669" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <BOUNDS type="Box" left="2550" top="7200" width="795" height="345">
    </BOUNDS>
@@ -1009,9 +1009,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="724" srcpinname="Output String" dstnodeid="646" dstpinname="Controllers" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="8755" y="5528">
+   <LINKPOINT x="8990" y="5543">
    </LINKPOINT>
-   <LINKPOINT x="5405" y="5873">
+   <LINKPOINT x="5875" y="5903">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="724" srcpinname="Output String" dstnodeid="598" dstpinname="Server" hiddenwhenlocked="1" linkstyle="VHV">
@@ -1533,9 +1533,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="612" srcpinname="Success" dstnodeid="646" dstpinname="Send" hiddenwhenlocked="1" linkstyle="VHV">
-   <LINKPOINT x="5830" y="7500">
+   <LINKPOINT x="6065" y="7515">
    </LINKPOINT>
-   <LINKPOINT x="6410" y="7545">
+   <LINKPOINT x="6880" y="7575">
    </LINKPOINT>
    </LINK>
    <NODE id="709" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" stayontop="0" hiddenwhenlocked="0">
@@ -1543,7 +1543,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="480" top="8595" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="10275" top="0" width="18525" height="10380">
+   <BOUNDS type="Window" left="10275" top="0" width="18525" height="10290">
    </BOUNDS>
    <PIN pinname="AA Samples per Pixel" slicecount="1" visible="1" values="4">
    </PIN>
@@ -1655,9 +1655,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="751">
-   <BOUNDS type="Box" left="5910" top="8985" width="1740" height="240">
+   <BOUNDS type="Box" left="6615" top="9030" width="1740" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="5910" top="8985" width="0" height="0">
+   <BOUNDS type="Node" left="6615" top="9030" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -1715,9 +1715,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="753" srcpinname="Output" dstnodeid="646" dstpinname="Content" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="9220" y="8600">
+   <LINKPOINT x="9455" y="8615">
    </LINKPOINT>
-   <LINKPOINT x="5330" y="8590">
+   <LINKPOINT x="5800" y="8620">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="755">
@@ -1725,7 +1725,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7305" top="3240" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="70">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="69.99">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -1795,9 +1795,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="758">
-   <BOUNDS type="Box" left="4350" top="8610" width="795" height="240">
+   <BOUNDS type="Box" left="4350" top="8655" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="4350" top="8610" width="0" height="0">
+   <BOUNDS type="Node" left="4350" top="8655" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
@@ -1807,9 +1807,9 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="694" srcpinname="AudioOffset" dstnodeid="758" dstpinname="Y Input Value" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="8870" y="7483">
+   <LINKPOINT x="8870" y="7498">
    </LINKPOINT>
-   <LINKPOINT x="4915" y="7488">
+   <LINKPOINT x="4915" y="7518">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="759">
@@ -1833,9 +1833,27 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="759" srcpinname="Y Output Value" dstnodeid="646" dstpinname="Enable" linkstyle="VHV">
-   <LINKPOINT x="9430" y="8495">
+   <LINKPOINT x="9665" y="8510">
    </LINKPOINT>
-   <LINKPOINT x="7400" y="8575">
+   <LINKPOINT x="7870" y="8605">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="760">
+   <BOUNDS type="Box" left="5280" top="8655" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5280" top="8655" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Length">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="612" srcpinname="Length" dstnodeid="760" dstpinname="Y Input Value" linkstyle="VHV" hiddenwhenlocked="1">
+   <LINKPOINT x="6645" y="7515">
+   </LINKPOINT>
+   <LINKPOINT x="5295" y="7530">
    </LINKPOINT>
    </LINK>
    </PATCH>
