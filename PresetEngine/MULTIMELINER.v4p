@@ -1543,7 +1543,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="480" top="8595" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="10275" top="0" width="18525" height="10290">
+   <BOUNDS type="Window" left="10275" top="0" width="18525" height="10305">
    </BOUNDS>
    <PIN pinname="AA Samples per Pixel" slicecount="1" visible="1" values="4">
    </PIN>
