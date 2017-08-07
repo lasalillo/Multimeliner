@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Cues.v4p" systemname="Cues" filename="D:\_VVVV\_VL\User\PresetEngine\Cues.v4p" scrollx="0" scrolly="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\Cues.v4p" systemname="Cues" filename="D:\_VVVV\_VL\User\PresetEngine\Cues.v4p" scrollx="8205" scrolly="1635">
    <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="4470" top="5565" width="100" height="100">
    </BOUNDS>
@@ -139,7 +139,7 @@
    </PIN>
    <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 7" visible="1">
+   <PIN pinname="Layer 7" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
@@ -166,7 +166,7 @@
    </LINK>
    <LINK srcnodeid="3" srcpinname="Transform Out" dstnodeid="6" dstpinname="Transform In">
    </LINK>
-   <BOUNDS type="Window" left="10140" top="-240" width="12525" height="14115">
+   <BOUNDS type="Window" left="7380" top="1680" width="12525" height="14115">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -419,7 +419,7 @@
    </PIN>
    <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
-   <PIN pinname="Render State" visible="1">
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Font" visible="1">
    </PIN>
@@ -697,7 +697,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12975" top="8655" width="2400" height="1800">
    </BOUNDS>
-   <PIN pinname="Layer 2" visible="1">
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer 1" visible="1">
    </PIN>
@@ -705,9 +705,9 @@
    </PIN>
    <PIN pinname="Enabled" visible="1">
    </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="44" srcpinname="Layer" dstnodeid="66" dstpinname="Layer 2">
-   </LINK>
    <LINK srcnodeid="65" srcpinname="Layer" dstnodeid="66" dstpinname="Layer 1">
    </LINK>
    <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="67">
@@ -771,15 +771,13 @@
    <LINK srcnodeid="70" srcpinname="Render State" dstnodeid="65" dstpinname="Render State">
    </LINK>
    <NODE systemname="Blend (DX11.RenderState)" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="71" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll">
-   <BOUNDS type="Node" left="11565" top="7455" width="100" height="100">
+   <BOUNDS type="Node" left="11760" top="7455" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Mode" slicecount="1" values="TextDefault">
    </PIN>
    </NODE>
-   <LINK srcnodeid="71" srcpinname="Render State" dstnodeid="44" dstpinname="Render State">
-   </LINK>
    <NODE systemname="Blend (DX11.RenderState)" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="72" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll">
    <BOUNDS type="Node" left="975" top="5910" width="100" height="100">
    </BOUNDS>
@@ -3666,8 +3664,6 @@
    </LINK>
    <LINK srcnodeid="323" srcpinname="Output" dstnodeid="322" dstpinname="Input 2">
    </LINK>
-   <LINK srcnodeid="66" srcpinname="Layer Out" dstnodeid="13" dstpinname="Layer 7">
-   </LINK>
    <LINK srcnodeid="173" srcpinname="Layer Out" dstnodeid="13" dstpinname="Layer 6">
    </LINK>
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="324">
@@ -3789,5 +3785,33 @@
    <LINK srcnodeid="331" srcpinname="Output" dstnodeid="333" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="333" srcpinname="Output" dstnodeid="332" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="DepthStencil (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="DepthStencil (DX11.RenderState)" componentmode="Hidden" id="334">
+   <BOUNDS type="Node" left="12210" top="8145" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12210" top="8145" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mode" slicecount="1" values="NoDepth">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="71" srcpinname="Render State" dstnodeid="44" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="334" srcpinname="Render State" dstnodeid="71" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="334" srcpinname="Render State" dstnodeid="70" dstpinname="Render State">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="Layer" dstnodeid="66" dstpinname="Layer 2">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="335">
+   <BOUNDS type="Box" left="12915" top="13890" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12915" top="13890" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PanelOut">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Layer Out" dstnodeid="335" dstpinname="Input Node">
    </LINK>
    </PATCH>

@@ -1779,6 +1779,8 @@
    </PIN>
    <PIN pinname="AudioOffset" visible="1">
    </PIN>
+   <PIN pinname="Control Panel" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <LINK srcnodeid="694" srcpinname="Seek" dstnodeid="698" dstpinname="Y Input Value">
    </LINK>
