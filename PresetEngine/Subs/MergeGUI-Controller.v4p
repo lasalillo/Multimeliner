@@ -699,7 +699,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9255" top="3345" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="6" visible="1" values="1,1,1,1,1,1">
+   <PIN pinname="Y Input Value" slicecount="6" visible="1" values="0,0,0,1,0,0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
