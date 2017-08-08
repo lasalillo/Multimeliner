@@ -2196,7 +2196,7 @@
     ************************ AsRaw (Preset) ************************
 
 -->
-        <Node Name="AsRaw (Preset)" Bounds="843,-183,77,133" Id="ExW63h1FgMVNtvoWSL55fq">
+        <Node Name="AsRaw (Preset)" Bounds="843,-205,77,156" Id="ExW63h1FgMVNtvoWSL55fq">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
             <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
             <Choice Kind="OperationDefinition" Name="Operation" />
@@ -2211,7 +2211,7 @@
               <Pin Id="N2juEF82HTmMXKKLOMZ1Cj" Name="Writeable" Kind="InputPin" />
               <Pin Id="Rwe7N3X329TLLTQVjLvBzh" Name="Result" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="QEHrCaMPXs3PGjWbpVkYg8" Bounds="858,-166" />
+            <ControlPoint Id="QEHrCaMPXs3PGjWbpVkYg8" Bounds="862,-189" />
             <Pin Id="KpKRqa7ZhddMHYZUhXdfKJ" Name="List" Kind="InputPin" Bounds="887,-146">
               <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Core.dll" ReferenceKind="App">
                 <Choice Kind="TypeFlag" Name="Spread" />
@@ -5742,6 +5742,152 @@
             <Pin Id="CzRcvwLB6hBQeATOr9rfM6" Name="ContentValuesIndex" Kind="InputPin" />
             <Pin Id="QgIu7YwYTYxLywfvv1L2Eb" Name="ContentToggleIndex" Kind="InputPin" />
             <Pin Id="CeuXD6UViyPOOr4mNE6fsP" Name="TrackID" Kind="InputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ AsJsonRaw (Preset) ************************
+
+-->
+        <Node Name="AsJsonRaw (Preset)" Bounds="1266,-524,247,160" Id="ERoBMj18QB8LkATBrOCoD0">
+          <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+            <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="LY7aIt6rWmVPa9pmLE00GB">
+            <Node Bounds="1282,-464,48,13" Id="BrfI7W3rPUjN1YO2qyt2Hi">
+              <p:NodeReference LastCategoryFullName="Runtime.Serialization" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Serialize (Json)" />
+              </p:NodeReference>
+              <Pin Id="KEl3HPavKnpM7REQPqbkAD" Name="Value" Kind="InputPin" />
+              <Pin Id="EWCEfQeQkbGOrZicTgCWMX" Name="Indent" Kind="InputPin" />
+              <Pin Id="NiDmjU3roRwOqWwRkPrpG6" Name="Omit Header" Kind="InputPin" />
+              <Pin Id="LazVO9isUYBPQtLC7LXGKy" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="QsFb7S7fclkMQnnhJUVJv9" Bounds="1280,-499" />
+            <Link Id="AKP64an72ZHOQpc4aCt5Un" Ids="QsFb7S7fclkMQnnhJUVJv9,KEl3HPavKnpM7REQPqbkAD" />
+            <Pin Id="F5h0MbhXSdCNkLacCbAQ5b" Name="List" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Core.dll" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference ReferenceKind="App">
+                    <Choice Kind="TypeFlag" Name="Preset" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+            </Pin>
+            <Link Id="TKYwDSx8HveNnaAQcYVPWi" Ids="F5h0MbhXSdCNkLacCbAQ5b,QsFb7S7fclkMQnnhJUVJv9" IsHidden="true" />
+            <Node Bounds="1282,-412,53,13" Id="MUs76vPvMGGLdQRwEBo6wU">
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ToStream" />
+              </p:NodeReference>
+              <Pin Id="VEisR2SkInxQVwQtAWEJYe" Name="Input" Kind="InputPin" />
+              <Pin Id="NX8cNbQ4takM6hxxcotDr9" Name="Writeable" Kind="InputPin" />
+              <Pin Id="A7LbZfmiI1bQRk5NrC4wXm" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1282,-435,45,13" Id="C8Ci5bA8qGkMZIVVxCY44U">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ToBytes" />
+                <CategoryReference Kind="TypeFlag" Name="String" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="C3SQVWE4R92MgoB3H30xQI" Name="Input" Kind="InputPin" />
+              <Pin Id="Jlis4y1HMh8LfjHsxhUe3l" Name="Encoding" Kind="InputPin" />
+              <Pin Id="CWMUcPT6TapNJTznrgtERh" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Link Id="HzaMrEgDkKpMM03xWiWW4h" Ids="LazVO9isUYBPQtLC7LXGKy,C3SQVWE4R92MgoB3H30xQI" />
+            <Link Id="LUpwHTfoxeyPVAy8PCS9MD" Ids="CWMUcPT6TapNJTznrgtERh,VEisR2SkInxQVwQtAWEJYe" />
+            <ControlPoint Id="AsYnuyNRGdjMRc3q8Y0hyu" Bounds="1282,-383" />
+            <Link Id="Ho4oJGR7w9FOYTREGHLfkB" Ids="A7LbZfmiI1bQRk5NrC4wXm,AsYnuyNRGdjMRc3q8Y0hyu" />
+            <Pin Id="QgqVFyQa6XXN1kQjnipYkj" Name="Raw" Kind="OutputPin" />
+            <Link Id="Q6DvILRqRyNNE8erC5Tkak" Ids="AsYnuyNRGdjMRc3q8Y0hyu,QgqVFyQa6XXN1kQjnipYkj" IsHidden="true" />
+            <Pad Id="BRm2OHR8kUWLPDSA6rDYr5" Comment="Indent" Bounds="1316,-495,40,19" ShowValueBox="true" isIOBox="true" Value="true">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Link Id="DiTuuwPrhPNL42BvOlUaLK" Ids="BRm2OHR8kUWLPDSA6rDYr5,EWCEfQeQkbGOrZicTgCWMX" />
+            <Pad Id="RjbBOJdNQTePhqCsX1Ozt9" Comment="Omit Header" Bounds="1371,-473,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Link Id="P3maPlVn52SQAAnWaa7CRH" Ids="RjbBOJdNQTePhqCsX1Ozt9,NiDmjU3roRwOqWwRkPrpG6" />
+            <Pad Id="LE66YLqqL6lOQ2UL5Ul7Sa" Comment="Encoding" Bounds="1349,-443,90,19" ShowValueBox="true" isIOBox="true" Value="&quot;UTF8&quot;">
+              <p:TypeAnnotation LastCategoryFullName="Text" LastSymbolSource="VL.CoreLib.dll" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Encodings" />
+                <CategoryReference Kind="Category" Name="Text" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Link Id="BYBkvQZs4OWNd3WgTA8ts8" Ids="LE66YLqqL6lOQ2UL5Ul7Sa,Jlis4y1HMh8LfjHsxhUe3l" />
+            <Pad Id="OleLsgblvzqPcztAZLT5qd" Comment="Writeable" Bounds="1354,-409,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CommonLanguageRuntimeLibrary" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+                <CategoryReference Kind="Category" Name="Primitive" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Link Id="SlEmWd4rgwlLDHSwqDOzHL" Ids="OleLsgblvzqPcztAZLT5qd,NX8cNbQ4takM6hxxcotDr9" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ FromJsonRaw (Preset) ************************
+
+-->
+        <Node Name="FromJsonRaw (Preset)" Bounds="1527,-527,271,150" Id="JJ7uCK95UwUNQxogePl6qx">
+          <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="Builtin">
+            <Choice Kind="RegionFlag" Name="Region" Fixed="true" />
+            <Choice Kind="OperationDefinition" Name="Operation" />
+          </p:NodeReference>
+          <Patch Id="A7J0ufjbMM9OoxRkxqKb9L">
+            <Node Bounds="1574,-432,57,13" Id="MKZNiM7vUqRL3F7TLGyQ8r">
+              <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="FromBytes" />
+              </p:NodeReference>
+              <Pin Id="Buco9MLiGkdMTV9DdcqxAu" Name="Input" Kind="InputPin" />
+              <Pin Id="E4XPapoDOLWORVwi8Nlbf5" Name="Encoding" Kind="InputPin" />
+              <Pin Id="EdfXaxYLjC2N3NWkftRSSP" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="AJstEzmjIkLPJKI8SJISAx" Bounds="1541,-511" />
+            <Pin Id="FRMnbbGEvJ2LaRUswtYy1R" Name="Raw" Kind="InputPin" Bounds="1026,-180" />
+            <Node Bounds="1574,-460,45,13" Id="Pr8nnxkmw7TNi59n7dXdga">
+              <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.DevLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationNode" Name="ToArray" />
+                <CategoryReference Kind="TypeFlag" Name="Sequence" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="POqSjgAoNzzPtAIHFRcdgt" Name="Input" Kind="InputPin" />
+              <Pin Id="KF9ke2e5oskLOjsv9unWTj" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="1540,-485,44,13" Id="PcQgEpQfBJnPbFZQtsMt94">
+              <p:NodeReference LastCategoryFullName="IO.Stream" LastSymbolSource="VL.CoreLib.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationNode" Name="ReadAll" />
+              </p:NodeReference>
+              <Pin Id="LgZknKXxUOvPUvu5gLs7fQ" Name="Input" Kind="InputPin" />
+              <Pin Id="C31zeoOi0wPMGPWBz1H0hQ" Name="Output" Kind="OutputPin" />
+              <Pin Id="N7MJwrOKJrPMWYZocc7iTY" Name="Data" Kind="OutputPin" />
+            </Node>
+            <Link Id="HrbEV8ttl8JNWqWg2AkKQ3" Ids="FRMnbbGEvJ2LaRUswtYy1R,AJstEzmjIkLPJKI8SJISAx" IsHidden="true" />
+            <Link Id="FaqHmwXeYipPvmKWZoPiKi" Ids="AJstEzmjIkLPJKI8SJISAx,LgZknKXxUOvPUvu5gLs7fQ" />
+            <Link Id="FtGMmbFmS4vMXdRjqOWrAH" Ids="N7MJwrOKJrPMWYZocc7iTY,POqSjgAoNzzPtAIHFRcdgt" />
+            <Link Id="NX52J89LC1wLGFP00ehuHV" Ids="KF9ke2e5oskLOjsv9unWTj,Buco9MLiGkdMTV9DdcqxAu" />
+            <ControlPoint Id="GKPHjOZFVxuO73xfyjP2RH" Bounds="1576,-396" />
+            <Pin Id="N7sWHHEdkObP7pYgcNkMqu" Name="Json" Kind="OutputPin" />
+            <Link Id="GIYMCrcJDjqLOhv31EZ2ZR" Ids="GKPHjOZFVxuO73xfyjP2RH,N7sWHHEdkObP7pYgcNkMqu" IsHidden="true" />
+            <Pad Id="SZiR9K9hM05O7RNXe8rrUw" Comment="Encoding" Bounds="1634,-463,90,19" ShowValueBox="true" isIOBox="true" Value="&quot;UTF8&quot;">
+              <p:TypeAnnotation LastCategoryFullName="Text" LastSymbolSource="VL.CoreLib.dll" ReferenceKind="App">
+                <Choice Kind="TypeFlag" Name="Encodings" />
+                <CategoryReference Kind="Category" Name="Text" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Link Id="OKFvgb5CCjnOd0OLY94khi" Ids="SZiR9K9hM05O7RNXe8rrUw,E4XPapoDOLWORVwi8Nlbf5" />
+            <Link Id="FfU5VcFL0ViNrtzvd47cLd" Ids="EdfXaxYLjC2N3NWkftRSSP,GKPHjOZFVxuO73xfyjP2RH" />
           </Patch>
         </Node>
       </Canvas>

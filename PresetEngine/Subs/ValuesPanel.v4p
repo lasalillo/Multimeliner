@@ -551,7 +551,7 @@
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="62">
    <BOUNDS type="Node" left="13680" top="4485" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="14" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="Input" visible="1" slicecount="14" values="0,0,0,0,0,0,0,0,0,0,1,1,0,1">
    </PIN>
    <PIN pinname="OnChange" visible="1">
    </PIN>
@@ -805,7 +805,7 @@
    <NODE systemname="Round (Value)" filename="%VVVV%\addonpack\lib\nodes\plugins\Round.dll" nodename="Round (Value)" componentmode="Hidden" id="91">
    <BOUNDS type="Node" left="4050" top="3675" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="28" values="0,0,0,0,0,0,0,0,0.913385808467865,1,0.637795269489288,0,0,0,0,0,0,0,0,0,0,0.944881916046143,0.31496062874794,0.0708661451935768,0,0,0,0">
+   <PIN pinname="Input" visible="1" slicecount="28" values="0,0,0,0,0.5,0.75,0,0,0,0,0,0,0.809020340442657,0.0221013650298119,0.75,0.5,0.5,0,0,0,0.308374613523483,0.666666686534882,0,0,0.401574790477753,0.0551181100308895,0,0">
    </PIN>
    <PIN pinname="Digits" slicecount="1" values="5">
    </PIN>
@@ -1935,7 +1935,7 @@
    </BOUNDS>
    <PIN pinname="Input 2" visible="1">
    </PIN>
-   <PIN pinname="Input 1" slicecount="1" values="||" visible="1">
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>

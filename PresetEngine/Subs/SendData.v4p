@@ -875,7 +875,7 @@
    <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="240">
    <BOUNDS type="Node" left="6855" top="6705" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
+   <PIN pinname="Input 1" visible="1" slicecount="23" values=",,,,,,,,,,,,,,,,,,,,,,">
    </PIN>
    <PIN pinname="Switch" visible="1">
    </PIN>
@@ -899,7 +899,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   <PIN pinname="Input Node" visible="1" slicecount="25" values=",,,,,,,,,,,,,,,,,,,,,,,,">
    </PIN>
    </NODE>
    <LINK srcnodeid="46" srcpinname="Y Output Value" dstnodeid="241" dstpinname="Index" linkstyle="VHV">
@@ -1097,7 +1097,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2685" top="2325">
    </BOUNDS>
-   <PIN pinname="List" visible="1">
+   <PIN pinname="List" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK srcnodeid="259" srcpinname="Raw" dstnodeid="6" dstpinname="Raw" hiddenwhenlocked="0">
@@ -1109,7 +1109,7 @@
    </PIN>
    <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Input 1" visible="1">
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
