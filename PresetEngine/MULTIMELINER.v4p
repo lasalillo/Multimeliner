@@ -1415,7 +1415,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="540" top="3780" width="6490" height="6160">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="9690" width="6210" height="5910">
+   <BOUNDS type="Window" left="0" top="9690" width="6735" height="5910">
    </BOUNDS>
    <PIN pinname="EditEnable" visible="1">
    </PIN>
