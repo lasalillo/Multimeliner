@@ -1,0 +1,351 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\PresetSlit\GetToggle (JsonRaw).v4p" systemname="GetToggle (JsonRaw)" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\PresetSlit\GetToggle (JsonRaw).v4p" scrollx="0" scrolly="0">
+   <NODE systemname="AsXElement (JSON)" filename="%VVVV%\addonpack\lib\nodes\plugins\JSONStringAsElement.dll" nodename="AsXElement (JSON)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1380" top="1935" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1380" top="1935" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="JSON" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Element (XElement Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Split)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1380" top="3060" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1380" top="3060" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <PIN pinname="Attributes" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Name" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Value" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Children Bin Size" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Next" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Parent" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Document Root" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Attributes Bin Size" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Deep Value" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Node Type" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetElements (XElement ByXPath)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="GetElements (XElement ByXPath)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1380" top="2580" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1380" top="2580" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Elements" visible="1">
+   </PIN>
+   <PIN pinname="XPath" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1845" top="2250" width="1725" height="300">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1845" top="2250" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//array/array/array">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyChildTag/MyChildsChildTag">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Elements" dstnodeid="2" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Element" dstnodeid="3" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="3" dstpinname="XPath">
+   </LINK>
+   <BOUNDS type="Window" left="20520" top="4245" width="5550" height="10575">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="1395" top="1425" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Encoding" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="16" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="1395" top="1065" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1395" top="1065" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="JsonRaw">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Output Node" dstnodeid="15" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Output" dstnodeid="0" dstpinname="JSON">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="77" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="2490" top="1215" width="825" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2490" top="1215" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="utf-8">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|System Default|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="77" srcpinname="Output Enum" dstnodeid="15" dstpinname="Encoding">
+   </LINK>
+   <NODE id="7" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2295" top="5370" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2295" top="5370" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="array">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyAttribute">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="54" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2295" top="4515" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2295" top="4515" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyAttribute">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="53" systemname="GetElements (XElement ByName)" nodename="GetElements (XElement ByName)" componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS type="Node" left="1365" top="4515" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Elements" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1365" top="4515">
+   </BOUNDS>
+   </NODE>
+   <NODE id="52" systemname="Element (XElement Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Split)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1380" top="5400" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1380" top="5400" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <PIN pinname="Attributes" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Name" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Value" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Deep Value" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Next" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Parent" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Document Root" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Attributes Bin Size" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Node Type" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Children Bin Size" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE id="50" systemname="GetElements (XElement ByName)" nodename="GetElements (XElement ByName)" componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS type="Node" left="1380" top="5865" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Elements" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1380" top="5865">
+   </BOUNDS>
+   </NODE>
+   <NODE id="49" systemname="Element (XElement Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Split)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1380" top="6270" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1380" top="6270" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <PIN pinname="Attributes" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Name" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Value" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Deep Value" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Children Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Next" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Parent" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Document Root" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Attributes Bin Size" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Node Type" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE id="48" systemname="Element (XElement Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Split)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1380" top="6795" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1380" top="6795" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Children" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Attributes" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Name" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Value" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Deep Value" visible="1">
+   </PIN>
+   <PIN pinname="Next" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Parent" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Node Type" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Document Root" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Attributes Bin Size" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Children Bin Size" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE id="47" systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1380" top="7215" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="45" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2280" top="7815" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2280" top="7815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Toggle Bin Size|">
+   </PIN>
+   </NODE>
+   <NODE id="55" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1380" top="7815" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1380" top="7815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <NODE id="76" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3735" top="7815" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3735" top="7815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Preset Bin Size|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Children Bin Size" dstnodeid="76" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="0" y="3635">
+   </LINKPOINT>
+   <LINKPOINT x="7995" y="3805">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Output" dstnodeid="55" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Children Bin Size" dstnodeid="45" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Deep Value" dstnodeid="47" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="Children" dstnodeid="48" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Elements" dstnodeid="49" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="52" srcpinname="Children" dstnodeid="50" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="50" dstpinname="Name">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="Elements" dstnodeid="52" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Children" dstnodeid="53" dstpinname="Element" linkstyle="VHV">
+   <LINKPOINT x="0" y="3823">
+   </LINKPOINT>
+   <LINKPOINT x="5595" y="3993">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Output String" dstnodeid="53" dstpinname="Name">
+   </LINK>
+   </PATCH>

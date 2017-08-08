@@ -1,0 +1,195 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\PresetSlit\GetTime (Json).v4p" systemname="GetTime (JsonRaw)" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\PresetSlit\GetTime (JsonRaw).v4p" scrollx="0" scrolly="0">
+   <NODE systemname="AsXElement (JSON)" filename="%VVVV%\addonpack\lib\nodes\plugins\JSONStringAsElement.dll" nodename="AsXElement (JSON)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1380" top="1935" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1380" top="1935" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="JSON" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Element (XElement Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Split)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="1380" top="3060" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1380" top="3060" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <PIN pinname="Attributes" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Name" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Value" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Children Bin Size" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Next" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Parent" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Document Root" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Attributes Bin Size" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Deep Value" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Node Type" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetElements (XElement ByXPath)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="GetElements (XElement ByXPath)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1380" top="2580" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1380" top="2580" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Elements" visible="1">
+   </PIN>
+   <PIN pinname="XPath" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1845" top="2250" width="1725" height="300">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1845" top="2250" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//array/array/array">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyChildTag/MyChildsChildTag">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Elements" dstnodeid="2" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Element" dstnodeid="3" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output String" dstnodeid="3" dstpinname="XPath">
+   </LINK>
+   <BOUNDS type="Window" left="21135" top="4245" width="4935" height="10575">
+   </BOUNDS>
+   <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE id="57" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1425" top="7590" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1425" top="7590" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Time">
+   </PIN>
+   </NODE>
+   <NODE id="59" systemname="AsValue (String)" nodename="AsValue (String)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1425" top="6990" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="60" systemname="Element (XElement Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Split)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1425" top="5145" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1425" top="5145" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Children" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Attributes" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Name" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Value" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Deep Value" visible="1">
+   </PIN>
+   <PIN pinname="Next" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Parent" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Document Root" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Attributes Bin Size" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Children Bin Size" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Node Type" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <NODE id="61" systemname="GetElements (XElement ByName)" nodename="GetElements (XElement ByName)" componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS type="Node" left="1425" top="4290" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Elements" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="1425" top="4290">
+   </BOUNDS>
+   </NODE>
+   <NODE id="62" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2355" top="4290" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2355" top="4290" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Time">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyAttribute">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="62" srcpinname="Output String" dstnodeid="61" dstpinname="Name">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Children" dstnodeid="61" dstpinname="Element" linkstyle="VHV">
+   <LINKPOINT x="0" y="3748">
+   </LINKPOINT>
+   <LINKPOINT x="3440" y="3843">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Elements" dstnodeid="60" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="60" srcpinname="Deep Value" dstnodeid="59" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="Output" dstnodeid="57" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="78">
+   <BOUNDS type="Box" left="1395" top="870" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1395" top="870" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="{&quot;vvvv&quot;:&quot;awesome&quot;}">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="JSON">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="Output String" dstnodeid="0" dstpinname="JSON">
+   </LINK>
+   </PATCH>
