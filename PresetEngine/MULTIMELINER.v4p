@@ -193,9 +193,9 @@
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="613" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3825" top="2865" width="615" height="645">
+   <BOUNDS type="Box" left="3510" top="2655" width="915" height="705">
    </BOUNDS>
-   <BOUNDS type="Node" left="3825" top="2865" width="0" height="0">
+   <BOUNDS type="Node" left="3510" top="2655" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -213,9 +213,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="614" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3825" top="4380" width="435" height="315">
+   <BOUNDS type="Box" left="7320" top="3795" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3825" top="4380" width="0" height="0">
+   <BOUNDS type="Node" left="7320" top="3795" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -233,9 +233,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="615" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3825" top="5055" width="285" height="240">
+   <BOUNDS type="Box" left="4560" top="4395" width="285" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="3825" top="5055" width="0" height="0">
+   <BOUNDS type="Node" left="4560" top="4395" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -253,9 +253,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="616" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3825" top="3795" width="615" height="255">
+   <BOUNDS type="Box" left="3525" top="3735" width="615" height="255">
    </BOUNDS>
-   <BOUNDS type="Node" left="3825" top="3795" width="0" height="0">
+   <BOUNDS type="Node" left="3525" top="3735" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
@@ -1131,27 +1131,27 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="616" srcpinname="Y Output Value" dstnodeid="612" dstpinname="ZoomOut" linkstyle="VHV">
-   <LINKPOINT x="4140" y="5110">
+   <LINKPOINT x="3940" y="5070">
    </LINKPOINT>
-   <LINKPOINT x="4215" y="5030">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="615" srcpinname="Y Output Value" dstnodeid="612" dstpinname="Init" linkstyle="Bezier">
-   <LINKPOINT x="4180" y="5898">
-   </LINKPOINT>
-   <LINKPOINT x="4175" y="5503">
+   <LINKPOINT x="4115" y="5010">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="614" srcpinname="Y Output Value" dstnodeid="612" dstpinname="Write" linkstyle="Bezier">
-   <LINKPOINT x="4025" y="5590">
+   <LINK srcnodeid="615" srcpinname="Y Output Value" dstnodeid="612" dstpinname="Init" linkstyle="VHV">
+   <LINKPOINT x="4670" y="5448">
    </LINKPOINT>
-   <LINKPOINT x="4030" y="5195">
+   <LINKPOINT x="4420" y="5278">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="613" srcpinname="Y Output Value" dstnodeid="612" dstpinname="Reload" linkstyle="Bezier">
-   <LINKPOINT x="3860" y="5015">
+   <LINK srcnodeid="614" srcpinname="Y Output Value" dstnodeid="612" dstpinname="Write" linkstyle="VHV">
+   <LINKPOINT x="7395" y="7030">
    </LINKPOINT>
-   <LINKPOINT x="3865" y="4765">
+   <LINKPOINT x="3960" y="6515">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="613" srcpinname="Y Output Value" dstnodeid="612" dstpinname="Reload" linkstyle="VHV">
+   <LINKPOINT x="3650" y="4875">
+   </LINKPOINT>
+   <LINKPOINT x="3760" y="4695">
    </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="727">
