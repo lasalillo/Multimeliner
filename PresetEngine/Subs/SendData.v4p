@@ -278,12 +278,6 @@
    </NODE>
    <LINK srcnodeid="17" srcpinname="Success" dstnodeid="22" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Send" linkstyle="VHV" hiddenwhenlocked="1">
-   <LINKPOINT x="12085" y="3275">
-   </LINKPOINT>
-   <LINKPOINT x="3170" y="3280">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="17" dstpinname="Send" linkstyle="VHV" hiddenwhenlocked="1">
    <LINKPOINT x="12085" y="3275">
    </LINKPOINT>
@@ -291,7 +285,7 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="OnOpen (VVVV)" nodename="OnOpen (VVVV)" componentmode="Hidden" id="23" hiddenwhenlocked="1">
-   <BOUNDS type="Node" left="12405" top="2040" width="100" height="100">
+   <BOUNDS type="Node" left="12375" top="1905" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
@@ -1246,12 +1240,6 @@
    </NODE>
    <LINK srcnodeid="277" srcpinname="OnData" dstnodeid="279" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="277" srcpinname="OnData" dstnodeid="23" dstpinname="Simulate" linkstyle="Bezier">
-   <LINKPOINT x="13410" y="5415">
-   </LINKPOINT>
-   <LINKPOINT x="14055" y="1155">
-   </LINKPOINT>
-   </LINK>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Send" linkstyle="VHV" hiddenwhenlocked="1">
    <LINKPOINT x="11800" y="5068">
    </LINKPOINT>
@@ -1275,7 +1263,39 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="284" srcpinname="Y Output Value" dstnodeid="258" dstpinname="Input 4">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="285">
+   <BOUNDS type="Node" left="10950" top="2445" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   <PIN pinname="Input 4" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Bang" dstnodeid="285" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="253" srcpinname="Input Value" dstnodeid="285" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="266" srcpinname="Y Output Value" dstnodeid="285" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="285" srcpinname="Output" dstnodeid="6" dstpinname="Send" linkstyle="VHV">
+   <LINKPOINT x="10940" y="3065">
+   </LINKPOINT>
+   <LINKPOINT x="3265" y="3100">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="284" srcpinname="Y Output Value" dstnodeid="285" dstpinname="Input 4">
    </LINK>
    </PATCH>

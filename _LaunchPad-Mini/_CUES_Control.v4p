@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\_LaunchPad-Mini\_CUES_Control.v4p" systemname="_CUES_Control" filename="D:\_ElbePhilharmonie\TEST\_Timeliner\_LaunchPad-Mini\_CUES_Control.v4p" scrollx="180" scrolly="0">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\_LaunchPad-Mini\_CUES_Control.v4p" systemname="_CUES_Control" filename="D:\_ElbePhilharmonie\TEST\_Timeliner\_LaunchPad-Mini\_CUES_Control.v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="3930" top="5085" width="6675" height="11130">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
@@ -665,7 +665,7 @@
    <LINK srcnodeid="527" srcpinname="Output" dstnodeid="82" dstpinname="EditValues">
    </LINK>
    <NODE id="528" nodename="IOBox (Value Advanced)" componentmode="InABox" systemname="IOBox (Value Advanced)">
-   <PIN pinname="Y Input Value" slicecount="64" visible="1" values="33,33,80,45,43,45,43,45,43,45,43,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41,41">
+   <PIN pinname="Y Input Value" slicecount="64" visible="1" values="33,33,80,45,43,45,43,45,43,45,43,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46,46">
    </PIN>
    <BOUNDS type="Box" left="2295" top="195" width="2550" height="1425">
    </BOUNDS>
