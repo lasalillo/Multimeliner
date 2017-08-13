@@ -1296,6 +1296,4 @@
    <LINKPOINT x="3265" y="3100">
    </LINKPOINT>
    </LINK>
-   <LINK srcnodeid="284" srcpinname="Y Output Value" dstnodeid="285" dstpinname="Input 4">
-   </LINK>
    </PATCH>

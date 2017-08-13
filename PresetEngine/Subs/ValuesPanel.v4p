@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ValuesPanel.v4p" systemname="ValuesPanel" filename="D:\_VVVV\_VL\User\PresetEngine\ValuesPanel.v4p" scrollx="26295" scrolly="75">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\ValuesPanel.v4p" systemname="ValuesPanel" filename="D:\_VVVV\_VL\User\PresetEngine\ValuesPanel.v4p" scrollx="0" scrolly="3900">
    <NODE componentmode="InABox" id="0" nodename="IOBox (Color)" systemname="IOBox (Color)">
    <BOUNDS height="0" left="10890" top="3354" type="Node" width="0">
    </BOUNDS>
@@ -551,7 +551,7 @@
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="62">
    <BOUNDS type="Node" left="13680" top="4485" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="14" values="0,0,0,0,0,0,0,0,0,0,1,1,0,1">
+   <PIN pinname="Input" visible="1" slicecount="14" values="1,0,0,0,0,0,1,0,0,0,0,0,0,0">
    </PIN>
    <PIN pinname="OnChange" visible="1">
    </PIN>
@@ -805,7 +805,7 @@
    <NODE systemname="Round (Value)" filename="%VVVV%\addonpack\lib\nodes\plugins\Round.dll" nodename="Round (Value)" componentmode="Hidden" id="91">
    <BOUNDS type="Node" left="4050" top="3675" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1" slicecount="28" values="0,0,0,0,0.5,0.75,0,0,0,0,0,0,0.809020340442657,0.0221013650298119,0.75,0.5,0.5,0,0,0,0.308374613523483,0.666666686534882,0,0,0.401574790477753,0.0551181100308895,0,0">
+   <PIN pinname="Input" visible="1" slicecount="28" values="0,0,0,0.149606302380562,0.5,1,0,0,0,0,0.141732290387154,0.559055089950562,0.503937005996704,0.503937005996704,0.5,0.5,0.5,0.511811017990112,0.125984251499176,0.322834640741348,0.503937005996704,0.440944880247116,0,0.666666686534882,1,0,0.078740157186985,1">
    </PIN>
    <PIN pinname="Digits" slicecount="1" values="5">
    </PIN>
@@ -1023,7 +1023,7 @@
    </PIN>
    <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Input String" pintype="Input" visible="1" slicecount="1" values="||">
+   <PIN pinname="Input String" pintype="Input" visible="1" slicecount="1" values="Def-18">
    </PIN>
    <PIN pinname="Changed" pintype="Output" visible="-1">
    </PIN>
@@ -1205,7 +1205,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="16620" top="3150" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="28">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -1223,7 +1223,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="17685" top="3120" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="14">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -2749,9 +2749,9 @@
    <LINK srcnodeid="396" srcpinname="Transform Out" dstnodeid="272" dstpinname="Transform">
    </LINK>
    <NODE systemname="SetBlendMode" filename="SetBlendMode.v4p" nodename="SetBlendMode.v4p" componentmode="Hidden" id="412" debug="0">
-   <BOUNDS type="Node" left="4468" top="16914" width="0" height="0">
+   <BOUNDS type="Node" left="5383" top="15579" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="1861" top="12919" width="5215" height="7990">
+   <BOUNDS type="Box" left="2776" top="11584" width="5215" height="7990">
    </BOUNDS>
    <BOUNDS type="Window" left="690" top="255" width="21570" height="15975">
    </BOUNDS>
@@ -2903,7 +2903,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="28" values="0,0,0,0.149606302380562,0.5,1,0,0,0,0,0.141732290387154,0.559055089950562,0.503937005996704,0.503937005996704,0.5,0.5,0.5,0.511811017990112,0.125984251499176,0.322834640741348,0.503937005996704,0.440944880247116,0,0.666666686534882,1,0,0.078740157186985,1">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -3005,7 +3005,7 @@
    <LINK srcnodeid="442" srcpinname="Output 1" dstnodeid="441" dstpinname="Input Value">
    </LINK>
    <NODE systemname="MixerParametersSnap_Values" filename="MixerParametersSnap_Values.v4p" nodename="MixerParametersSnap_Values.v4p" componentmode="Hidden" id="444">
-   <BOUNDS type="Node" left="5355" top="9075" width="100" height="100">
+   <BOUNDS type="Node" left="5340" top="8985" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Preset" visible="1" slicecount="1" values="||">
    </PIN>
@@ -3017,7 +3017,7 @@
    </PIN>
    <PIN pinname="Input" visible="1" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
    </PIN>
-   <PIN pinname="Values" visible="1" slicecount="28" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0">
+   <PIN pinname="Values" visible="1" slicecount="28" values="0,0,0,0.149606302380562,0.5,1,0,0,0,0,0.141732290387154,0.559055089950562,0.503937005996704,0.503937005996704,0.5,0.5,0.5,0.511811017990112,0.125984251499176,0.322834640741348,0.503937005996704,0.440944880247116,0,0.666666686534882,1,0,0.078740157186985,1">
    </PIN>
    </NODE>
    <LINK srcnodeid="171" srcpinname="Output" dstnodeid="444" dstpinname="Preset">
