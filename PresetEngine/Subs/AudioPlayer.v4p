@@ -303,6 +303,8 @@
    </PIN>
    <PIN pinname="Audio Out" visible="1">
    </PIN>
+   <PIN pinname="Volume" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="0" srcpinname="Duration" dstnodeid="26" dstpinname="Input Value">
    </LINK>
@@ -507,7 +509,7 @@
    </PIN>
    <PIN pinname="Desired Input Channels" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Control Panel" slicecount="1" values="0" visible="1">
+   <PIN pinname="Control Panel" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Desired Output Channels" visible="1">
    </PIN>
@@ -627,5 +629,21 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="47" dstpinname="Control Panel">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="55">
+   <BOUNDS type="Box" left="6855" top="855" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6855" top="855" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Volume">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Volume">
    </LINK>
    </PATCH>

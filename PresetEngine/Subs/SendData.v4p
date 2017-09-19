@@ -1187,6 +1187,8 @@
    </PIN>
    <PIN pinname="OnData" visible="1">
    </PIN>
+   <PIN pinname="Update" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="276" srcpinname="Y Output Value" dstnodeid="277" dstpinname="Port" linkstyle="VHV">
    <LINKPOINT x="10425" y="2058">
@@ -1295,5 +1297,25 @@
    </LINKPOINT>
    <LINKPOINT x="3265" y="3100">
    </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="286">
+   <BOUNDS type="Box" left="10470" top="3570" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10470" top="3570" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="286" srcpinname="Y Output Value" dstnodeid="277" dstpinname="Update">
    </LINK>
    </PATCH>

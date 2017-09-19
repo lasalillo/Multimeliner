@@ -101,7 +101,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="7">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="4">
    </PIN>
@@ -121,7 +121,7 @@
    </PIN>
    <PIN pinname="Rows" slicecount="1" values="7">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" visible="1">
    </PIN>
    <PIN pinname="Vector Size" slicecount="1" values="3">
    </PIN>
@@ -221,6 +221,8 @@
    </PIN>
    <BOUNDS type="Box" left="2145" top="2325">
    </BOUNDS>
+   <PIN pinname="Success" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="20" dstpinname="Filename">
    </LINK>
@@ -269,17 +271,15 @@
    </BOUNDS>
    <PIN pinname="PlaceAfter" visible="1">
    </PIN>
-   <PIN pinname="Append" visible="1">
+   <PIN pinname="Append" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="AddNewTracks" visible="1">
+   <PIN pinname="AddNewTracks" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Tracks" visible="1">
    </PIN>
    <PIN pinname="In Progress" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Read">
-   </LINK>
    <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="3" dstpinname="Merged File Path">
    </LINK>
    <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Write">
@@ -317,5 +317,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="In Progress" dstnodeid="22" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Success" dstnodeid="3" dstpinname="Read">
    </LINK>
    </PATCH>

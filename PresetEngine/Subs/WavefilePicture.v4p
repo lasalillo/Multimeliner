@@ -440,16 +440,6 @@
    </NODE>
    <LINK srcnodeid="54" srcpinname="Sampler" dstnodeid="49" dstpinname="Sampler State">
    </LINK>
-   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="55">
-   <BOUNDS type="Node" left="2685" top="6150" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="55" dstpinname="Reload">
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="55" dstpinname="Filename">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56">
    <BOUNDS type="Box" left="3210" top="1515" width="795" height="720">
    </BOUNDS>
@@ -470,6 +460,14 @@
    </NODE>
    <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="55" srcpinname="Texture Out" dstnodeid="49" dstpinname="Texture">
+   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="57">
+   <BOUNDS type="Node" left="2685" top="6150" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="57" dstpinname="Reload">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="57" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Texture Out" dstnodeid="49" dstpinname="Texture">
    </LINK>
    </PATCH>

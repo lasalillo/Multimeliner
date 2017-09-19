@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\InfoPanelGUI.v4p" systemname="InfoPanelGUI" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\InfoPanelGUI.v4p" scrollx="0" scrolly="555">
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\InfoPanelGUI.v4p" systemname="InfoPanelGUI" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\InfoPanelGUI.v4p" scrollx="0" scrolly="1560">
    <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="2220" top="6030" width="100" height="100">
    </BOUNDS>
@@ -285,7 +285,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2685" top="3585" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.01">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.922">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -679,7 +679,7 @@
    <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="48" dstpinname="Switch">
    </LINK>
    <NODE systemname="SetAlpha (Color)" nodename="SetAlpha (Color)" componentmode="Hidden" id="49">
-   <BOUNDS type="Node" left="4710" top="7695" width="100" height="100">
+   <BOUNDS type="Node" left="5535" top="8055" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>

@@ -83,7 +83,7 @@
    </PIN>
    </NODE>
    <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="12">
-   <BOUNDS type="Node" left="1725" top="1890" width="100" height="100">
+   <BOUNDS type="Node" left="1695" top="1995" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Receive String" slicecount="1" values="TrackControls">
    </PIN>
@@ -755,6 +755,8 @@
    </BOUNDS>
    <BOUNDS type="Window" left="7515" top="10020" width="4515" height="5835">
    </BOUNDS>
+   <PIN pinname="Globals" visible="1" slicecount="1" values="||">
+   </PIN>
    </NODE>
    <LINK srcnodeid="83" srcpinname="Globals" dstnodeid="47" dstpinname="Input Value">
    </LINK>

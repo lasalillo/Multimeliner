@@ -463,7 +463,7 @@
    <NODE id="33" systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <PIN pinname="Input 1" visible="1" slicecount="1" pintype="Input" values="|Stop Loop|">
    </PIN>
-   <BOUNDS type="Node" left="3000" top="4860" width="100" height="100">
+   <BOUNDS type="Node" left="2955" top="5280" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Intersperse" slicecount="1" pintype="Input" visible="1" values="Space">
    </PIN>
@@ -473,9 +473,9 @@
    </PIN>
    <PIN pinname="Output" visible="1" pintype="Output">
    </PIN>
-   <PIN pinname="Input Count" slicecount="1" pintype="Configuration" values="2">
+   <PIN pinname="Input Count" slicecount="1" pintype="Configuration" values="3">
    </PIN>
-   <PIN pinname="Input 3" slicecount="1" pintype="Input" visible="1" values="||">
+   <PIN pinname="Input 3" slicecount="1" pintype="Input" visible="1" values="text">
    </PIN>
    <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
    </PIN>
@@ -696,8 +696,6 @@
    </LINK>
    <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="0" dstpinname="Input String">
    </LINK>
-   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="33" dstpinname="Input 2">
-   </LINK>
    <LINK srcnodeid="34" srcpinname="Input Value" dstnodeid="35" dstpinname="Switch">
    </LINK>
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="35" dstpinname="Input 1">
@@ -764,7 +762,7 @@
    </LINK>
    <LINK srcnodeid="24" srcpinname="Output" dstnodeid="30" dstpinname="Input">
    </LINK>
-   <BOUNDS type="Window" left="13515" top="5670" width="10755" height="11175">
+   <BOUNDS type="Window" left="4770" top="4995" width="10755" height="11175">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
@@ -1173,5 +1171,31 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="81" srcpinname="Output" dstnodeid="82" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="33" dstpinname="Input 3">
+   </LINK>
+   <NODE systemname="Sec2HMS" filename="Sec2HMS.v4p" nodename="Sec2HMS.v4p" componentmode="Hidden" id="83">
+   <BOUNDS type="Node" left="3630" top="4545" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Input Value" dstnodeid="83" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="84">
+   <BOUNDS type="Node" left="3165" top="4920" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="|  TimeLeft &gt;|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="83" srcpinname="Output" dstnodeid="84" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="84" srcpinname="Output" dstnodeid="33" dstpinname="Input 2">
    </LINK>
    </PATCH>
